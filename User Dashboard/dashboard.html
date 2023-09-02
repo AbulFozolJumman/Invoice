@@ -23,36 +23,66 @@
                 <a href="settings.html" class="pr-[30px] text-[18px] text-[#15304D]">Settings</a>
             </div>
             <div class=" flex items-center">
-                <a href=""><img class="w-12" src="notification+dot.png" alt=""></a>
-                <div class="dropdown dropdown-hover pr-6">
-                    <label tabindex="0" class="btn bg-[#F2F2F2] m-1">
-                        <a class="flex items-center justify-start gap-2" href="">
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0" class="btn m-1 hover:bg-transparent  border-none">
+                        <div><img class="w-12" src="notification+dot.png" alt=""></div>
+                    </summary>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-white rounded-box w-[320px]">
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">Agent Rose</h3>
+                                    <p class="text-[12px]">Message: Please, kindly do take a snap-shot of the card.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">18min.</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGE Team</h3>
+                                    <p class="text-[12px]">Alert: New card added this week
+                                        check em out.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">34min.</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">Halloween Promo</h3>
+                                    <p class="text-[12px]">Promotion: Get 13% the price when
+                                        you exchange bitcoin to cash.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">1hour</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGO Team</h3>
+                                    <p class="text-[12px]">Alert: Sorry to see you go. You just unsubscribe from the
+                                        newsletter.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">2hour</p>
+                            </a></li>
+                        <button class="text-white bg-[#128CED] px-5 py-3 mt-4 mb-2 block mx-auto rounded-[4px]">View
+                            More</button>
+                    </ul>
+                </details>
+
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0" class="btn bg-[#F2F2F2] m-1">
+                        <div class="flex items-center justify-start gap-2" href="">
                             <img class=" w-12" src="profile.png" alt="">
                             <h5 class="capitalize">Devon Lane</h5>
                             <img src="dropdown.png" alt="">
-                        </a>
-                    </label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-[#F2F2F2] rounded-box w-26">
-                        <li><a>
-                                <img src="uk.png" alt="">
-                                EN
-                            </a></li>
-                        <li><a>
-                                <img src="france.png" alt="">
-                                RU
-                            </a></li>
-                        </a></li>
-                        <li><a>
-                                <img src="france.png" alt="">
-                                FR
-                            </a></li>
-                        </a></li>
-                        <li><a>
-                                <img src="uk.png" alt="">
-                                UK
-                            </a></li>
+                        </div>
+                    </summary>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[200px]">
+                        <li class="p-1"><a><img src="client.png" alt="">My Account</a></li>
+                        <li class="p-1"><a><img src="settings.png" alt="">Account Settings</a></li>
+                        <li class="p-1"><a><img src="faq.png" alt="">FAQ</a></li>
+                        <li class="p-1"><a><img src="logout.png" alt="">Log Out</a></li>
                     </ul>
-                </div>
+                </details>
             </div>
         </nav>
     </header>
@@ -84,34 +114,25 @@
                     <a class="px-6 py-3 inline-block text-[14px] hover:bg-[#128CED] hover:text-white rounded-[4px]"
                         href="trash.html">Trash</a>
                 </div>
-                <div class="dropdown dropdown-hover">
-                    <label tabindex="0" class="btn m-1 bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
-                        <a class="flex items-center justify-start gap-2" href="">
-                            <h5 class="text-white capitalize text-[16px] font-normal">New Invoice</h5>
+
+
+                <div
+                    class="flex items-center justify-start gap-2 rounded-lg bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
+                    <a href="add-1-items.html" class="text-white capitalize text-[16px] pl-5 font-normal">New Invoice</a>
+                    <details class="dropdown dropdown-end">
+                        <summary tabindex="0" class="btn bg-transparent hover:bg-transparent border-none">
                             <img src="down-white.png" alt="">
-                        </a>
-                    </label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-[#F2F2F2] rounded-box w-26">
-                        <li><a>
-                                <img src="uk.png" alt="">
-                                EN
-                            </a></li>
-                        <li><a>
-                                <img src="france.png" alt="">
-                                RU
-                            </a></li>
-                        </a></li>
-                        <li><a>
-                                <img src="france.png" alt="">
-                                FR
-                            </a></li>
-                        </a></li>
-                        <li><a>
-                                <img src="uk.png" alt="">
-                                UK
-                            </a></li>
-                    </ul>
+                        </summary>
+                        <ul tabindex="0"
+                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[170px]">
+                            <li><a href="add-1-items.html"><img src="new-invoice.png" alt="">New Invoice</a></li>
+                            <li><a href="#"><img src="client.png" alt="">New Client</a></li>
+                            <li><a href="#"><img src="new-item.png" alt="">New Item</a></li>
+                            <li><a href="#"><img src="estimate.png" alt="">New Estimate</a></li>
+                        </ul>
+                    </details>
                 </div>
+
             </div>
 
             <!-- Table -->
@@ -175,7 +196,19 @@
                                     <a href=""><img src="edit.png" alt=""></a>
                                     <a href=""><img src="delete.png" alt=""></a>
                                     <a href=""><img src="download.png" alt=""></a>
-                                    <a class="pl-9" href=""><img src="three-dot.png" alt=""></a>
+
+                                    <details class="dropdown dropdown-end">
+                                        <summary tabindex="0" class="btn ml-5 bg-transparent border-none">
+                                            <img src="three-dot.png" alt="">
+                                        </summary>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[170px]">
+                                            <li><a><img src="mail.png" alt="">Sent Mail</a></li>
+                                            <li><a><img src="copy.png" alt="">Make a copy</a></li>
+                                            <li><a><img src="payments.png" alt="">Payments</a></li>
+                                            <li><a><img src="recurring.png" alt="">Recurring</a></li>
+                                        </ul>
+                                    </details>
                                 </div>
                             </td>
                         </tr>
@@ -192,7 +225,19 @@
                                     <a href=""><img src="edit.png" alt=""></a>
                                     <a href=""><img src="delete.png" alt=""></a>
                                     <a href=""><img src="download.png" alt=""></a>
-                                    <a class="pl-9" href=""><img src="three-dot.png" alt=""></a>
+
+                                    <details class="dropdown dropdown-end">
+                                        <summary tabindex="0" class="btn ml-5 bg-transparent border-none">
+                                            <img src="three-dot.png" alt="">
+                                        </summary>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[170px]">
+                                            <li><a><img src="mail.png" alt="">Sent Mail</a></li>
+                                            <li><a><img src="copy.png" alt="">Make a copy</a></li>
+                                            <li><a><img src="payments.png" alt="">Payments</a></li>
+                                            <li><a><img src="recurring.png" alt="">Recurring</a></li>
+                                        </ul>
+                                    </details>
                                 </div>
                             </td>
                         </tr>
@@ -209,7 +254,19 @@
                                     <a href=""><img src="edit.png" alt=""></a>
                                     <a href=""><img src="delete.png" alt=""></a>
                                     <a href=""><img src="download.png" alt=""></a>
-                                    <a class="pl-9" href=""><img src="three-dot.png" alt=""></a>
+
+                                    <details class="dropdown dropdown-end">
+                                        <summary tabindex="0" class="btn ml-5 bg-transparent border-none">
+                                            <img src="three-dot.png" alt="">
+                                        </summary>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[170px]">
+                                            <li><a><img src="mail.png" alt="">Sent Mail</a></li>
+                                            <li><a><img src="copy.png" alt="">Make a copy</a></li>
+                                            <li><a><img src="payments.png" alt="">Payments</a></li>
+                                            <li><a><img src="recurring.png" alt="">Recurring</a></li>
+                                        </ul>
+                                    </details>
                                 </div>
                             </td>
                         </tr>
@@ -226,7 +283,19 @@
                                     <a href=""><img src="edit.png" alt=""></a>
                                     <a href=""><img src="delete.png" alt=""></a>
                                     <a href=""><img src="download.png" alt=""></a>
-                                    <a class="pl-9" href=""><img src="three-dot.png" alt=""></a>
+
+                                    <details class="dropdown  dropdown-top dropdown-end">
+                                        <summary tabindex="0" class="btn ml-5 bg-transparent border-none">
+                                            <img src="three-dot.png" alt="">
+                                        </summary>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[170px]">
+                                            <li><a><img src="mail.png" alt="">Sent Mail</a></li>
+                                            <li><a><img src="copy.png" alt="">Make a copy</a></li>
+                                            <li><a><img src="payments.png" alt="">Payments</a></li>
+                                            <li><a><img src="recurring.png" alt="">Recurring</a></li>
+                                        </ul>
+                                    </details>
                                 </div>
                             </td>
                         </tr>
@@ -243,7 +312,19 @@
                                     <a href=""><img src="edit.png" alt=""></a>
                                     <a href=""><img src="delete.png" alt=""></a>
                                     <a href=""><img src="download.png" alt=""></a>
-                                    <a class="pl-9" href=""><img src="three-dot.png" alt=""></a>
+
+                                    <details class="dropdown  dropdown-top dropdown-end">
+                                        <summary tabindex="0" class="btn ml-5 bg-transparent border-none">
+                                            <img src="three-dot.png" alt="">
+                                        </summary>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[170px]">
+                                            <li><a><img src="mail.png" alt="">Sent Mail</a></li>
+                                            <li><a><img src="copy.png" alt="">Make a copy</a></li>
+                                            <li><a><img src="payments.png" alt="">Payments</a></li>
+                                            <li><a><img src="recurring.png" alt="">Recurring</a></li>
+                                        </ul>
+                                    </details>
                                 </div>
                             </td>
                         </tr>
@@ -260,7 +341,19 @@
                                     <a href=""><img src="edit.png" alt=""></a>
                                     <a href=""><img src="delete.png" alt=""></a>
                                     <a href=""><img src="download.png" alt=""></a>
-                                    <a class="pl-9" href=""><img src="three-dot.png" alt=""></a>
+
+                                    <details class="dropdown  dropdown-top dropdown-end">
+                                        <summary tabindex="0" class="btn ml-5 bg-transparent border-none">
+                                            <img src="three-dot.png" alt="">
+                                        </summary>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[170px]">
+                                            <li><a><img src="mail.png" alt="">Sent Mail</a></li>
+                                            <li><a><img src="copy.png" alt="">Make a copy</a></li>
+                                            <li><a><img src="payments.png" alt="">Payments</a></li>
+                                            <li><a><img src="recurring.png" alt="">Recurring</a></li>
+                                        </ul>
+                                    </details>
                                 </div>
                             </td>
                         </tr>
@@ -312,7 +405,7 @@
                                 <img src="down-black.png" alt="">
                             </a>
                         </label>
-                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-[#F2F2F2] rounded-box w-26">
+                        <ul tabindex="0" class="dropdown-content hidden z-[1] menu p-2 shadow bg-[#F2F2F2] rounded-box w-26">
                             <li><a>
                                     <img src="uk.png" alt="">
                                     EN
