@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurring-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Nav -->
+        <nav class="mb-1 px-[100px] h-[70px] flex items-center justify-between bg-[#F2F2F2] shadow-lg">
+            <div class=" flex items-center">
+                <a href="index.html" class="pr-[50px]"><img src="logo.png" class="h-12" alt=""></a>
+                <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#128CED]">Invoices</a>
+                <a href="estimate.html" class="pr-[30px] text-[18px] text-[#15304D]">Estimate</a>
+                <a href="clients.html" class="pr-[30px] text-[18px] text-[#15304D]">Clients</a>
+                <a href="items.html" class="pr-[30px] text-[18px] text-[#15304D]">Items</a>
+                <a href="reports.html" class="pr-[30px] text-[18px] text-[#15304D]">Reports</a>
+                <a href="settings.html" class="pr-[30px] text-[18px] text-[#15304D]">Settings</a>
+            </div>
+            <div class=" flex items-center">
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0" class="btn m-1 hover:bg-transparent  border-none">
+                        <div><img class="w-12" src="notification+dot.png" alt=""></div>
+                    </summary>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-white rounded-box w-[320px]">
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">Agent Rose</h3>
+                                    <p class="text-[12px]">Message: Please, kindly do take a snap-shot of the card.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">18min.</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGE Team</h3>
+                                    <p class="text-[12px]">Alert: New card added this week
+                                        check em out.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">34min.</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">Halloween Promo</h3>
+                                    <p class="text-[12px]">Promotion: Get 13% the price when
+                                        you exchange bitcoin to cash.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">1hour</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGO Team</h3>
+                                    <p class="text-[12px]">Alert: Sorry to see you go. You just unsubscribe from the
+                                        newsletter.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">2hour</p>
+                            </a></li>
+                        <button class="text-white bg-[#128CED] px-5 py-3 mt-4 mb-2 block mx-auto rounded-[4px]">View
+                            More</button>
+                    </ul>
+                </details>
+
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0" class="btn bg-[#F2F2F2] m-1">
+                        <div class="flex items-center justify-start gap-2" href="">
+                            <img class=" w-12" src="profile.png" alt="">
+                            <h5 class="capitalize">Devon Lane</h5>
+                            <img src="dropdown.png" alt="">
+                        </div>
+                    </summary>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[200px]">
+                        <li class="p-1"><a><img src="client.png" alt="">My Account</a></li>
+                        <li class="p-1"><a><img src="settings.png" alt="">Account Settings</a></li>
+                        <li class="p-1"><a><img src="faq-sign.png" alt="">FAQ</a></li>
+                        <li class="p-1"><a><img src="logout.png" alt="">Log Out</a></li>
+                    </ul>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="min-h-screen px-[100px] mx-auto max-w-[963px]">
+            <h3 class="text-[24px] mt-10 mb-7">Schedule a Recurring Invoice</h3>
+            <p class="bg-[#128ced1a] border border-[#DEE2E6] p-5 w-full flex gap-2 mb-7"><img src="i.png" alt="">A recurring schedule for this invoice is currently inactive.</p>
+            <div class="w-[520px] mx-auto p-9 bg-[#F8F9FA] border border-[#DEE2E6]">
+                <p class="mb-7 font-semibold">How often should this invoice repeat?</p>
+                <p class="text-[14px] font-medium flex items-center gap-2 mb-6"><input type="radio" name="" id=""> Never (disable recurring)</p>
+                <p class="text-[14px] font-medium flex items-center gap-2 mb-6"><input type="radio" name="" id=""> Weekly</p>
+                <p class="text-[14px] font-medium flex items-center gap-2 mb-6"><input type="radio" name="" id=""> Biweekly(Every 2 weeks)</p>
+                <p class="text-[14px] font-medium flex items-center gap-2 mb-6"><input type="radio" name="" id=""> Monthly</p>
+                <p class="text-[14px] font-medium flex items-center gap-2 mb-6"><input type="radio" name="" id=""> Bimonthly(Every 2 months)</p>
+                <p class="text-[14px] font-medium flex items-center gap-2 mb-6"><input type="radio" name="" id=""> Quarterly</p>
+                <p class="text-[14px] font-medium flex items-center gap-2 mb-10"><input type="radio" name="" id=""> Yearly</p>
+                <div class="flex items-center justify-center gap-3">
+                    <a class="py-3 font-medium rounded-[4px] px-14 border border-[#CED4DA]" href="#">Cancel</a>
+                    <a class="py-3 font-medium rounded-[4px] px-14 bg-[#128CED] text-white" href="#">Save</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="px-[100px] pt-12 pb-5">
+        <hr class="border-2 border-[#CDD5DF] mb-4">
+        <p class="text-center text-[14px] text-[#1D2939]">© 2023 @ InvoiceUs All rights reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Invoice - Add 1 items</title>
+    <title>Create Invoice - Sender & Receiver</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -96,21 +96,15 @@
                 <div class="flex items-start justify-between gap-5">
                     <div class="p-5 border border-[#DEE2E6] bg-[#F8F9FA] w-full">
                         <p class="font-medium mb-4">From</p>
-                        <p class="mb-1 text-[12px] flex items-center justify-between">Name <input type="text"
-                                placeholder="Business Name" class="input input-bordered w-full max-w-xs" /></p>
-                        <p class="mb-1 text-[12px] flex items-center justify-between">Email <input type="text"
-                                placeholder="Email address" class="input input-bordered w-full max-w-xs" /></p>
-                        <p class="mb-1 text-[12px] flex items-center justify-between">Address <input type="text"
-                                placeholder="Address" class="input input-bordered w-full max-w-xs" /></p>
+                        <p class="font-medium mb-4">Cathy Blick</p>
+                        <p class="text-[14px] text-[#6A7178]">San Bruno, California <br>
+                            United States</p>
                     </div>
                     <div class="p-5 border border-[#DEE2E6] bg-[#F8F9FA] w-full">
                         <p class="font-medium mb-4">To</p>
-                        <p class="mb-1 text-[12px] flex items-center justify-between">Name <input type="text"
-                                placeholder="Client Name" class="input input-bordered w-full max-w-xs" /></p>
-                        <p class="mb-1 text-[12px] flex items-center justify-between">Email <input type="text"
-                                placeholder="Email Address" class="input input-bordered w-full max-w-xs" /></p>
-                        <p class="mb-1 text-[12px] flex items-center justify-between">Address <input type="text"
-                                placeholder="Address" class="input input-bordered w-full max-w-xs" /></p>
+                        <p class="font-medium mb-4">Mr. John</p>
+                        <p class="text-[14px] text-[#6A7178]">1508 Main St Belmar, New Mexico <br>
+                            United States</p>
                     </div>
                 </div>
 
@@ -120,7 +114,7 @@
                     <p class="mb-1 text-[12px] flex items-center justify-between">Invoice Date <input type="text"
                             placeholder="Aug 7, 2023" class="input input-bordered w-full max-w-xs" /></p>
                     <p class="mb-1 text-[12px] flex items-center justify-between">Due Date <input type="text"
-                            placeholder="Dec 7," class="input input-bordered w-full max-w-xs" /></p>
+                            placeholder="Dec 7, 2023" class="input input-bordered w-full max-w-xs" /></p>
                 </div>
 
                 <table class="w-full">
@@ -132,28 +126,74 @@
                         <th class="pb-2">Total</th>
                     </thead>
                     <tbody>
-                        <td class="pr-3"><input type="text" placeholder="Item Name"
-                                class="input input-bordered input-sm w-full max-w-xs" /></td>
-                        <td class="pr-3"><input type="text" placeholder="1.00"
-                                class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
-                        <td class="pr-3"><input type="text" placeholder="$2.00"
-                                class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
-                        <td class="pr-3"><select
-                                class="select select-bordered select-sm w-[100px] max-w-xs bg-[#DEE2E6]">
-                                <option selected>0%</option>
-                                <option>10%</option>
-                                <option>20%</option>
-                                <option>30%</option>
-                                <option>40%</option>
-                                <option>50%</option>
-                            </select></td>
-                        <td>
-                            <div class="flex gap-1">
-                                <input type="text" placeholder="$2.00"
-                                    class="input input-bordered input-sm w-[100px] max-w-xs" />
-                                <img src="delete.png" alt="">
-                            </div>
-                        </td>
+                        <tr>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="Amazon Fire TV Stick 4K Max  device"
+                                    class="input input-bordered input-sm w-[283px]" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="1.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="$2.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><select
+                                    class="select select-bordered select-sm w-[100px] max-w-xs bg-[#DEE2E6]">
+                                    <option disabled selected>0%</option>
+                                    <option>5%</option>
+                                    <option>10%</option>
+                                    <option>15%</option>
+                                </select></td>
+                            <td class="pb-4">
+                                <div class="flex gap-1">
+                                    <input type="text" placeholder="$2.00"
+                                        class="input input-bordered input-sm w-[100px] max-w-xs" />
+                                    <img src="delete.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="JBL Vibe 200TWS True Wireless "
+                                    class="input input-bordered input-sm w-[283px]" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="1.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="$2.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><select
+                                    class="select select-bordered select-sm w-[100px] max-w-xs bg-[#DEE2E6]">
+                                    <option disabled selected>0%</option>
+                                    <option>5%</option>
+                                    <option>10%</option>
+                                    <option>15%</option>
+                                </select></td>
+                            <td class="pb-4">
+                                <div class="flex gap-1">
+                                    <input type="text" placeholder="$2.00"
+                                        class="input input-bordered input-sm w-[100px] max-w-xs" />
+                                    <img src="delete.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="Amazon Fire TV Stick 4K Max  device"
+                                    class="input input-bordered input-sm w-[283px]" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="1.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="$2.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><select
+                                    class="select select-bordered select-sm w-[100px] max-w-xs bg-[#DEE2E6]">
+                                    <option selected>0%</option>
+                                    <option>10%</option>
+                                    <option>20%</option>
+                                    <option>30%</option>
+                                    <option>40%</option>
+                                    <option>50%</option>
+                                </select></td>
+                            <td class="pb-4">
+                                <div class="flex gap-1">
+                                    <input type="text" placeholder="$2.00"
+                                        class="input input-bordered input-sm w-[100px] max-w-xs" />
+                                    <img src="delete.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -249,14 +289,14 @@
                     <img src="template-design.png" alt="">Choose Template Design
                 </a>
 
-                <!-- Calling Empty Select client Modal -->
+
                 <a onclick="my_modal_3.showModal()"
                     class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
                     href="#">
                     <img src="add-client.png" alt="">Add Client info
                 </a>
 
-                <!-- Empty Select client Modal -->
+                <!-- Select client Modal -->
                 <dialog id="my_modal_3" class="modal">
                     <form method="dialog" class="modal-box w-[350px] min-h-[450px] px-5 py-2 rounded-lg">
                         <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
@@ -267,12 +307,31 @@
                         <div class="flex items-center justify-between gap-1 mt-10">
                             <input class="border w-full text-[12px] py-2 pl-1" type="text"
                                 placeholder="Search by client name">
-
-                            <!-- Calling Create client Modal -->
                             <a onclick="my_modal_4.showModal()" href="#"
                                 class="p-2 bg-[#128CED] w-[170px] text-[12px] text-white flex items-center gap-1">
                                 <img src="plus-white.png" alt="">Create Client
                             </a>
+                        </div>
+
+                        <div class="flex items-center justify-between border mt-2 w-full p-1 bg-[#F8F8FA]">
+                            <div>
+                                <p class="font-semibold">Client 1</p>
+                                <p class="text-[14px]">Mr. Bond</p>
+                            </div>
+                            <div class="flex gap-1">
+                                <a href="#" onclick="my_modal_5.showModal()"><img src="edit-blue.png" alt=""></a>
+                                <a href="#"><img src="delete-red.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between border mt-2 w-full p-1 bg-[#F8F8FA]">
+                            <div>
+                                <p class="font-semibold">Client 2</p>
+                                <p class="text-[14px]">Mr. John</p>
+                            </div>
+                            <div class="flex gap-1">
+                                <a href="#" onclick="my_modal_5.showModal()"><img src="edit-blue.png" alt=""></a>
+                                <a href="#"><img src="delete-red.png" alt=""></a>
+                            </div>
                         </div>
 
                         <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
@@ -340,131 +399,13 @@
                     </form>
                 </dialog>
 
-                <!-- Calling Select saved item -->
-                <a onclick="my_modal_6.showModal()" class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-14"
-                    href="#">
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-14"
+                    href="">
                     <img src="add-save-item.png" alt="">Add Saved Items
                 </a>
 
-                
-                <!-- Select saved item -->
-                <dialog id="my_modal_6" class="modal">
-                    <form method="dialog" class="modal-box w-[450px] min-h-[450px] px-5 py-2 rounded-lg">
-                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
-                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
-                            <p>Select saved item</p>
-                        </div>
-
-                        <div class="flex items-center justify-between gap-1 mt-10">
-                            <input class="border w-full text-[12px] py-2 pl-1" type="text"
-                                placeholder="Search by item name">
-
-                            <!-- Calling Create new item -->
-                            <a onclick="my_modal_7.showModal()" href="#"
-                                class="p-2 bg-[#128CED] w-[170px] text-[12px] text-white flex items-center gap-1">
-                                <img src="plus-white.png" alt="">Create item
-                            </a>
-                        </div>
-
-                        <div class="flex items-center justify-between border mt-2 w-full p-2 bg-[#F8F8FA]">
-                            <div>
-                                <p class="font-semibold">Amazon Fire TV Stick 4K Max  device</p>
-                                <p class="text-[14px]">$80</p>
-                            </div>
-                            <div class="flex gap-1">
-
-                                <!-- Calling Edit Item info Modal -->
-                                <a href="#" onclick="my_modal_8.showModal()"><img src="edit-blue.png" alt=""></a>
-                                <a href="#"><img src="delete-red.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between border mt-2 w-full p-2 bg-[#F8F8FA]">
-                            <div>
-                                <p class="font-semibold">JBL Vibe 200TWS True Wireless Earbuds</p>
-                                <p class="text-[14px]">$80</p>
-                            </div>
-                            <div class="flex gap-1">
-
-                                <!-- Calling Edit Item info Modal -->
-                                <a href="#" onclick="my_modal_8.showModal()"><img src="edit-blue.png" alt=""></a>
-                                <a href="#"><img src="delete-red.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between border mt-2 w-full p-2 bg-[#F8F8FA]">
-                            <div>
-                                <p class="font-semibold">Amazon Fire TV Stick 4K Max  device</p>
-                                <p class="text-[14px]">$80</p>
-                            </div>
-                            <div class="flex gap-1">
-
-                                <!-- Calling Edit Item info Modal -->
-                                <a href="#" onclick="my_modal_8.showModal()"><img src="edit-blue.png" alt=""></a>
-                                <a href="#"><img src="delete-red.png" alt=""></a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
-                            <a class="border text-[12px] p-2 rounded-[4px]" href="#">Cancel</a>
-                            <a class="bg-[#128CED] text-white text-[12px] rounded-[4px] py-2 px-4" href="#">Add item</a>
-                        </div>
-                    </form>
-                    <form method="dialog" class="modal-backdrop">
-                        <button>close</button>
-                    </form>
-                </dialog>
-
-                <!-- Create New item modal -->
-                <dialog id="my_modal_7" class="modal">
-                    <form method="dialog" class="modal-box w-[350px] min-h-[300px] px-5 py-2 rounded-lg">
-                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
-                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
-                            <p>Create New Item</p>
-                        </div>
-
-                        <div class="w-full py-5 px-0">
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Item name <input type="text"
-                                    placeholder="Name" class="input input-bordered max-w-xs" /></p>
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Unit Price <input type="text"
-                                    placeholder="Price" class="input input-bordered max-w-xs" /></p>
-                        </div>
-
-                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
-                            <a class="border text-[12px] p-2" href="#">Cancel</a>
-                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Create</a>
-                        </div>
-                    </form>
-                    <form method="dialog" class="modal-backdrop">
-                        <button>close</button>
-                    </form>
-                </dialog>
-                
-                <!-- Edit Item info Modal -->
-                <dialog id="my_modal_8" class="modal">
-                    <form method="dialog" class="modal-box w-[450px] min-h-[300px] px-5 py-2 rounded-lg">
-                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
-                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
-                            <p>Edit Item info</p>
-                        </div>
-
-                        <div class="w-full py-5 px-0">
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Item Name <input type="text"
-                                    placeholder="Amazon Fire TV Stick 4K Max  device" class="input input-bordered w-[80%]" /></p>
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Unit Price <input type="text"
-                                    placeholder="$80" class="input input-bordered w-[80%]" /></p>
-                        </div>
-
-                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
-                            <a class="border text-[12px] p-2" href="#">Cancel</a>
-                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="after-adding-all-item.html">Update</a>
-                        </div>
-                    </form>
-                    <form method="dialog" class="modal-backdrop">
-                        <button>close</button>
-                    </form>
-                </dialog>
-
                 <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
-                    href="create-Invoice-with-sender-and-receiver.html">
+                    href="">
                     <img src="save-white.png" alt="">Save
                 </a>
                 <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
