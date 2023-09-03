@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Invoice - Add 3 items</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Nav -->
+        <nav class="mb-1 px-[100px] h-[70px] flex items-center justify-between bg-[#F2F2F2] shadow-lg">
+            <div class=" flex items-center">
+                <a href="index.html" class="pr-[50px]"><img src="logo.png" class="h-12" alt=""></a>
+                <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#128CED]">Invoices</a>
+                <a href="estimate.html" class="pr-[30px] text-[18px] text-[#15304D]">Estimate</a>
+                <a href="clients.html" class="pr-[30px] text-[18px] text-[#15304D]">Clients</a>
+                <a href="items.html" class="pr-[30px] text-[18px] text-[#15304D]">Items</a>
+                <a href="reports.html" class="pr-[30px] text-[18px] text-[#15304D]">Reports</a>
+                <a href="settings.html" class="pr-[30px] text-[18px] text-[#15304D]">Settings</a>
+            </div>
+            <div class=" flex items-center">
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0" class="btn m-1 hover:bg-transparent  border-none">
+                        <div><img class="w-12" src="notification+dot.png" alt=""></div>
+                    </summary>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-white rounded-box w-[320px]">
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">Agent Rose</h3>
+                                    <p class="text-[12px]">Message: Please, kindly do take a snap-shot of the card.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">18min.</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGE Team</h3>
+                                    <p class="text-[12px]">Alert: New card added this week
+                                        check em out.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">34min.</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">Halloween Promo</h3>
+                                    <p class="text-[12px]">Promotion: Get 13% the price when
+                                        you exchange bitcoin to cash.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">1hour</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGO Team</h3>
+                                    <p class="text-[12px]">Alert: Sorry to see you go. You just unsubscribe from the
+                                        newsletter.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">2hour</p>
+                            </a></li>
+                        <button class="text-white bg-[#128CED] px-5 py-3 mt-4 mb-2 block mx-auto rounded-[4px]">View
+                            More</button>
+                    </ul>
+                </details>
+
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0" class="btn bg-[#F2F2F2] m-1">
+                        <div class="flex items-center justify-start gap-2" href="">
+                            <img class=" w-12" src="profile.png" alt="">
+                            <h5 class="capitalize">Devon Lane</h5>
+                            <img src="dropdown.png" alt="">
+                        </div>
+                    </summary>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[200px]">
+                        <li class="p-1"><a><img src="client.png" alt="">My Account</a></li>
+                        <li class="p-1"><a><img src="settings.png" alt="">Account Settings</a></li>
+                        <li class="p-1"><a><img src="faq.png" alt="">FAQ</a></li>
+                        <li class="p-1"><a><img src="logout.png" alt="">Log Out</a></li>
+                    </ul>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="min-h-screen">
+
+        <section class="px-[100px] pt-10 mx-auto flex items-start justify-between gap-5">
+
+            <div class="max-w-[916px] border-t-2 border-[#128CED] shadow-lg p-5 w-full">
+                <div class="flex items-start justify-between gap-5">
+                    <div class="p-5 border border-[#DEE2E6] bg-[#F8F9FA] w-full">
+                        <p class="font-medium mb-4">From</p>
+                        <p class="mb-1 text-[12px] flex items-center justify-between">Name <input type="text"
+                                placeholder="Business Name" class="input input-bordered w-full max-w-xs" /></p>
+                        <p class="mb-1 text-[12px] flex items-center justify-between">Email <input type="text"
+                                placeholder="Email address" class="input input-bordered w-full max-w-xs" /></p>
+                        <p class="mb-1 text-[12px] flex items-center justify-between">Address <input type="text"
+                                placeholder="Address" class="input input-bordered w-full max-w-xs" /></p>
+                    </div>
+                    <div class="p-5 border border-[#DEE2E6] bg-[#F8F9FA] w-full">
+                        <p class="font-medium mb-4">To</p>
+                        <p class="mb-1 text-[12px] flex items-center justify-between">Name <input type="text"
+                                placeholder="Client Name" class="input input-bordered w-full max-w-xs" /></p>
+                        <p class="mb-1 text-[12px] flex items-center justify-between">Email <input type="text"
+                                placeholder="Email Address" class="input input-bordered w-full max-w-xs" /></p>
+                        <p class="mb-1 text-[12px] flex items-center justify-between">Address <input type="text"
+                                placeholder="Address" class="input input-bordered w-full max-w-xs" /></p>
+                    </div>
+                </div>
+
+                <div class="w-[50%] py-5 px-0">
+                    <p class="mb-1 text-[12px] flex items-center justify-between">Invoice Number <input type="text"
+                            placeholder="INV001" class="input input-bordered w-full max-w-xs" /></p>
+                    <p class="mb-1 text-[12px] flex items-center justify-between">Invoice Date <input type="text"
+                            placeholder="Aug 7, 2023" class="input input-bordered w-full max-w-xs" /></p>
+                    <p class="mb-1 text-[12px] flex items-center justify-between">Due Date <input type="text"
+                            placeholder="Dec 7," class="input input-bordered w-full max-w-xs" /></p>
+                </div>
+
+                <table class="w-full">
+                    <thead>
+                        <th class="text-left pr-3 pb-2">Item name</th>
+                        <th class="text-left pr-3 pb-2">Qty</th>
+                        <th class="text-left pr-3 pb-2">price</th>
+                        <th class="text-left pr-3 pb-2">VAT</th>
+                        <th class="pb-2">Total</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="Item Name"
+                                    class="input input-bordered input-sm w-full max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="1.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="$2.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><select
+                                    class="select select-bordered select-sm w-[100px] max-w-xs bg-[#DEE2E6]">
+                                    <option disabled selected>0%</option>
+                                    <option>5%</option>
+                                    <option>10%</option>
+                                    <option>15%</option>
+                                </select></td>
+                            <td class="pb-4">
+                                <div class="flex gap-1">
+                                    <input type="text" placeholder="$2.00"
+                                        class="input input-bordered input-sm w-[100px] max-w-xs" />
+                                    <img src="delete.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="Item Name"
+                                    class="input input-bordered input-sm w-full max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="1.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="$2.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><select
+                                    class="select select-bordered select-sm w-[100px] max-w-xs bg-[#DEE2E6]">
+                                    <option disabled selected>0%</option>
+                                    <option>5%</option>
+                                    <option>10%</option>
+                                    <option>15%</option>
+                                </select></td>
+                            <td class="pb-4">
+                                <div class="flex gap-1">
+                                    <input type="text" placeholder="$2.00"
+                                        class="input input-bordered input-sm w-[100px] max-w-xs" />
+                                    <img src="delete.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="Item Name"
+                                    class="input input-bordered input-sm w-full max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="1.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><input type="text" placeholder="$2.00"
+                                    class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
+                            <td class="pr-3 pb-2"><select
+                                    class="select select-bordered select-sm w-[100px] max-w-xs bg-[#DEE2E6]">
+                                    <option selected>0%</option>
+                                    <option>10%</option>
+                                    <option>20%</option>
+                                    <option>30%</option>
+                                    <option>40%</option>
+                                    <option>50%</option>
+                                </select></td>
+                            <td class="pb-4">
+                                <div class="flex gap-1">
+                                    <input type="text" placeholder="$2.00"
+                                        class="input input-bordered input-sm w-[100px] max-w-xs" />
+                                    <img src="delete.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="add-3-items.html"
+                    class="text-[
+                #272B30] text-[14px] flex items-center justify-center gap-3 py-4 my-5 border-dashed border-2 border-[#DEE2E6]">
+                    <img src="plus.png" alt="">
+                    Add New Item
+                </a>
+
+                <!-- Total -->
+                <div class="w-[300px] ml-auto mb-5">
+                    <div class="flex items-center justify-between bg-[#DEE2E6] rounded-[4px]">
+                        <p class="text-[#4F575E] text-[14px] font-semibold pl-7">Invoice Summery</p>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="btn m-1 bg-[#DEE2E6] border border-[#ADB5BD]">
+                                <a class="flex items-center justify-start gap-10" href="">
+                                    <h5 class="text-[14px] font-normal">usd</h5>
+                                    <img src="down-black.png" alt="">
+                                </a>
+                            </label>
+                            <ul tabindex="0"
+                                class="dropdown-content hidden z-[1] menu p-2 shadow bg-[#F2F2F2] rounded-box w-26">
+                                <li><a>
+                                        <img src="uk.png" alt="">
+                                        EN
+                                    </a></li>
+                                <li><a>
+                                        <img src="france.png" alt="">
+                                        RU
+                                    </a></li>
+                                </a></li>
+                                <li><a>
+                                        <img src="france.png" alt="">
+                                        FR
+                                    </a></li>
+                                </a></li>
+                                <li><a>
+                                        <img src="uk.png" alt="">
+                                        UK
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-7 pt-2 text-[14px]">
+                        <p>Total Amount</p>
+                        <p>$0.00</p>
+                    </div>
+                    <div class="flex items-center justify-between px-7 pt-2 text-[14px]">
+                        <p>Total Amount</p>
+                        <p>$0.00</p>
+                    </div>
+                    <div class="flex items-center justify-between px-7 pt-2 pb-8 text-[14px]">
+                        <p>Total Amount</p>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+
+                <div class="mb-5 w-full">
+                    <p class="text-[14px] font-medium text[#555555] pb-2">Notes</p>
+                    <textarea placeholder="" class="textarea textarea-bordered textarea-xs w-full"></textarea>
+                </div>
+
+                <div class="flex items-start justify-center gap-5">
+                    <a href=""
+                        class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[3px] flex items-center justify-center gap-3 border border-[#CED4DA]">
+                        <img src="upload.png" alt="">
+                        Choose Logo
+                    </a>
+                    <a href=""
+                        class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[3px] flex items-center justify-center gap-3 border border-[#CED4DA]">
+                        <img src="signature.png" alt="">
+                        Signature
+                    </a>
+                </div>
+
+            </div>
+
+            <div>
+                <select
+                    class="h-11 select select-bordered select-sm w-[200px] max-w-xs text-[14px] bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2">
+                    <option selected>Invoice Type</option>
+                    <option>Proforma Invoice</option>
+                    <option>Tax Invoice</option>
+                    <option>Receipt</option>
+                    <option>Sales Receipt</option>
+                    <option>Credit Note</option>
+                    <option>Estimate</option>
+                </select>
+
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
+                    href="templates.html">
+                    <img src="template-design.png" alt="">Choose Template Design
+                </a>
+
+
+                <a onclick="my_modal_3.showModal()"
+                    class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
+                    href="#">
+                    <img src="add-client.png" alt="">Add Client info
+                </a>
+
+                <!-- Select client Modal -->
+                <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box w-[350px] min-h-[450px] px-5 py-2 rounded-lg">
+                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
+                            <p>Select Client</p>
+                        </div>
+
+                        <div class="flex items-center justify-between gap-1 mt-10">
+                            <input class="border w-full text-[12px] py-2 pl-1" type="text"
+                                placeholder="Search by client name">
+                            <a onclick="my_modal_4.showModal()" href="#"
+                                class="p-2 bg-[#128CED] w-[170px] text-[12px] text-white flex items-center gap-1">
+                                <img src="plus-white.png" alt="">Create Client
+                            </a>
+                        </div>
+
+                        <div class="flex items-center justify-between border mt-2 w-full p-1 bg-[#F8F8FA]">
+                            <div>
+                                <p class="font-semibold">Client 1</p>
+                                <p class="text-[14px]">Mr. Bond</p>
+                            </div>
+                            <div class="flex gap-1">
+                                <a href="#" onclick="my_modal_5.showModal()"><img src="edit-blue.png" alt=""></a>
+                                <a href="#"><img src="delete-red.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between border mt-2 w-full p-1 bg-[#F8F8FA]">
+                            <div>
+                                <p class="font-semibold">Client 2</p>
+                                <p class="text-[14px]">Mr. John</p>
+                            </div>
+                            <div class="flex gap-1">
+                                <a href="#" onclick="my_modal_5.showModal()"><img src="edit-blue.png" alt=""></a>
+                                <a href="#"><img src="delete-red.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
+                            <a class="border text-[12px] p-2" href="#">Cancel</a>
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Ok</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+
+                <!-- Create client Modal -->
+                <dialog id="my_modal_4" class="modal">
+                    <form method="dialog" class="modal-box w-[350px] min-h-[300px] px-5 py-2 rounded-lg">
+                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
+                            <p>Add new client</p>
+                        </div>
+
+                        <div class="w-full py-5 px-0">
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Client name <input type="text"
+                                    placeholder="Client name" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Email address <input
+                                    type="text" placeholder="Email address" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Address <input type="text"
+                                    placeholder="Business address" class="input input-bordered max-w-xs" /></p>
+                        </div>
+
+                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
+                            <a class="border text-[12px] p-2" href="#">Cancel</a>
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Ok</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+
+                <!-- Edit client info Modal -->
+                <dialog id="my_modal_5" class="modal">
+                    <form method="dialog" class="modal-box w-[350px] min-h-[300px] px-5 py-2 rounded-lg">
+                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
+                            <p>Edit client info</p>
+                        </div>
+
+                        <div class="w-full py-5 px-0">
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Client name <input type="text"
+                                    placeholder="John Doe" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Email address <input
+                                    type="text" placeholder="Example@gmail.com" class="input input-bordered max-w-xs" />
+                            </p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Address <input type="text"
+                                    placeholder="106/5, Dhaka, Bangladesh" class="input input-bordered max-w-xs" /></p>
+                        </div>
+
+                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
+                            <a class="border text-[12px] p-2" href="#">Cancel</a>
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Ok</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-14"
+                    href="">
+                    <img src="add-save-item.png" alt="">Add Saved Items
+                </a>
+
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
+                    href="create-Invoice-with-sender-and-receiver.html">
+                    <img src="save-white.png" alt="">Save
+                </a>
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
+                    href="">
+                    <img src="delete-white.png" alt="">Delete
+                </a>
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
+                    href="">
+                    <img src="download-white.png" alt="">Download PDF
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="px-[100px] pt-12 pb-5">
+        <hr class="border-2 border-[#CDD5DF] mb-4">
+        <p class="text-center text-[14px] text-[#1D2939]">© 2023 @ InvoiceUs All rights reserved</p>
+    </footer>
+</body>
+
+</html>

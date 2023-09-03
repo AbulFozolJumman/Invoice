@@ -140,10 +140,12 @@
                                 class="input input-bordered input-sm w-[100px] max-w-xs" /></td>
                         <td class="pr-3"><select
                                 class="select select-bordered select-sm w-[100px] max-w-xs bg-[#DEE2E6]">
-                                <option disabled selected>0%</option>
-                                <option>5%</option>
+                                <option selected>0%</option>
                                 <option>10%</option>
-                                <option>15%</option>
+                                <option>20%</option>
+                                <option>30%</option>
+                                <option>40%</option>
+                                <option>50%</option>
                             </select></td>
                         <td>
                             <div class="flex gap-1">
@@ -212,15 +214,17 @@
 
                 <div class="mb-5 w-full">
                     <p class="text-[14px] font-medium text[#555555] pb-2">Notes</p>
-                    <textarea placeholder="" class="textarea textarea-bordered textarea-xs w-full" ></textarea>
+                    <textarea placeholder="" class="textarea textarea-bordered textarea-xs w-full"></textarea>
                 </div>
 
                 <div class="flex items-start justify-center gap-5">
-                    <a href="" class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[3px] flex items-center justify-center gap-3 border border-[#CED4DA]">
+                    <a href=""
+                        class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[3px] flex items-center justify-center gap-3 border border-[#CED4DA]">
                         <img src="upload.png" alt="">
                         Choose Logo
                     </a>
-                    <a href="" class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[3px] flex items-center justify-center gap-3 border border-[#CED4DA]">
+                    <a href=""
+                        class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[3px] flex items-center justify-center gap-3 border border-[#CED4DA]">
                         <img src="signature.png" alt="">
                         Signature
                     </a>
@@ -229,32 +233,128 @@
             </div>
 
             <div>
-                <select class="h-11 select select-bordered select-sm w-[200px] max-w-xs text-[14px] bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2">
-                    <option selected>Invoice</option>
-                    <option>Type</option>
-                    <option>Type</option>
-                    <option>Type</option>
-                  </select>
+                <select
+                    class="h-11 select select-bordered select-sm w-[200px] max-w-xs text-[14px] bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2">
+                    <option selected>Invoice Type</option>
+                    <option>Proforma Invoice</option>
+                    <option>Tax Invoice</option>
+                    <option>Receipt</option>
+                    <option>Sales Receipt</option>
+                    <option>Credit Note</option>
+                    <option>Estimate</option>
+                </select>
 
-                  <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2" href="">
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
+                    href="templates.html">
                     <img src="template-design.png" alt="">Choose Template Design
-                  </a>
-                  <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2" href="">
-                    <img src="add-client.png" alt="">Add Client info
-                  </a>
-                  <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-14" href="">
-                    <img src="add-save-item.png" alt="">Add Saved Items
-                  </a>
+                </a>
 
-                  <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2" href="">
+
+                <a onclick="my_modal_3.showModal()"
+                    class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
+                    href="#">
+                    <img src="add-client.png" alt="">Add Client info
+                </a>
+
+                <!-- Empty Select client Modal -->
+                <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box w-[350px] min-h-[450px] px-5 py-2 rounded-lg">
+                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
+                            <p>Select Client</p>
+                        </div>
+
+                        <div class="flex items-center justify-between gap-1 mt-10">
+                            <input class="border w-full text-[12px] py-2 pl-1" type="text"
+                                placeholder="Search by client name">
+                            <a onclick="my_modal_4.showModal()" href="#"
+                                class="p-2 bg-[#128CED] w-[170px] text-[12px] text-white flex items-center gap-1">
+                                <img src="plus-white.png" alt="">Create Client
+                            </a>
+                        </div>
+
+                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
+                            <a class="border text-[12px] p-2" href="#">Cancel</a>
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Ok</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+
+                <!-- Create client Modal -->
+                <dialog id="my_modal_4" class="modal">
+                    <form method="dialog" class="modal-box w-[350px] min-h-[300px] px-5 py-2 rounded-lg">
+                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
+                            <p>Add new client</p>
+                        </div>
+
+                        <div class="w-full py-5 px-0">
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Client name <input type="text"
+                                    placeholder="Client name" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Email address <input
+                                    type="text" placeholder="Email address" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Address <input type="text"
+                                    placeholder="Business address" class="input input-bordered max-w-xs" /></p>
+                        </div>
+
+                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
+                            <a class="border text-[12px] p-2" href="#">Cancel</a>
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Ok</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+
+                <!-- Edit client info Modal -->
+                <dialog id="my_modal_5" class="modal">
+                    <form method="dialog" class="modal-box w-[350px] min-h-[300px] px-5 py-2 rounded-lg">
+                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
+                            <p>Edit client info</p>
+                        </div>
+
+                        <div class="w-full py-5 px-0">
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Client name <input type="text"
+                                    placeholder="John Doe" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Email address <input
+                                    type="text" placeholder="Example@gmail.com" class="input input-bordered max-w-xs" />
+                            </p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Address <input type="text"
+                                    placeholder="106/5, Dhaka, Bangladesh" class="input input-bordered max-w-xs" /></p>
+                        </div>
+
+                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
+                            <a class="border text-[12px] p-2" href="#">Cancel</a>
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Ok</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-14"
+                    href="">
+                    <img src="add-save-item.png" alt="">Add Saved Items
+                </a>
+
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
+                    href="create-Invoice-with-sender-and-receiver.html">
                     <img src="save-white.png" alt="">Save
-                  </a>
-                  <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2" href="">
+                </a>
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
+                    href="">
                     <img src="delete-white.png" alt="">Delete
-                  </a>
-                  <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2" href="">
+                </a>
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
+                    href="">
                     <img src="download-white.png" alt="">Download PDF
-                  </a>
+                </a>
 
             </div>
 
