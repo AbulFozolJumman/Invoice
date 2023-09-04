@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Templates</title>
+    <title>Payment Status</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
     <header>
         <!-- Nav -->
         <nav class="mb-1 px-[100px] h-[70px] flex items-center justify-between bg-[#F2F2F2] shadow-lg">
             <div class=" flex items-center">
                 <a href="index.html" class="pr-[50px]"><img src="logo.png" class="h-12" alt=""></a>
-                <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#128CED]">Invoices</a>
+                <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#15304D]">Invoices</a>
                 <a href="estimate.html" class="pr-[30px] text-[18px] text-[#15304D]">Estimate</a>
                 <a href="clients.html" class="pr-[30px] text-[18px] text-[#15304D]">Clients</a>
                 <a href="items.html" class="pr-[30px] text-[18px] text-[#15304D]">Items</a>
                 <a href="reports.html" class="pr-[30px] text-[18px] text-[#15304D]">Reports</a>
-                <a href="settings.html" class="pr-[30px] text-[18px] text-[#15304D]">Settings</a>
+                <a href="settings.html" class="pr-[30px] text-[18px] text-[#128CED]">Settings</a>
             </div>
             <div class=" flex items-center">
                 <details class="dropdown dropdown-end">
@@ -86,90 +87,48 @@
         </nav>
     </header>
 
-    
     <!-- Main -->
     <main>
+        <section class="px-[100px] mx-auto mt-10 min-h-screen w-[963px]">
 
+            <h2 class="text-2xl font-bold mb-8">Payment</h2>
 
-        <!-- Popular Invoice template section -->
-        <section class="px-[100px] my-[60px]">
-            <p class="w-[364px] text-[24px] text-center py-3 text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
-                Popular Invoice Templates</p>
-            <hr class="border-[#23A6F0] border-2 mt-0 mb-10">
+            <div class="flex items-center gap-2 p-5 bg-[#128ced1a] rounded-lg">
+                <img src="i.png" alt="">
+                <p>This invoice of $65.00 was partially paid on 23/08/2023 in the amount of  $25.00.</p>
+            </div>
 
-            <div class="flex justify-between items-start mb-10">
-                <div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Business Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="military-orange.png" alt="">
+            <div class="bg-[#f8f9fa] border rounded-lg px-10 py-5">
+                <h4 class="text-lg mb-5">Hamilton Masakazda</h4>
+                <hr>
+
+                <div class="mt-5 flex items-center justify-between">
+                    <div class="border-r pr-24">
+                        <p class="flex justify-between gap-20"><span>Invoice Number:</span><span>INV1011</span></p>
+                        <p class="flex justify-between gap-20"><span>Issue Date:</span><span>20 Aug 2023</span></p>
+                        <p class="flex justify-between gap-20"><span>Due Date:</span><span>30 Aug 2023</span></p>
                     </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Internet Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="MapReceipt_sm.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Internet Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="MapReceipt_sm.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Internet Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="MapReceipt_sm.png" alt="">
-                    </div>
-                </div>
-                <div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Sales Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="cool-waves.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Sales Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="cool-waves.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Sales Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="cool-waves.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Sales Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="cool-waves.png" alt="">
-                    </div>
-                </div>
-                <div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Simple Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="select.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Business Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="connect-rbw.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Business Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="connect-rbw.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Business Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="connect-rbw.png" alt="">
+                    <div>
+                        <p class="flex justify-between gap-20"><span>Total Amount:</span><span>$600.00</span></p>
+                        <p class="flex justify-between gap-20"><span>Paid Amount:</span><span>$200.00</span></p>
+                        <p class="flex justify-between gap-20"><span>Due Amount:</span><span>$400.00</span></p>
                     </div>
                 </div>
             </div>
 
-            <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 text-center w-[425px] mx-auto block text-[18px] rounded-[8px] mb-12 font-medium"
-                href="">Load more</a>
+            <div class="flex items-center justify-center gap-2 mt-10 mb-3">
+                <a class="block bg-[#F8F9FA] border text-center py-3 px-10 rounded-[6px]" href="payment-edit.html">Edit Payment</a>
+                <a class="block bg-[#128CED] text-center py-3 px-12 rounded-[6px] text-white" href="#">Set as Paid</a>
+            </div>
+
         </section>
 
     </main>
+
+    <footer class="px-[100px] pt-12 pb-5">
+        <hr class="border-2 border-[#CDD5DF] mb-4">
+        <p class="text-center text-[14px] text-[#1D2939]">© 2023 @ InvoiceUs All rights reserved</p>
+    </footer>
 </body>
+
 </html>

@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Templates</title>
+    <title>Email Report</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
     <header>
         <!-- Nav -->
         <nav class="mb-1 px-[100px] h-[70px] flex items-center justify-between bg-[#F2F2F2] shadow-lg">
             <div class=" flex items-center">
                 <a href="index.html" class="pr-[50px]"><img src="logo.png" class="h-12" alt=""></a>
-                <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#128CED]">Invoices</a>
+                <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#15304D]">Invoices</a>
                 <a href="estimate.html" class="pr-[30px] text-[18px] text-[#15304D]">Estimate</a>
                 <a href="clients.html" class="pr-[30px] text-[18px] text-[#15304D]">Clients</a>
                 <a href="items.html" class="pr-[30px] text-[18px] text-[#15304D]">Items</a>
                 <a href="reports.html" class="pr-[30px] text-[18px] text-[#15304D]">Reports</a>
-                <a href="settings.html" class="pr-[30px] text-[18px] text-[#15304D]">Settings</a>
+                <a href="settings.html" class="pr-[30px] text-[18px] text-[#128CED]">Settings</a>
             </div>
             <div class=" flex items-center">
                 <details class="dropdown dropdown-end">
@@ -86,90 +87,57 @@
         </nav>
     </header>
 
-    
     <!-- Main -->
     <main>
+        <section class="px-[100px] mx-auto min-h-screen">
 
+            <h3 class="text-[24px] font-bold mt-10 mb-7">Settings</h3>
 
-        <!-- Popular Invoice template section -->
-        <section class="px-[100px] my-[60px]">
-            <p class="w-[364px] text-[24px] text-center py-3 text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
-                Popular Invoice Templates</p>
-            <hr class="border-[#23A6F0] border-2 mt-0 mb-10">
-
-            <div class="flex justify-between items-start mb-10">
-                <div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Business Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="military-orange.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Internet Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="MapReceipt_sm.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Internet Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="MapReceipt_sm.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Internet Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="MapReceipt_sm.png" alt="">
-                    </div>
-                </div>
-                <div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Sales Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="cool-waves.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Sales Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="cool-waves.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Sales Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="cool-waves.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Sales Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="cool-waves.png" alt="">
-                    </div>
-                </div>
-                <div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Simple Bill Template</p>
-                        <img class="border border-[#108bf833] p-[11px]" src="select.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Business Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="connect-rbw.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Business Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="connect-rbw.png" alt="">
-                    </div>
-                    <div class="mb-20 w-[370px] h-[330px]">
-                        <p class="flex items-center gap-1 text-[18px] font-bold mb-4"><img src="three-line.png" alt="">
-                            Business Invoice Template</p>
-                        <img class="border border-[#108bf833]" src="connect-rbw.png" alt="">
-                    </div>
-                </div>
+            <!-- Settings routes -->
+            <div class="rounded-[6px] mb-9">
+                <a class="px-6 py-3 inline-block hover:bg-[#cdd5df80] border text-[14px] rounded-[4px]"
+                    href="settings.html">Profile</a>
+                <a class="px-6 py-3 inline-block text-[14px] hover:bg-[#cdd5df80] border rounded-[4px]"
+                    href="change-password.html">Change Password</a>
+                <a class="px-6 py-3 inline-block text-[14px] bg-[#cdd5df80] border rounded-[4px]"
+                    href="email-report.html">Email Report</a>
+                <a class="px-6 py-3 inline-block text-[14px] hover:bg-[#cdd5df80] border rounded-[4px]"
+                    href="sign-in-option.html">Sign In Option</a>
+                <a class="px-6 py-3 inline-block text-[14px] hover:bg-[#cdd5df80] border rounded-[4px]"
+                    href="document-setting.html">Document Setting</a>
             </div>
 
-            <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 text-center w-[425px] mx-auto block text-[18px] rounded-[8px] mb-12 font-medium"
-                href="">Load more</a>
+            <div class="w-[540px] mx-auto border bg-[#F8F9FA] p-8">
+                <p class="mb-8 font-semibold">How often would you like to receive e-mail reports?</p>
+
+                <div class="flex items-center justify-start gap-2 mb-3">
+                    <input type="radio" name="" id="">
+                    <p>Weekly</p>
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                    <input type="radio" name="" id="" checked>
+                    <p>Monthly</p>
+                </div>
+                <div class="flex items-center gap-2 mb-12">
+                    <input type="radio" name="" id="">
+                    <p>Never</p>
+                </div>
+
+                <div class="flex items-center justify-center gap-2 mb-3">
+                    <a class="block bg-[#F8F9FA] border text-center py-3 px-10 rounded-[6px]" href="#">Cancel</a>
+                    <a class="block bg-[#128CED] text-center py-3 px-12 rounded-[6px] text-white" href="#">Save</a>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
+
+    <footer class="px-[100px] pt-12 pb-5">
+        <hr class="border-2 border-[#CDD5DF] mb-4">
+        <p class="text-center text-[14px] text-[#1D2939]">© 2023 @ InvoiceUs All rights reserved</p>
+    </footer>
 </body>
+
 </html>
