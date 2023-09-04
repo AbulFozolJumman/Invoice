@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Nav -->
+        <nav class="mb-1 px-[100px] h-[70px] flex items-center justify-between bg-[#F2F2F2] shadow-lg">
+            <div class=" flex items-center">
+                <a href="index.html" class="pr-[50px]"><img src="logo.png" class="h-12" alt=""></a>
+                <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#15304D]">Invoices</a>
+                <a href="estimate.html" class="pr-[30px] text-[18px] text-[#15304D]">Estimate</a>
+                <a href="clients.html" class="pr-[30px] text-[18px] text-[#15304D]">Clients</a>
+                <a href="items.html" class="pr-[30px] text-[18px] text-[#15304D]">Items</a>
+                <a href="reports.html" class="pr-[30px] text-[18px] text-[#15304D]">Reports</a>
+                <a href="settings.html" class="pr-[30px] text-[18px] text-[#128CED]">Settings</a>
+            </div>
+            <div class=" flex items-center">
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0" class="btn m-1 hover:bg-transparent  border-none">
+                        <div><img class="w-12" src="notification+dot.png" alt=""></div>
+                    </summary>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-white rounded-box w-[320px]">
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">Agent Rose</h3>
+                                    <p class="text-[12px]">Message: Please, kindly do take a snap-shot of the card.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">18min.</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGE Team</h3>
+                                    <p class="text-[12px]">Alert: New card added this week
+                                        check em out.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">34min.</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">Halloween Promo</h3>
+                                    <p class="text-[12px]">Promotion: Get 13% the price when
+                                        you exchange bitcoin to cash.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">1hour</p>
+                            </a></li>
+                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
+                                <img class="pt-1" src="oval.png" alt="">
+                                <div>
+                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGO Team</h3>
+                                    <p class="text-[12px]">Alert: Sorry to see you go. You just unsubscribe from the
+                                        newsletter.</p>
+                                </div>
+                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">2hour</p>
+                            </a></li>
+                        <button class="text-white bg-[#128CED] px-5 py-3 mt-4 mb-2 block mx-auto rounded-[4px]">View
+                            More</button>
+                    </ul>
+                </details>
+
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0" class="btn bg-[#F2F2F2] m-1">
+                        <div class="flex items-center justify-start gap-2" href="">
+                            <img class=" w-12" src="profile.png" alt="">
+                            <h5 class="capitalize">Devon Lane</h5>
+                            <img src="dropdown.png" alt="">
+                        </div>
+                    </summary>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[200px]">
+                        <li class="p-1"><a><img src="client.png" alt="">My Account</a></li>
+                        <li class="p-1"><a><img src="settings.png" alt="">Account Settings</a></li>
+                        <li class="p-1"><a><img src="faq-sign.png" alt="">FAQ</a></li>
+                        <li class="p-1"><a><img src="logout.png" alt="">Log Out</a></li>
+                    </ul>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="px-[100px] mx-auto">
+
+            <h3 class="text-[24px] font-bold mt-10 mb-7">Settings</h3>
+
+            <div class="rounded-[6px] mb-9">
+                <a class="px-6 py-3 inline-block bg-[#cdd5df80] border text-[14px] rounded-[4px]"
+                    href="dashboard.html">Profile</a>
+                <a class="px-6 py-3 inline-block text-[14px] hover:bg-[#cdd5df80] border rounded-[4px]"
+                    href="paid.html">Change Password</a>
+                <a class="px-6 py-3 inline-block text-[14px] hover:bg-[#cdd5df80] border rounded-[4px]"
+                    href="unpaid.html">Email Report</a>
+                <a class="px-6 py-3 inline-block text-[14px] hover:bg-[#cdd5df80] border rounded-[4px]"
+                    href="partiallyPaid.html">Sign In Option</a>
+                <a class="px-6 py-3 inline-block text-[14px] hover:bg-[#cdd5df80] border rounded-[4px]"
+                    href="overdue.html">Document Setting</a>
+            </div>
+
+            <h4 class="text-[20px] font-medium mt-5">Basics</h4>
+
+            <div class="bg-[#f8f9fa] flex items-center justify-between border py-3 px-7">
+                <p class="text-[14px]">Profile Photo</p>
+                <div class="flex items-center justify-center gap-2">
+                    <img src="profile.png" alt="">
+                    <a class="text-[12px] text-red-500" href="#">Remove</a>
+                    <a class="text-[12px] text-[#128CED]" href="#">Update</a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="px-[100px] pt-12 pb-5">
+        <hr class="border-2 border-[#CDD5DF] mb-4">
+        <p class="text-center text-[14px] text-[#1D2939]">© 2023 @ InvoiceUs All rights reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client List</title>
+    <title>Item List After Delete Item</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -17,8 +17,8 @@
                 <a href="index.html" class="pr-[50px]"><img src="logo.png" class="h-12" alt=""></a>
                 <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#15304D]">Invoices</a>
                 <a href="estimate.html" class="pr-[30px] text-[18px] text-[#15304D]">Estimate</a>
-                <a href="clients.html" class="pr-[30px] text-[18px] text-[#128CED]">Clients</a>
-                <a href="items.html" class="pr-[30px] text-[18px] text-[#15304D]">Items</a>
+                <a href="clients.html" class="pr-[30px] text-[18px] text-[#15304D]">Clients</a>
+                <a href="items.html" class="pr-[30px] text-[18px] text-[#128CED]">Items</a>
                 <a href="reports.html" class="pr-[30px] text-[18px] text-[#15304D]">Reports</a>
                 <a href="settings.html" class="pr-[30px] text-[18px] text-[#15304D]">Settings</a>
             </div>
@@ -89,8 +89,8 @@
 
     <!-- Main -->
     <main>
-        <section class="px-[100px] mb-12 mx-auto">
-            <h2 class="text-[24px] font-bold mt-12 mb-8">List of Clients</h2>
+        <section class="px-[100px] mb-24 mx-auto">
+            <h2 class="text-[24px] font-bold mt-12 mb-8">List of Items</h2>
 
             <div class="flex items-start justify-between w-full mb-8">
                 <!-- Search input -->
@@ -102,7 +102,7 @@
                 </div>
 
                 <!-- Add new client -->
-                    <a href="create-client.html" class="text-white py-3 capitalize text-[16px] px-5 font-normal flex items-center justify-center gap-2 rounded-[4px] bg-gradient-to-r from-[#17A9F7] to-[#0969FA]"><img src="plus-white.png" alt="">Add new client</a>
+                    <a href="create-new-items.html" class="text-white py-3 capitalize text-[16px] px-5 font-normal flex items-center justify-center gap-2 rounded-[4px] bg-gradient-to-r from-[#17A9F7] to-[#0969FA]"><img src="plus-white.png" alt="">Add new item</a>
             </div>
 
             
@@ -114,136 +114,74 @@
                         <tr>
                             <th>
                                 <div class="flex items-center justify-start py-2 gap-2">
-                                    <p>Customer</p>
+                                    <p>Item Name</p>
                                     <img src="up-down-white.png" alt="">
                                 </div>
                             </th>
                             <th>
                                 <div class="flex items-center justify-start py-2 gap-2">
-                                    <p>Document</p>
+                                    <p>Unit Price</p>
                                     <img src="up-down-white.png" alt="">
                                 </div>
                             </th>
                             <th>
                                 <div class="flex items-center justify-start py-2 gap-2">
-                                    <p>No#</p>
-                                    <img src="up-down-white.png" alt="">
                                 </div>
-                            </th>
-                            <th>
-                                <div class="flex items-center justify-start py-2 gap-2">
-                                    <p>Date</p>
-                                    <img src="up-down-white.png" alt="">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="flex items-center justify-start py-2 gap-2">
-                                    <p>Paid</p>
-                                    <img src="up-down-white.png" alt="">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="flex items-center justify-start py-2 gap-2">
-                                    <p>Total</p>
-                                    <img src="up-down-white.png" alt="">
-                                </div>
-                            </th>
-                            <th>
-                                <p>Action</p>
                             </th>
                         </tr>
                     </thead>
                     <tbody class="text-[#15304D]">
                         <!-- row 1 -->
                         <tr>
-                            <td>Elton Chigumbura</td>
-                            <td>Invoice</td>
-                            <td>101</td>
-                            <td>Nov20, 2022</td>
-                            <td>$10.00</td>
-                            <td>$20.00</td>
+                            <td>Amazon Fire TV Stick 4K Max streaming device</td>
+                            <td>$100.00</td>
                             <td>
-                                <div class="flex items-center justify-start gap-2">
-                                    <a href=""><img src="download.png" alt=""></a>
-                                    <a href=""><img src="cross.png" alt=""></a>
-                                </div>
+                                <a href="" class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                    <img src="delete-black.png" alt="">Delete</a>
+                                </a>
                             </td>
                         </tr>
                         <!-- row 2 -->
                         <tr>
-                            <td>John Doe</td>
-                            <td>Credit Memo</td>
-                            <td>102</td>
-                            <td>Nov20, 2022</td>
-                            <td>$255.00</td>
-                            <td>$250.00</td>
+                            <td>JBL Vibe 200TWS True Wireless Earbuds - Black, Small</td>
+                            <td>$20.50</td>
                             <td>
-                                <div class="flex items-center justify-start gap-2">
-                                    <a href=""><img src="download.png" alt=""></a>
-                                    <a href=""><img src="cross.png" alt=""></a>
-                                </div>
+                                <a href="" class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                    <img src="delete-black.png" alt="">Delete</a>
+                                </a>
                             </td>
                         </tr>
                         <!-- row 3 -->
                         <tr>
-                            <td>Hamilton Masakadza</td>
-                            <td>Invoice</td>
-                            <td>202</td>
-                            <td>Nov20, 2022</td>
-                            <td>$32.00</td>
-                            <td>$420.00</td>
+                            <td>Apple iPad (9th Generation): with A13 Bionic chip, 10.2-inch Retina Display, 64GB, Wi-Fi</td>
+                            <td>$20.50</td>
                             <td>
-                                <div class="flex items-center justify-start gap-2">
-                                    <a href=""><img src="download.png" alt=""></a>
-                                    <a href=""><img src="cross.png" alt=""></a>
-                                </div>
+                                <a href="" class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                    <img src="delete-black.png" alt="">Delete</a>
+                                </a>
                             </td>
                         </tr>
                         <!-- row 4 -->
                         <tr>
-                            <td>Steven Smith</td>
-                            <td>Invoice</td>
-                            <td>302</td>
-                            <td>Nov16, 2022</td>
-                            <td>$42.00</td>
-                            <td>$320.00</td>
+                            <td>Apple AirPods (2nd Generation) Wireless Earbuds with Lightning Charging Case Included</td>
+                            <td>$20.00</td>
                             <td>
-                                <div class="flex items-center justify-start gap-2">
-                                    <a href=""><img src="download.png" alt=""></a>
-                                    <a href=""><img src="cross.png" alt=""></a>
-                                </div>
+                                <a href="" class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                    <img src="delete-black.png" alt="">Delete</a>
+                                </a>
                             </td>
                         </tr>
                         <!-- row 5 -->
                         <tr>
-                            <td>Mitchel Clerk</td>
-                            <td>Credit Memo</td>
-                            <td>105</td>
-                            <td>Nov10, 2022</td>
-                            <td>$232.00</td>
-                            <td>$3330.00</td>
+                            <td>Apple iPad (9th Generation): with A13 Bionic chip, 10.2-inch Retina Display, 64GB, Wi-Fi</td>
+                            <td>$5.50</td>
                             <td>
-                                <div class="flex items-center justify-start gap-2">
-                                    <a href=""><img src="download.png" alt=""></a>
-                                    <a href=""><img src="cross.png" alt=""></a>
-                                </div>
+                                <a href="" class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                    <img src="delete-black.png" alt="">Delete</a>
+                                </a>
                             </td>
                         </tr>
-                        <!-- row 6 -->
-                        <tr>
-                            <td>Steven Fleming</td>
-                            <td>Credit Memo</td>
-                            <td>1005</td>
-                            <td>Oct30, 2022</td>
-                            <td>$22.00</td>
-                            <td>$3220.00</td>
-                            <td>
-                                <div class="flex items-center justify-start gap-2">
-                                    <a href=""><img src="download.png" alt=""></a>
-                                    <a href="clients-after-deleting.html"><img src="cross.png" alt=""></a>
-                                </div>
-                            </td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -280,53 +218,6 @@
                     <button>close</button>
                 </form>
             </dialog>
-
-            <!-- Total -->
-            <div class="w-[300px] ml-auto mt-5">
-                <div class="flex items-center justify-between bg-[#DEE2E6] rounded-[4px]">
-                    <p class="text-[#4F575E] text-[14px] font-semibold pl-7">Invoice Summery</p>
-                    <div class="dropdown dropdown-hover">
-                        <label tabindex="0" class="btn m-1 bg-[#DEE2E6] border border-[#ADB5BD]">
-                            <a class="flex items-center justify-start gap-10" href="">
-                                <h5 class="text-[14px] font-normal">usd</h5>
-                                <img src="down-black.png" alt="">
-                            </a>
-                        </label>
-                        <ul tabindex="0" class="dropdown-content hidden z-[1] menu p-2 shadow bg-[#F2F2F2] rounded-box w-26">
-                            <li><a>
-                                    <img src="uk.png" alt="">
-                                    EN
-                                </a></li>
-                            <li><a>
-                                    <img src="france.png" alt="">
-                                    RU
-                                </a></li>
-                            </a></li>
-                            <li><a>
-                                    <img src="france.png" alt="">
-                                    FR
-                                </a></li>
-                            </a></li>
-                            <li><a>
-                                    <img src="uk.png" alt="">
-                                    UK
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex items-center justify-between px-7 pt-2 text-[14px]">
-                    <p>Total Amount</p>
-                    <p>$5000</p>
-                </div>
-                <div class="flex items-center justify-between px-7 pt-2 text-[14px]">
-                    <p>Total Amount</p>
-                    <p>$2000</p>
-                </div>
-                <div class="flex items-center justify-between px-7 pt-2 pb-8 text-[14px]">
-                    <p>Total Amount</p>
-                    <p>$3000</p>
-                </div>
-            </div>
             
         </section>
     </main>
