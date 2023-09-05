@@ -101,7 +101,45 @@
                     <p class="text-gray-500 text-sm mb-2">My Balance</p>
                     <div class="flex items-center justify-between gap-20">
                         <p class="text-lg font-bold">$2,38,485</p>
-                        <a href="#" class="text-sm py-2 px-3 border">Withdraw</a>
+
+                        <!-- Calling withdraw modal -->
+                        <a onclick="my_modal_9.showModal()" href="#" class="text-sm py-2 px-3 border">Withdraw</a>
+
+                        <!-- Withdraw Modal -->
+                <dialog id="my_modal_9" class="modal">
+                    <form method="dialog" class="modal-box w-[400px] min-h-[500px] h-auto px-5 py-2 rounded-lg">
+                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="arrow-left-blue.png" alt=""></a>
+                            <p>Start a Payout</p>
+                        </div>
+
+                        <div class="w-full py-5 px-0">
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Withdraw amount <input type="text"
+                                    placeholder="Amount" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Bank Name <input
+                                    type="text" placeholder="Bank Name" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Account Holder Name <input type="text"
+                                    placeholder="Name" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Account Number <input type="text"
+                                    placeholder="Account Number" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">Sort code <input type="text"
+                                    placeholder="Sort code" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">IBAN Number <input type="text"
+                                    placeholder="IBAN Number" class="input input-bordered max-w-xs" /></p>
+                            <p class="mb-1 text-[14px] flex items-center justify-between">BIC Code <input type="text"
+                                    placeholder="BIC Code" class="input input-bordered max-w-xs" /></p>
+                        </div>
+
+                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
+                            <a class="border text-sm p-2 px-5 rounded" href="#">Cancel</a>
+                            <a class="bg-[#128CED] text-white text-sm py-2 px-5 rounded" href="#">Next</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+
                     </div>
                 </div>
                 <div class="border p-3 w-[284px] h-[91px]">
