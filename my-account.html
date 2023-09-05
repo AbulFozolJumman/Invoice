@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Edit</title>
+    <title>My Account</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -77,7 +77,8 @@
                         </div>
                     </summary>
                     <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[200px]">
-                        <li class="p-1"><a href="my-account.html" href="my-account.html"><img src="client.png" alt="">My Account</a></li>
+                        <li class="p-1"><a href="my-account.html" href="my-account.html"><img src="client.png" alt="">My
+                                Account</a></li>
                         <li class="p-1"><a><img src="settings.png" alt="">Account Settings</a></li>
                         <li class="p-1"><a><img src="faq-sign.png" alt="">FAQ</a></li>
                         <li class="p-1"><a><img src="logout.png" alt="">Log Out</a></li>
@@ -92,6 +93,200 @@
         <section class="px-[100px] mx-auto mt-10 min-h-screen w-[963px]">
 
             <h2 class="text-2xl font-bold mb-8">My Account</h2>
+            <p class="mb-10"><span class="font-bold">Hey Devon - </span>Here's what's happening with all of your
+                invoices</p>
+
+            <div class="flex items-center justify-between gap-5 mb-12">
+                <div class="border p-3 w-[284px] h-[91px]">
+                    <p class="text-gray-500 text-sm mb-2">My Balance</p>
+                    <div class="flex items-center justify-between gap-20">
+                        <p class="text-lg font-bold">$2,38,485</p>
+                        <a href="#" class="text-sm py-2 px-3 border">Withdraw</a>
+                    </div>
+                </div>
+                <div class="border p-3 w-[284px] h-[91px]">
+                    <p class="text-gray-500 text-sm mb-2">Total Paid</p>
+                    <p class="text-lg font-bold">$2,00,000</p>
+                </div>
+                <div class="border p-3 w-[284px] h-[91px]">
+                    <p class="text-gray-500 text-sm mb-2">Total Due</p>
+                    <p class="text-lg font-bold">$38,485</p>
+                </div>
+            </div>
+
+            <div class="w-[900px] border pt-[18px] mb-12 rounded-lg">
+                <div class="mb-7 flex items-start justify-between gap-20 px-[18px]">
+                    <div class="">
+                        <p class="font-bold mb-2">Transactions</p>
+                        <p class="text-sm text-gray-500font-bold">Payout History</p>
+                    </div>
+                    <a href="#" class="text-sm text-indigo-600 font-medium">See All Transactions ></a>
+                </div>
+
+                <!-- Table -->
+                <div class="overflow-x-auto border">
+                    <table class="table w-full">
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr class="border">
+                                <td>
+                                    <a class="text-xs py-1 px-1 bg-green-300 rounded-xl flex items-center justify-center gap-1"
+                                        href="#">
+                                        <img src="point-green.png" alt="">
+                                        <p class="text-green-900">Completed</p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">Visa card **** 4831</p>
+                                    <p class="text-xs font-medium">Card payment</p>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">$199.24</p>
+                                    <p class="text-xs font-medium">Jan 17, 2022</p>
+                                </td>
+                                <td>Client 1</td>
+                                <td>
+                                    <button class="btn"><img src="three-dots-horizontal.png" alt=""></button>
+                                </td>
+                            </tr>
+                            <!-- row 2 -->
+                            <tr class="border">
+                                <td>
+                                    <a class="text-xs py-1 px-1 bg-green-300 rounded-xl flex items-center justify-center gap-1"
+                                        href="#">
+                                        <img src="point-green.png" alt="">
+                                        <p class="text-green-900">Completed</p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">Mastercard **** 6442</p>
+                                    <p class="text-xs font-medium">Card payment</p>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">$199.24</p>
+                                    <p class="text-xs font-medium">Jan 17, 2022</p>
+                                </td>
+                                <td>Client 2</td>
+                                <td>
+                                    <button class="btn"><img src="three-dots-horizontal.png" alt=""></button>
+                                </td>
+                            </tr>
+                            <!-- row 3 -->
+                            <tr class="border">
+                                <td>
+                                    <a class="text-xs py-1 px-1 bg-yellow-300 rounded-xl flex items-center justify-center gap-1"
+                                        href="#">
+                                        <img src="point-yellow.png" alt="">
+                                        <p class="text-yellow-900">Pending</p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">Account ****882</p>
+                                    <p class="text-xs font-medium">Bank payment</p>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">$199.24</p>
+                                    <p class="text-xs font-medium">Jan 17, 2022</p>
+                                </td>
+                                <td>Client 3</td>
+                                <td>
+                                    <button class="btn"><img src="three-dots-horizontal.png" alt=""></button>
+                                </td>
+                            </tr>
+                            <!-- row 4 -->
+                            <tr class="border">
+                                <td>
+                                    <a class="text-xs py-1 px-1 bg-green-300 rounded-xl flex items-center justify-center gap-1"
+                                        href="#">
+                                        <img src="point-green.png" alt="">
+                                        <p class="text-green-900">Completed</p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">Mastercard **** 6442</p>
+                                    <p class="text-xs font-medium">Card payment</p>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">$199.24</p>
+                                    <p class="text-xs font-medium">Jan 17, 2022</p>
+                                </td>
+                                <td>Client 4</td>
+                                <td>
+                                    <button class="btn"><img src="three-dots-horizontal.png" alt=""></button>
+                                </td>
+                            </tr>
+                            <!-- row 5 -->
+                            <tr class="border">
+                                <td>
+                                    <a class="text-xs py-1 px-1 bg-green-300 rounded-xl flex items-center justify-center gap-1"
+                                        href="#">
+                                        <img src="point-green.png" alt="">
+                                        <p class="text-green-900">Completed</p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">Mastercard **** 6442</p>
+                                    <p class="text-xs font-medium">Card payment</p>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">$199.24</p>
+                                    <p class="text-xs font-medium">Jan 17, 2022</p>
+                                </td>
+                                <td>Client 5</td>
+                                <td>
+                                    <button class="btn"><img src="three-dots-horizontal.png" alt=""></button>
+                                </td>
+                            </tr>
+                            <!-- row 6 -->
+                            <tr class="border">
+                                <td>
+                                    <a class="text-xs py-1 px-1 bg-yellow-300 rounded-xl flex items-center justify-center gap-1"
+                                        href="#">
+                                        <img src="point-yellow.png" alt="">
+                                        <p class="text-yellow-900">Pending</p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">Account ****882</p>
+                                    <p class="text-xs font-medium">Bank payment</p>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">$199.24</p>
+                                    <p class="text-xs font-medium">Jan 17, 2022</p>
+                                </td>
+                                <td>Client 6</td>
+                                <td>
+                                    <button class="btn"><img src="three-dots-horizontal.png" alt=""></button>
+                                </td>
+                            </tr>
+                            <!-- row 7 -->
+                            <tr class="border">
+                                <td>
+                                    <a class="text-xs py-1 px-1 bg-red-300 rounded-xl flex items-center justify-center gap-1"
+                                        href="#">
+                                        <img src="point-red.png" alt="">
+                                        <p class="text-red-900">Canceled</p>
+                                    </a>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">Amex card **** 5666</p>
+                                    <p class="text-xs font-medium">Card payment</p>
+                                </td>
+                                <td>
+                                    <p class="text-sm font-bold mb-1">$199.24</p>
+                                    <p class="text-xs font-medium">Jan 17, 2022</p>
+                                </td>
+                                <td>Client 7</td>
+                                <td>
+                                    <button class="btn"><img src="three-dots-horizontal.png" alt=""></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
 
         </section>
 
