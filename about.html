@@ -7,27 +7,78 @@
     <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 
-<body>
+<body style="font-family: 'Inter';">
     <header>
-        <!-- Nav -->
-        <nav class="mb-1 px-[100px] h-[70px] flex items-center justify-between bg-[#F2F2F2] shadow-lg">
-            <div class=" flex items-center">
-                <a href="index.html" class="pr-[50px]"><img src="images/logo.png" class="h-12" alt=""></a>
-                <a href="index.html" class="pr-[30px] text-[18px] text-[#15304D]">Home</a>
-                <a href="about.html" class="pr-[30px] text-[18px] text-[#128CED]">About</a>
-                <a href="features.html" class="pr-[30px] text-[18px] text-[#15304D]">Features</a>
-                <a href="faq.html" class="pr-[30px] text-[18px] text-[#15304D]">FAQ</a>
-                <a href="pricing.html" class="pr-[30px] text-[18px] text-[#15304D]">Pricing</a>
+        <!-- Navbar -->
+        <div class="navbar bg-[#F2F2F2] shadow-lg mb-1 xl:px-24 lg:px-12 md:px-8 px-5">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn lg:hidden md:mr-5 pl-0 hover:bg-[#F2F2F2] border-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box w-[170px]">
+                        <li>
+                            <a href="index.html"
+                                class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Home</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="text-[18px] text-[#128CED] hover:text-[#128CED] hover:bg-white py-2 my-1">About</a></li>
+                        <li>
+                            <a href="features.html"
+                                class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Features</a>
+                        </li>
+                        <li>
+                            <a href="faq.html" class="text-[18px] hover:text-[#128CED] hover:bg-white py-2 my-1">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html"
+                                class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="text-[#128CED] py-3 border border-[#128CED] text-center w-[150px] my-2 block md:hidden rounded-md font-medium"
+                                href="signup.html">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] text-center rounded-md font-medium block md:hidden"
+                                href="dashboard.html">Create Invoice</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="index.html"><img src="images/logo.png" class="h-12" alt=""></a>
             </div>
-            <div class=" flex items-center">
-                <div class="dropdown dropdown-hover pr-6">
-                    <label tabindex="0" class="btn bg-[#F2F2F2] m-1">
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <a href="index.html" class="text-[18px] hover:bg-white hover:text-[#128CED]">Home</a>
+                    </li>
+                    <li><a href="about.html" class="text-[18px] text-[#128CED] hover:text-[#128CED] hover:bg-white">About</a></li>
+                    <li>
+                        <a href="features.html" class="text-[18px] hover:text-[#128CED] hover:bg-white">Features</a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="text-[18px] hover:text-[#128CED] hover:bg-white">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="pricing.html" class="text-[18px] hover:text-[#128CED] hover:bg-white mr-3">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+
+                <div class="dropdown dropdown-bottom dropdown-end dropdown-hover md:pr-3">
+                    <label tabindex="0" class="btn bg-[#F2F2F2] p-0 m-0 w-[60px]">
                         <img src="images/usa flag.png" alt="">
                         <img src="images/dropdown.png" alt="">
                     </label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-[#F2F2F2] rounded-box w-26">
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-1 shadow bg-[#F2F2F2] rounded-box w-[90px]">
                         <li><a>
                                 <img src="images/uk.png" alt="">
                                 EN
@@ -48,149 +99,193 @@
                             </a></li>
                     </ul>
                 </div>
-                <a class="text-[#128CED] py-[11px] px-7 border border-[#128CED] mr-4" href="">Sign In</a>
-                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 px-7" href="dashboard.html">Create Invoice</a>
+                <a class="text-[#128CED] py-[11px] text-center border border-[#128CED] mr-3 w-[106px] md:block hidden rounded-md font-medium"
+                    href="signup.html">Sign In</a>
+                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 rounded-md font-medium w-[156px] text-center md:block hidden"
+                    href="dashboard.html">Create Invoice</a>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Main -->
     <main>
-
-        <h3 class="text-[#034760] text-[32px] font-bold text-center mb-5 mt-20">Stand Out With Custom Invoices</h3>
-        <p class="text-[#034760] text-[18px] font-semibold text-center mb-12 px-[100px]">Separate yourself from your competition
-            by using one of Invoice Home's 100 beautifully designed templates. Take advantage of the invoice
-            template features by getting paid online using PayPal or with a credit or debit card.</p>
+        <div class="xl:px-24 lg:px-12 md:px-8 px-5 md:pt-12 pt-8">
+            <h3 class="text-[#034760] text-2xl lg:text-[32px]  font-bold md:text-center mb-5">Stand Out With Custom
+                Invoices</h3>
+            <p class="text-[#034760] lg:text-[18px] text-[14px] font-medium md:text-center md:mb-8 mb-5">Separate yourself
+                from your competition
+                by using one of Invoice Home's 100 beautifully designed templates. Take advantage of the invoice
+                template features by getting paid online using PayPal or with a credit or debit card.</p>
+        </div>
 
         <!-- Invoicing section 1 -->
-        <section class="px-[100px] py-14 flex items-start justify-between bg-[#108bf833]">
-            <div class="pr-10">
-                <h4 class="text-[#034760] text-[28px] font-medium mb-5">One Small Business. Many Clients. One Invoicing
+        <section
+            class="xl:px-24 lg:px-12 md:px-8 px-5 py-8 md:py-16 flex flex-col md:flex-row items-start justify-between bg-[#108bf833]">
+            <div>
+                <h4 class="text-[#034760] lg:text-[28px] text-xl font-medium mb-5">One Small Business. Many Clients.
+                    One Invoicing
                     Solution</h4>
-                <p class="text-[#034760] text-[18px] mb-8">All-in-one invoicing software for your business to manage &
+                <p class="text-[#034760] lg:text-[18px] lg:mb-8 mb-4">All-in-one invoicing software for your business
+                    to manage &
                     track payments, expenses, bills & more.All-in-one invoicing software for your business.</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/check.png" alt="">Invoice Template
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/check.png"
+                        alt="">Invoice
+                    Template
                     Customization</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/check.png" alt="">Invoice Process
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/check.png"
+                        alt="">Invoice
+                    Process
                     Automation</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/check.png" alt="">3-Layered Security
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/check.png"
+                        alt="">3-Layered
+                    Security
                 </p>
-                <p class="text-[#034760] flex items-center gap-2 mb-9"><img src="images/check.png" alt="">Save Costs with the
+                <p class="text-[#034760] flex items-center gap-2 mb-6 xl:mb-10"><img src="images/check.png" alt="">Save
+                    Costs
+                    with the
                     Invoice software</p>
-                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] pl-8 text-[14px] rounded-[8px] flex items-center gap-2"
-                    href="">Learn More <img src="images/arrow-r-white.png" alt=""></a>
+                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] rounded-md font-medium mb-10 md:mb-0 flex items-center justify-center gap-2"
+                    href="#">Learn More <img src="images/arrow-r-white.png" alt=""></a>
             </div>
-            <img src="images/image 13.png" alt="">
+            <img class="md:w-[50%] lg:w-full" src="images/image 13.png" alt="">
         </section>
 
         <!-- Invoicing section 2 -->
-        <section class="px-[100px] py-14 flex items-start justify-between">
-            <img src="images/image 14.png" alt="">
-            <div class="pl-20">
-                <h4 class="text-[#034760] text-[28px] font-medium mb-5">Refreshingly Simple Invoicing for Freelancers
+        <section
+            class="xl:px-24 lg:px-12 md:px-8 px-5 py-8 md:py-16 flex flex-col md:flex-row items-start justify-between">
+            <img class="md:w-[50%] lg:w-full pb-8" src="images/image 14.png" alt="">
+            <div class="md:pl-10">
+                <h4 class="text-[#034760] lg:text-[28px] text-xl font-medium mb-5">Refreshingly Simple Invoicing for
+                    Freelancers
                 </h4>
-                <p class="text-[#034760] text-[18px] mb-8">Dedicate more time on your projects and leave the
+                <p class="text-[#034760] lg:text-[18px] lg:mb-8 mb-4">Dedicate more time on your projects and leave
+                    the
                     unders-tanding of difficult digits with us. Now invoice easily!</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/point.png" alt="">Reporting and Client
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/point.png"
+                        alt="">Reporting and
+                    Client
                     Portal</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/point.png" alt="">We put a lot of
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/point.png" alt="">We
+                    put a lot
+                    of
                     effort in design.</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/point.png" alt="">The most important
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/point.png" alt="">The
+                    most
+                    important
                     ingredient of successful website.</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/point.png" alt="">Sed ut perspiciatis
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/point.png" alt="">Sed
+                    ut
+                    perspiciatis
                     unde omnis iste natus error sit.</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-9"><img src="images/point.png" alt="">Submit Your
+                <p class="text-[#034760] flex items-center gap-2 mb-6 xl:mb-10"><img src="images/point.png"
+                        alt="">Submit Your
                     Organization.</p>
-                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] pl-8 text-[14px] rounded-[8px] flex items-center gap-2"
-                    href="">Learn More <img src="images/arrow-r-white.png" alt=""></a>
+                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] rounded-md font-medium mb-5 md:mb-0 flex items-center justify-center gap-2"
+                    href="#">Learn More <img src="images/arrow-r-white.png" alt=""></a>
             </div>
         </section>
 
         <!-- Invoicing section 3 -->
-        <section class="px-[100px] py-14 flex items-start justify-between bg-[#108bf833]">
-            <div class="pr-10">
-                <h4 class="text-[#034760] text-[28px] font-medium mb-5">One Small Business. Many Clients. One Invoicing
+        <section
+            class="xl:px-24 lg:px-12 md:px-8 px-5 py-8 md:py-16 flex flex-col md:flex-row items-start justify-between bg-[#108bf833]">
+            <div>
+                <h4 class="text-[#034760] lg:text-[28px] text-xl font-medium mb-5">One Small Business. Many Clients.
+                    One Invoicing
                     Solution</h4>
-                <p class="text-[#034760] text-[18px] mb-8">All-in-one invoicing software for your business to manage &
+                <p class="text-[#034760] lg:text-[18px] lg:mb-8 mb-4">All-in-one invoicing software for your business
+                    to manage &
                     track payments, expenses, bills & more.All-in-one invoicing software for your business.</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/check.png" alt="">Invoice Template
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/check.png"
+                        alt="">Invoice
+                    Template
                     Customization</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/check.png" alt="">Invoice Process
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/check.png"
+                        alt="">Invoice
+                    Process
                     Automation</p>
-                <p class="text-[#034760] flex items-center gap-2 mb-3"><img src="images/check.png" alt="">3-Layered Security
+                <p class="text-[#034760] flex items-center gap-2 lg:mb-3 md:mb-1"><img src="images/check.png"
+                        alt="">3-Layered
+                    Security
                 </p>
-                <p class="text-[#034760] flex items-center gap-2 mb-9"><img src="images/check.png" alt="">Save Costs with the
+                <p class="text-[#034760] flex items-center gap-2 mb-6 xl:mb-10"><img src="images/check.png" alt="">Save
+                    Costs
+                    with the
                     Invoice software</p>
-                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] pl-8 text-[14px] rounded-[8px] flex items-center gap-2"
-                    href="">Learn More <img src="images/arrow-r-white.png" alt=""></a>
+                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] rounded-md font-medium mb-10 md:mb-0 flex items-center justify-center gap-2"
+                    href="#">Learn More <img src="images/arrow-r-white.png" alt=""></a>
             </div>
-            <img src="images/image 13.png" alt="">
+            <img class="md:w-[50%] lg:w-full" src="images/image 13.png" alt="">
         </section>
 
     </main>
 
-    <footer class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] px-[100px] pt-12 pb-5">
-        <div class="grid grid-cols-4 items-start gap-12">
+    <footer
+        class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] xl:px-24 lg:px-12 md:px-8 px-5 pt-10 md:pt-12 pb-5">
+        <div class="grid grid-cols-1 md:grid-cols-4 items-start gap-8 md:gap-12">
 
             <div>
-                <h2 class="text-[40px] leading-[40px] font-semibold mb-8">Logo</h2>
-                <p class="text-[14px] mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi sequi
+                <h2 class="text-[40px] leading-[40px] font-semibold mb-4 md:mb-8">Logo</h2>
+                <p class="text-[14px] mb-3 md:mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                    commodi sequi
                     animi cum? Optio maiores a harum animi.</p>
-                <div class="flex justify-start">
-                    <a href=""><img src="images/fb.png" alt=""></a>
-                    <a href=""><img src="images/twitter.png" alt=""></a>
-                    <a href=""><img src="images/insta.png" alt=""></a>
-                    <a href=""><img src="images/g+.png" alt=""></a>
+                <div class="flex justify-start items-center">
+                    <a href="#"><img src="images/fb.png" alt=""></a>
+                    <a href="#"><img src="images/twitter.png" alt=""></a>
+                    <a href="#"><img src="images/insta.png" alt=""></a>
+                    <a href="#"><img src="images/g+.png" alt=""></a>
                 </div>
             </div>
 
             <div>
-                <h3 class="text-[20px] font-semibold mb-5">Company News</h3>
+                <h3 class="lg:text-[20px]  font-semibold mb-5">Company News</h3>
                 <div class="flex gap-2">
-                    <hr class="border-4 mb-7 border-white w-[35px]">
-                    <hr class="border-4 mb-7 border-white w-[20px]">
-                    <hr class="border-4 mb-7 border-white w-[35px]">
+                    <hr class="border-2 mb-7 border-white w-[35px]">
+                    <hr class="border-2 mb-7 border-white w-[20px]">
+                    <hr class="border-2 mb-7 border-white w-[35px]">
                 </div>
                 <div>
-                    <a class="text-[14px] block mb-2" href="">Partners</a>
-                    <a class="text-[14px] block mb-2" href="">About Us</a>
-                    <a class="text-[14px] block mb-2" href="">Career</a>
-                    <a class="text-[14px] block mb-2" href="">Reviews</a>
-                    <a class="text-[14px] block mb-2" href="">Terms & Conditions</a>
+                    <a class="text-[14px] block mb-2" href="#">Partners</a>
+                    <a class="text-[14px] block mb-2" href="#">About Us</a>
+                    <a class="text-[14px] block mb-2" href="#">Career</a>
+                    <a class="text-[14px] block mb-2" href="#">Reviews</a>
+                    <a class="text-[14px] block mb-2" href="#">Terms & Conditions</a>
                 </div>
             </div>
 
             <div>
-                <h3 class="text-[20px] font-semibold mb-5">Useful Links</h3>
+                <h3 class="lg:text-[20px] font-semibold mb-5">Useful Links</h3>
                 <div class="flex gap-2">
-                    <hr class="border-4 mb-7 border-white w-[35px]">
-                    <hr class="border-4 mb-7 border-white w-[20px]">
-                    <hr class="border-4 mb-7 border-white w-[35px]">
+                    <hr class="border-2 mb-7 border-white w-[35px]">
+                    <hr class="border-2 mb-7 border-white w-[20px]">
+                    <hr class="border-2 mb-7 border-white w-[35px]">
                 </div>
                 <div>
-                    <a class="text-[14px] block mb-2" href="">Home</a>
-                    <a class="text-[14px] block mb-2" href="">About Us</a>
-                    <a class="text-[14px] block mb-2" href="">Services</a>
-                    <a class="text-[14px] block mb-2" href="">Why us</a>
-                    <a class="text-[14px] block mb-2" href="">Our Team</a>
+                    <a class="text-[14px] block mb-2" href="#">Home</a>
+                    <a class="text-[14px] block mb-2" href="#">About Us</a>
+                    <a class="text-[14px] block mb-2" href="#">Services</a>
+                    <a class="text-[14px] block mb-2" href="#">Why us</a>
+                    <a class="text-[14px] block mb-2" href="#">Our Team</a>
                 </div>
             </div>
 
             <div>
-                <h3 class="text-[20px] font-semibold mb-5">Useful Links</h3>
+                <h3 class="lg:text-[20px] font-semibold mb-5">Useful Links</h3>
                 <div class="flex gap-2">
-                    <hr class="border-4 mb-7 border-white w-[35px]">
-                    <hr class="border-4 mb-7 border-white w-[20px]">
-                    <hr class="border-4 mb-7 border-white w-[35px]">
+                    <hr class="border-2 mb-7 border-white w-[35px]">
+                    <hr class="border-2 mb-7 border-white w-[20px]">
+                    <hr class="border-2 mb-7 border-white w-[35px]">
                 </div>
                 <div>
-                    <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img src="images/hello.png" alt="">
+                    <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img src="images/hello.png"
+                            alt="">
                         <p>1800-121-3637 <br> +91 555 234-8765</p>
                     </div>
-                    <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img src="images/mail-blue.png" alt="">
-                        <p>info@invoiceus.com <br> sale@example.com</p>
+                    <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img src="images/mail-blue.png"
+                            alt="">
+                        <p class="break-all	">info@invoiceus.com <br> sale@example.com</p>
                     </div>
-                    <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img src="images/location.png" alt="">
+                    <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img src="images/location.png"
+                            alt="">
                         <p>380 St Kilda Road, <br> Melbourne <br> VIC 3004, Australia</p>
                     </div>
                 </div>
