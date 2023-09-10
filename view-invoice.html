@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Invoice - Add 1 items</title>
+    <title>View Invoice</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -12,123 +12,179 @@
 
 <body style="font-family: 'Inter';">
     <header>
-        <!-- Nav -->
-        <nav class="mb-1 px-[100px] h-[70px] flex items-center justify-between bg-[#F2F2F2] shadow-lg">
-            <div class=" flex items-center">
-                <a href="index.html" class="pr-[50px]"><img src="images/logo.png" class="h-12" alt=""></a>
-                <a href="dashboard.html" class="pr-[30px] text-[18px] text-[#128CED]">Invoices</a>
-                <a href="estimate.html" class="pr-[30px] text-[18px] text-[#15304D]">Estimate</a>
-                <a href="clients.html" class="pr-[30px] text-[18px] text-[#15304D]">Clients</a>
-                <a href="items.html" class="pr-[30px] text-[18px] text-[#15304D]">Items</a>
-                <a href="reports.html" class="pr-[30px] text-[18px] text-[#15304D]">Reports</a>
-                <a href="settings.html" class="pr-[30px] text-[18px] text-[#15304D]">Settings</a>
+        <!-- Navbar -->
+        <div class="navbar bg-[#F2F2F2] shadow-lg mb-1 xl:px-24 lg:px-12 md:px-8 px-5">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn lg:hidden md:mr-5 pl-0 hover:bg-[#F2F2F2] border-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box w-[130px]">
+                        <li>
+                            <a href="dashboard.html"
+                                class="text-[18px] text-center block rounded-md hover:text-[#128CED] hover:bg-white py-2 text-[#128CED]">Invoices</a>
+                        </li>
+                        <li><a href="#.html"
+                                class="text-[18px] text-center block rounded-md hover:text-[#128CED] hover:bg-white py-2 my-1">Estimate</a>
+                        </li>
+                        <li>
+                            <a href="clients.html"
+                                class="text-[18px] text-center block rounded-md hover:text-[#128CED] hover:bg-white py-2">Clients</a>
+                        </li>
+                        <li>
+                            <a href="items.html"
+                                class="text-[18px] text-center block rounded-md hover:text-[#128CED] hover:bg-white py-2 my-1">Items</a>
+                        </li>
+                        <li>
+                            <a href="reports.html"
+                                class="text-[18px] text-center block rounded-md hover:text-[#128CED] hover:bg-white py-2">Reports</a>
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                class="text-[18px] text-center block rounded-md hover:text-[#128CED] hover:bg-white py-2">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="index.html"><img src="images/logo.png" class="h-12" alt=""></a>
             </div>
-            <div class=" flex items-center">
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <a href="dashboard.html"
+                            class="text-[18px] rounded-md hover:bg-white hover:text-[#128CED] text-[#128CED]">Invoices</a>
+                    </li>
+                    <li><a href="#" class="text-[18px] rounded-md hover:text-[#128CED] hover:bg-white">Estimate</a></li>
+                    <li>
+                        <a href="clients.html"
+                            class="text-[18px] rounded-md hover:text-[#128CED] hover:bg-white">Clients</a>
+                    </li>
+                    <li>
+                        <a href="items.html"
+                            class="text-[18px] rounded-md hover:text-[#128CED] hover:bg-white">Items</a>
+                    </li>
+                    <li>
+                        <a href="reports.html"
+                            class="text-[18px] rounded-md hover:text-[#128CED] hover:bg-white">Reports</a>
+                    </li>
+                    <li>
+                        <a href="settings.html"
+                            class="text-[18px] rounded-md hover:text-[#128CED] hover:bg-white mr-3">Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
                 <details class="dropdown dropdown-end">
-                    <summary tabindex="0" class="btn m-1 hover:bg-transparent  border-none">
-                        <div><img class="w-12" src="images/notification+dot.png" alt=""></div>
+                    <summary tabindex="0" class="btn m-1 hover:bg-transparent p-0 m-0 border-none mr-2 xl:mr-5">
+                        <div><img class="w-9 h-9" src="images/notification+dot.png" alt=""></div>
                     </summary>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-white rounded-box w-[320px]">
-                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
-                                <img class="pt-1" src="images/oval.png" alt="">
-                                <div>
-                                    <h3 class="text-[16px] text-[#128CED] font-bold">Agent Rose</h3>
-                                    <p class="text-[12px]">Message: Please, kindly do take a snap-shot of the card.</p>
-                                </div>
-                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">18min.</p>
-                            </a></li>
-                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
-                                <img class="pt-1" src="images/oval.png" alt="">
-                                <div>
-                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGE Team</h3>
-                                    <p class="text-[12px]">Alert: New card added this week
-                                        check em out.</p>
-                                </div>
-                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">34min.</p>
-                            </a></li>
-                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
-                                <img class="pt-1" src="images/oval.png" alt="">
-                                <div>
-                                    <h3 class="text-[16px] text-[#128CED] font-bold">Halloween Promo</h3>
-                                    <p class="text-[12px]">Promotion: Get 13% the price when
-                                        you exchange bitcoin to cash.</p>
-                                </div>
-                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">1hour</p>
-                            </a></li>
-                        <li class="p-1"><a href="#" class="flex items-start justify-between gap-3">
-                                <img class="pt-1" src="images/oval.png" alt="">
-                                <div>
-                                    <h3 class="text-[16px] text-[#128CED] font-bold">GOGO Team</h3>
-                                    <p class="text-[12px]">Alert: Sorry to see you go. You just unsubscribe from the
-                                        newsletter.</p>
-                                </div>
-                                <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">2hour</p>
-                            </a></li>
-                        <button class="text-white bg-[#128CED] px-5 py-3 mt-4 mb-2 block mx-auto rounded-[4px]">View
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-1 shadow bg-white rounded-md w-[280px]">
+                        <a href="#" class="flex items-start justify-center gap-2 p-2 hover:bg-[#f2f2f2]">
+                            <img class="pt-1" src="images/oval.png" alt="">
+                            <div>
+                                <h3 class="text-[14px] text-[#128CED] font-medium">Agent Rose</h3>
+                                <p class="text-[12px]">Message: Please, kindly do take a snap-shot of the card.</p>
+                            </div>
+                            <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">18min.</p>
+                        </a>
+                        <a href="#" class="flex items-start justify-center gap-2 p-2 hover:bg-[#f2f2f2]">
+                            <img class="pt-1" src="images/oval.png" alt="">
+                            <div>
+                                <h3 class="text-[14px] text-[#128CED] font-medium">GOGE Team</h3>
+                                <p class="text-[12px]">Alert: New card added this week
+                                    check em out.</p>
+                            </div>
+                            <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">34min.</p>
+                        </a>
+                        <a href="#" class="flex items-start justify-center gap-2 p-2 hover:bg-[#f2f2f2]">
+                            <img class="pt-1" src="images/oval.png" alt="">
+                            <div>
+                                <h3 class="text-[14px] text-[#128CED] font-medium">Halloween Promo</h3>
+                                <p class="text-[12px]">Promotion: Get 13% the price when
+                                    you exchange bitcoin to cash.</p>
+                            </div>
+                            <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">1hour</p>
+                        </a>
+                        <a href="#" class="flex items-start justify-center gap-2 p-2 hover:bg-[#f2f2f2]">
+                            <img class="pt-1" src="images/oval.png" alt="">
+                            <div>
+                                <h3 class="text-[14px] text-[#128CED] font-medium">GOGO Team</h3>
+                                <p class="text-[12px]">Alert: Sorry to see you go. You just unsubscribe from the
+                                    newsletter.</p>
+                            </div>
+                            <p class="text-[10px] text-[#128CED] rounded-lg px-1 bg-[#a6d7ff]">2hour</p>
+                        </a>
+                        <button class="text-white bg-[#128CED] px-5 py-3 mt-4 mb-2 block mx-auto rounded-[6px]">View
                             More</button>
                     </ul>
                 </details>
-
                 <details class="dropdown dropdown-end">
-                    <summary tabindex="0" class="btn bg-[#F2F2F2] m-1">
-                        <div class="flex items-center justify-start gap-2" href="">
-                            <img class=" w-12" src="images/profile.png" alt="">
-                            <h5 class="capitalize">Devon Lane</h5>
+                    <summary tabindex="0" class="btn bg-[#F2F2F2] p-0 m-0 hover:bg-white rounded-md">
+                        <div class="flex items-center justify-start gap-1" href="#">
+                            <img class="h-9 w-9" src="images/profile.png" alt="">
+                            <h5 class="capitalize hidden md:block p-0 m-0">Devon Lane</h5>
                             <img src="images/dropdown.png" alt="">
                         </div>
                     </summary>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-[200px]">
-                        <li class="p-1"><a href="my-account.html"><img src="images/client.png" alt="">My Account</a></li>
-                        <li class="p-1"><a><img src="images/settings.png" alt="">Account Settings</a></li>
-                        <li class="p-1"><a><img src="images/faq.png" alt="">FAQ</a></li>
-                        <li class="p-1"><a><img src="images/logout.png" alt="">Log Out</a></li>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-md m-1 w-[200px]">
+                        <li class="p-1"><a href="my-account.html" href="my-account.html"><img src="images/client.png"
+                                    alt="">My Account</a></li>
+                        <li class="p-1"><a href="settings.html"><img src="images/settings.png" alt="">Account
+                                Settings</a></li>
+                        <li class="p-1"><a href="faq.html"><img src="images/faq-sign.png" alt="">FAQ</a></li>
+                        <li class="p-1"><a href="#"><img src="images/logout.png" alt="">Log Out</a></li>
                     </ul>
                 </details>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Main -->
     <main class="min-h-screen">
 
-        <section class="px-[100px] pt-10 mx-auto flex items-start justify-between gap-5">
+        <section class="xl:px-[150px] lg:px-12 md:px-8 px-5 pt-10 mx-auto flex flex-col md:flex-row items-start justify-between xl:gap-12 gap-5">
 
-            <div class="max-w-[916px] w-full">
+            <div class="w-full p-0">
                 <img src="images/INVOICE.png" alt="">
             </div>
 
             <div>
 
-                <a class="w-[200px] text-[14px] mt-2 py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
-                    href="templates.html">
+                <a class="w-[200px] text-[14px] mt-2 py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[6px] mb-2"
+                    href="#">
                     <img src="images/copy.png" alt="">Make a copy
                 </a>
 
-                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
-                    href="templates.html">
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[6px] mb-2"
+                    href="sent-mail.html">
                     <img src="images/mail.png" alt="">Sent mail
                 </a>
 
-                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
-                    href="#">
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[6px] mb-2"
+                    href="payment-status.html">
                     <img src="images/payments.png" alt="">Payments
                 </a>
 
-                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-14"
-                    href="">
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[6px] mb-14"
+                    href="recurring-3.html">
                     <img src="images/recurring.png" alt="">Recurring
                 </a>
 
-                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[6px] mb-2"
                     href="create-Invoice-with-sender-and-receiver.html">
                     <img src="images/edit-white-transparent.png" alt="">Edit
                 </a>
-                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
-                    href="">
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[6px] mb-2"
+                    href="#">
                     <img src="images/delete-white.png" alt="">Delete
                 </a>
-                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
-                    href="">
+                <a class="w-[200px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[6px] mb-2"
+                    href="#">
                     <img src="images/download-white.png" alt="">Download PDF
                 </a>
 

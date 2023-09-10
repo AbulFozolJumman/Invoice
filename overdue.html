@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 
-<body style="font-family: 'Inter';">
+<body class="min-h-screen" style="font-family: 'Inter';">
     <header>
         <!-- Navbar -->
         <div class="navbar bg-[#F2F2F2] shadow-lg mb-1 xl:px-24 lg:px-12 md:px-8 px-5">
@@ -124,7 +124,7 @@
                 </details>
                 <details class="dropdown dropdown-end">
                     <summary tabindex="0" class="btn bg-[#F2F2F2] p-0 m-0 hover:bg-white rounded-md">
-                        <div class="flex items-center justify-start gap-1" href="">
+                        <div class="flex items-center justify-start gap-1" href="#">
                             <img class="h-9 w-9" src="images/profile.png" alt="">
                             <h5 class="capitalize hidden md:block p-0 m-0">Devon Lane</h5>
                             <img src="images/dropdown.png" alt="">
@@ -146,7 +146,7 @@
 
     <!-- Main -->
     <main>
-        <section class="px-[100px] mx-auto min-h-screen">
+        <section class="xl:px-24 lg:px-12 md:px-8 px-5 mx-auto">
             <div class="flex flex-col md:flex-row md:items-center justify-between">
                 <!-- Search input -->
                 <div
@@ -158,7 +158,7 @@
                         <a class="left-[10px] top-[13px] absolute" href="#"><img src="images/search.png" alt=""></a>
                     </div>
                     <a class="text-[#364152] border rounded-md md:rounded-none md:border-e-0 md:border-t-0 md:border-b-0 border-[#CDD5DF] w-[100px] font-medium py-3 px-6 text-[14px] border-s"
-                        href="">Search</a>
+                        href="#">Search</a>
                 </div>
                 <div
                     class="flex items-center md:my-9 my-5 justify-start gap-2 w-[152px] rounded-lg bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
@@ -182,16 +182,16 @@
             <!-- Routes -->
             <div class="mb-8">
                 <div class="flex-wrap">
-                    <a class="px-6 py-3 inline-block text-[16px] mb-1 bg-[#128CED] text-white rounded-md"
-                        href="dashboard.html">All Invoice(6)</a>
+                    <a class="px-6 py-3 inline-block text-[16px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-md"
+                        href="dashboard.html">All Invoice</a>
                     <a class="px-6 py-3 inline-block text-[16px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-md"
                         href="paid.html">Paid</a>
                     <a class="px-6 py-3 inline-block text-[16px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-md"
                         href="unpaid.html">Unpaid</a>
                     <a class="px-6 py-3 inline-block text-[16px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-md"
                         href="partiallyPaid.html">Partially Paid</a>
-                    <a class="px-6 py-3 inline-block text-[16px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-md"
-                        href="overdue.html">Overdue</a>
+                    <a class="px-6 py-3 inline-block text-[16px] mb-1 bg-[#128CED] text-white rounded-md"
+                        href="overdue.html">Overdue(2)</a>
                     <a class="px-6 py-3 inline-block text-[16px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-md"
                         href="mailSent.html">Mail sent</a>
                     <a class="px-6 py-3 inline-block text-[16px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-md"
@@ -204,8 +204,8 @@
             </div>
 
             <!-- Table -->
-            <div class="rounded-[14px] mb-3">
-                <table class="table table-zebra">
+            <div class="lg:overflow-x-auto overflow-x-scroll rounded-md mb-3">
+                <table class="table table-zebra min-w-[928px]">
                     <!-- head -->
                     <thead class="text-[14px] font-semibold text-white bg-[#128CED]">
                         <tr>
@@ -261,9 +261,9 @@
                             <td>$20.00</td>
                             <td>
                                 <div class="flex items-center justify-start">
-                                    <a href=""><img src="images/edit.png" alt=""></a>
-                                    <a href=""><img src="images/delete.png" alt=""></a>
-                                    <a href=""><img src="images/download.png" alt=""></a>
+                                    <a href="#"><img src="images/edit.png" alt=""></a>
+                                    <a href="#"><img src="images/delete.png" alt=""></a>
+                                    <a href="#"><img src="images/download.png" alt=""></a>
 
                                     <details class="dropdown dropdown-end">
                                         <summary tabindex="0" class="btn ml-5 bg-transparent border-none">
@@ -290,9 +290,9 @@
                             <td>$250.00</td>
                             <td>
                                 <div class="flex items-center justify-start">
-                                    <a href=""><img src="images/edit.png" alt=""></a>
-                                    <a href=""><img src="images/delete.png" alt=""></a>
-                                    <a href=""><img src="images/download.png" alt=""></a>
+                                    <a href="#"><img src="images/edit.png" alt=""></a>
+                                    <a href="#"><img src="images/delete.png" alt=""></a>
+                                    <a href="#"><img src="images/download.png" alt=""></a>
 
                                     <details class="dropdown dropdown-end">
                                         <summary tabindex="0" class="btn ml-5 bg-transparent border-none">
@@ -314,7 +314,7 @@
             </div>
 
             <!-- Chatbot -->
-            <a class="fixed top-[50%] right-0 pr-5" onclick="my_modal_2.showModal()" href="#">
+            <a class="fixed top-[50%] right-0 pr-1" onclick="my_modal_2.showModal()" href="#">
                 <img src="images/chat-bot.png" alt="">
             </a>
 
@@ -338,7 +338,7 @@
                     </div>
                     <div class="flex items-center justify-between border-t-2 p-3 gap-2 absolute bottom-0 w-full">
                         <input class="w-full outline-0 bg-[#EAF0F6] p-2" type="text" placeholder="Write a message">
-                        <a href=""><img class="w-7" src="images/send.png" alt=""></a>
+                        <a href="#"><img class="w-7" src="images/send.png" alt=""></a>
                     </div>
                 </form>
                 <form method="dialog" class="modal-backdrop">
