@@ -368,7 +368,7 @@
 
                         <div
                             class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
-                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#">Cancel</a>
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" id="cancelButton3" href="#">Cancel</a>
                             <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Ok</a>
                         </div>
                     </form>
@@ -397,7 +397,8 @@
 
                         <div
                             class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
-                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#">Cancel</a>
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#" id="cancelButton4">Cancel</a>
+
                             <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Ok</a>
                         </div>
                     </form>
@@ -425,7 +426,7 @@
                         </div>
 
                         <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
-                            <a class="border text-[12px] p-2" href="#">Cancel</a>
+                            <a class="border text-[12px] p-2" href="#" id="cancelButton5">Cancel</a>
                             <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Ok</a>
                         </div>
                     </form>
@@ -500,7 +501,7 @@
 
                         <div
                             class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
-                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#">Cancel</a>
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#" id="cancelButton6">Cancel</a>
                             <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Ok</a>
                         </div>
                     </form>
@@ -528,7 +529,7 @@
 
                         <div
                             class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
-                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#">Cancel</a>
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#" id="cancelButton7">Cancel</a>
                             <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Create</a>
                         </div>
                     </form>
@@ -554,7 +555,7 @@
                         </div>
 
                         <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
-                            <a class="border text-[12px] p-2" href="#">Cancel</a>
+                            <a class="border text-[12px] p-2" href="#" id="cancelButton8">Cancel</a>
                             <a class="bg-[#128CED] text-white text-[12px] py-2 px-4"
                                 href="after-adding-all-item.html">Update</a>
                         </div>
@@ -576,7 +577,6 @@
                     href="#">
                     <img src="images/download-white.png" alt="">Download PDF
                 </a>
-
             </div>
 
         </section>
@@ -588,5 +588,39 @@
         <p class="text-center text-[14px] text-[#1D2939]">© 2023 @ InvoiceUs All rights reserved</p>
     </footer>
 </body>
+
+<script>
+    const cancelButton3 = document.getElementById('cancelButton3');
+    const cancelButton4 = document.getElementById('cancelButton4');
+    const cancelButton5 = document.getElementById('cancelButton5');
+    const cancelButton6 = document.getElementById('cancelButton6');
+    const cancelButton7 = document.getElementById('cancelButton7');
+    const cancelButton8 = document.getElementById('cancelButton8');
+    const modal3 = document.getElementById('my_modal_3');
+    const modal4 = document.getElementById('my_modal_4');
+    const modal5 = document.getElementById('my_modal_5');
+    const modal6 = document.getElementById('my_modal_6');
+    const modal7 = document.getElementById('my_modal_7');
+    const modal8 = document.getElementById('my_modal_8');
+
+    cancelButton3.addEventListener('click', () => {
+        modal3.close();
+    });
+    cancelButton4.addEventListener('click', () => {
+        modal4.close();
+    });
+    cancelButton5.addEventListener('click', () => {
+        modal5.close();
+    });
+    cancelButton6.addEventListener('click', () => {
+        modal6.close();
+    });
+    cancelButton7.addEventListener('click', () => {
+        modal7.close();
+    });
+    cancelButton8.addEventListener('click', () => {
+        modal8.close();
+    });
+</script>
 
 </html>
