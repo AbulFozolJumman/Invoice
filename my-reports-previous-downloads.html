@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Report-Last Downloads</title>
+    <title>My Report-Previous Downloads</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -150,183 +150,179 @@
     <main>
         <section class=" max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto  mx-auto mt-10">
 
-            <!-- Routes -->
             <div class="flex flex-col md:flex-row items-start md:gap-5 justify-between">
-                <div class="mb-8">
-                    <a class="px-6 py-3 inline-block text-[14px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-[5px]"
+                <!-- Routes -->
+                <div class="mb-8 bg-[#cdd5df80] rounded-[5px] p-[5px]">
+                    <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                         href="reports.html">All Documents</a>
-                    <a class="px-6 py-3 inline-block text-[14px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-[5px]"
+                    <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                         href="my-report-last-month.html">Last Month</a>
-                    <a class="px-6 py-3 inline-block text-[14px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-[5px]"
+                    <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                         href="#">Last Quarter</a>
-                    <a class="px-6 py-3 inline-block text-[14px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-[5px]"
+                    <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                         href="#">Export to PDF</a>
-                    <a class="px-6 py-3 inline-block text-[14px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-[5px]"
+                    <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                         href="#">Export to Excel</a>
-                    <a class="px-6 py-3 inline-block text-[14px] mb-1 hover:bg-[#128CED] bg-[#cdd5df80] hover:text-white rounded-[5px]"
+                    <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                         href="#">Print</a>
-                    <a class="px-6 py-3 inline-block text-[14px] mb-1 bg-[#128CED] text-white rounded-[5px]"
-                        href="my-report-last-downloads.html">Previous Export(6)</a>
+                    <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] bg-[#128CED] text-white"
+                        href="my-report-last-downloads.html">Previous Export(20)</a>
                 </div>
 
-
-                <div class="flex items-center justify-start gap-2 rounded-[5px] bg-white border mb-8 md:mb-0">
-
-                    <!-- My report with filter -->
-                    <details class="dropdown dropdown-end">
-                        <summary tabindex="0"
-                            class="btn bg-white hover:bg-[#cdd5df80] capitalize py-2 h-[38px] text-[14px] rounded-[5px] border-2 border-[#cdd5df80] font-medium">
-                            <img src="images/filters-icon.png" alt="">Filters
-                        </summary>
-                        <div tabindex="0"
-                            class="dropdown-content z-[10] menu p-3 shadow bg-base-100 rounded-box w-[320px] bg-gray-300 m-1">
-                            <p class="font-bold mb-2">Date</p>
-                            <div class="flex justify-center gap-2">
-                                <p>From <input class="border p-2 my-2" type="date" name="" id=""></p>
-                                <p>To<input class="border p-2 my-2" type="date" name="" id=""></p>
+                <!-- My report with filter -->
+                <details class="dropdown dropdown-end">
+                    <summary tabindex="0"
+                        class="btn bg-white hover:bg-[#cdd5df80] capitalize py-2 h-[38px] text-[14px] rounded-[5px] border-2 border-[#cdd5df80] font-medium">
+                        <img src="images/filters-icon.png" alt="">Filters
+                    </summary>
+                    <div tabindex="0"
+                        class="dropdown-content z-[10] menu p-5 shadow rounded-box rounded-[5px] border w-[350px] bg-base-100 m-1">
+                        <p class="font-bold mb-3 text-[16px]">Date</p>
+                        <div class="flex justify-between items-center gap-2 text-sm mb-3">
+                            <p>From <br> <input class="border p-2 my-1 h-[38px]" type="date" name="" id=""></p>
+                            <p>To <br><input class="border p-2 my-1 h-[38px]" type="date" name="" id=""></p>
+                        </div>
+                        <div class="flex justify-start flex-col items-start">
+                            <div>
+                                <p class="font-bold mb-2">Payment Status</p>
+                                <p class="flex gap-2 items-center"><input class="bg-gray-300" type="checkbox" name="" id="" checked> All
+                                </p>
+                                <p class="flex gap-2 items-center"><input class="accent-gray-300" type="checkbox"
+                                        name="" id=""> Paid</p>
+                                <p class="flex gap-2 items-center"><input type="checkbox" name="" id=""> Partially
+                                    Paid</p>
+                                <p class="flex gap-2 items-center"><input type="checkbox" name="" id=""> Unpaid</p>
+                                <p class="flex gap-2 items-center mb-5"><input type="checkbox" name="" id="">
+                                    Overdue</p>
                             </div>
-                            <div class="flex justify-between gap-10 items-start">
-                                <div>
-                                    <p class="font-bold mb-2">Payment Status</p>
-                                    <p class="flex gap-2 items-center"><input type="checkbox" name="" id="" checked> All
-                                    </p>
-                                    <p class="flex gap-2 items-center"><input type="checkbox" name="" id=""> Paid</p>
-                                    <p class="flex gap-2 items-center"><input type="checkbox" name="" id=""> Partially
-                                        Paid</p>
-                                    <p class="flex gap-2 items-center"><input type="checkbox" name="" id=""> Unpaid</p>
-                                    <p class="flex gap-2 items-center mb-5"><input type="checkbox" name="" id="">
-                                        Overdue</p>
-                                </div>
-                                <div>
-                                    <p class="font-bold mb-2">Invoice type</p>
-                                    <p class="flex gap-2 items-center"><input type="checkbox" name="" id="" checked> All
-                                    </p>
-                                    <p class="flex gap-2 items-center"><input type="checkbox" name="" id=""> Invoice</p>
-                                    <p class="flex gap-2 items-center mb-5"><input type="checkbox" name="" id=""> Credit
-                                        Memo</p>
-                                    <a class="bg-[#128CED] rounded-[5px] py-3 text-center text-white font-medium w-[150px] mx-auto block"
-                                        href="#">Show All Results</a>
-                                </div>
+                            <div>
+                                <p class="font-bold mb-2">Invoice type</p>
+                                <p class="flex gap-2 items-center"><input type="checkbox" name="" id="" checked> All
+                                </p>
+                                <p class="flex gap-2 items-center"><input type="checkbox" name="" id=""> Invoice</p>
+                                <p class="flex gap-2 items-center mb-5"><input type="checkbox" name="" id=""> Credit
+                                    Memo</p>
                             </div>
                         </div>
-                    </details>
-                </div>
-
+                        <a class="bg-[#128CED] rounded-[5px] py-2 text-center text-[15px] text-white font-medium w-[150px] mx-auto flex justify-center items-center mx-auto"
+                            href="#">Show All Results</a>
+                    </div>
+                </details>
             </div>
 
             <p class="my-7 font-medium text-center">Download your previous 20 export files</p>
 
             <div class="flex flex-col md:flex-row items-center justify-center gap-10 w-full">
                 <!-- Table-1 -->
-                <div class="overflow-x-auto rounded-[14px] mb-3 md:w-[480px] mx-auto">
+                <div class="overflow-x-auto  rounded-[5px] border mb-3 md:w-[480px] p-2 mx-auto">
                     <table class="table">
                         <tbody class="text-[#15304D]">
                             <!-- row 1 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 2 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 3 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 4 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 5 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 6 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 7 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 8 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 9 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 10 -->
-                            <tr class="border">
+                            <tr>
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
@@ -335,115 +331,115 @@
                     </table>
                 </div>
                 <!-- Table-2 -->
-                <div class="overflow-x-auto rounded-[14px] mb-3 md:w-[480px] mx-auto">
+                <div class="overflow-x-auto rounded-[5px] border mb-3 p-2 md:w-[480px] mx-auto">
                     <table class="table">
                         <tbody class="text-[#15304D]">
                             <!-- row 1 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 2 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 3 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 4 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 5 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 6 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 7 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 8 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 9 -->
-                            <tr class="border">
+                            <tr class="border-b">
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
                             </tr>
                             <!-- row 10 -->
-                            <tr class="border">
+                            <tr>
                                 <td>Nov20, 2022</td>
 
                                 <td>
                                     <a href="#"
-                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[4px]">
+                                        class="flex items-center justify-center gap-2 border py-2 px-4 rounded-[5px] bg-white w-[120px] text-[15px] ml-auto mr-12">
                                         <img src="images/download-black.png" alt="">Download</a>
                                     </a>
                                 </td>
