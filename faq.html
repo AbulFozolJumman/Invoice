@@ -8,97 +8,117 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body style="font-family: 'Inter';">
     <header>
         <!-- Navbar -->
-        <div class="navbar bg-[#F2F2F2] shadow-lg mb-1 xl:px-24 lg:px-12 md:px-8 px-5">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn lg:hidden md:mr-5 pl-0 hover:bg-[#F2F2F2] border-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box w-[170px]">
-                        <li>
-                            <a href="index.html" class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Home</a>
-                        </li>
-                        <li><a href="about.html" class="text-[18px] hover:text-[#128CED] hover:bg-white py-2 my-1">About</a></li>
-                        <li>
-                            <a href="features.html" class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Features</a>
-                        </li>
-                        <li>
-                            <a href="faq.html" class="text-[18px] text-[#128CED] hover:text-[#128CED] hover:bg-white py-2 my-1">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="pricing.html" class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Pricing</a>
-                        </li>
-                        <li>
-                            <a class="text-[#128CED] py-3 border border-[#128CED] text-center w-[150px] my-2 block md:hidden rounded-md font-medium"
-                                href="signup.html">Sign In</a>
-                        </li>
-                        <li>
-                            <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] text-center rounded-md font-medium block md:hidden"
-                                href="dashboard.html">Create Invoice</a>
-                        </li>
-                    </ul>
+        <div class=" bg-[#F2F2F2] shadow-lg mb-1">
+            <div class="navbar max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto ">
+                <div class="navbar-start w-[150px]">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn lg:hidden md:mr-5 pl-0 hover:bg-[#F2F2F2] border-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box w-[170px]">
+                            <li>
+                                <a href="index.html"
+                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2 text-[#128CED]">Home</a>
+                            </li>
+                            <li><a href="about.html"
+                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2 my-1">About</a></li>
+                            <li>
+                                <a href="features.html"
+                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Features</a>
+                            </li>
+                            <li>
+                                <a href="faq.html"
+                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2 my-1">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html"
+                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Pricing</a>
+                            </li>
+                            <li>
+                                <a class="text-[#128CED] py-3 border border-[#128CED] text-center w-[150px] my-2 block md:hidden rounded-[5px] font-medium"
+                                    href="signup.html">Sign In</a>
+                            </li>
+                            <li>
+                                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 w-[150px] text-center rounded-[5px] font-medium block md:hidden"
+                                    href="dashboard.html">Create Invoice</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="index.html"><img src="images/logo.png" class="h-12" alt=""></a>
                 </div>
-                <a href="index.html"><img src="images/logo.png" class="h-12" alt=""></a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li>
-                        <a href="index.html" class="text-[18px] hover:bg-white hover:text-[#128CED]">Home</a>
-                    </li>
-                    <li><a href="about.html" class="text-[18px] hover:text-[#128CED] hover:bg-white">About</a></li>
-                    <li>
-                        <a href="features.html" class="text-[18px] hover:text-[#128CED] hover:bg-white">Features</a>
-                    </li>
-                    <li>
-                        <a href="faq.html" class="text-[18px] text-[#128CED] hover:text-[#128CED] hover:bg-white">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="pricing.html" class="text-[18px] hover:text-[#128CED] hover:bg-white mr-3">Pricing</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="navbar-end">
+                <div class="navbar-center hidden lg:flex">
+                    <div class=" menu-horizontal px-1">
+                        
+                            <a href="index.html"
+                                class="pr-8 text-[16px] hover:text-[#128CED]">Home</a>
+                       
+                        <a href="about.html" class="hover:text-[#128CED] pr-8 text-[16px]">About</a></li>
+                        
+                            <a href="features.html" class="hover:text-[#128CED] pr-8 text-[16px]">Features</a>
+                       
+                        
+                            <a href="faq.html" class="text-[#128CED] pr-8 text-[16px]">FAQ</a>
+                       
+                        
+                            <a href="pricing.html"
+                                class="hover:text-[#128CED] pr-8 text-[16px] mr-3">Pricing</a>
+                       
+                    </div>
+                </div>
+                <div class="navbar-end ml-auto">
 
-                <div class="dropdown dropdown-bottom dropdown-end dropdown-hover md:pr-3">
-                    <label tabindex="0" class="btn bg-[#F2F2F2] p-0 m-0 w-[60px]">
-                        <img src="images/usa flag.png" alt="">
-                        <img src="images/dropdown.png" alt="">
-                    </label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-1 shadow bg-[#F2F2F2] rounded-box w-[90px]">
-                        <li><a>
-                                <img src="images/uk.png" alt="">
-                                EN
+                    <div class="dropdown dropdown-bottom dropdown-end dropdown-hover md:pr-3">
+                        <label tabindex="0" class="btn bg-[#F2F2F2] hover:bg-[#F2F2F2] hover:border-0 p-0 m-0 w-[60px]">
+                            <img src="images/usa flag.png" alt="">
+                            <img src="images/dropdown.png" alt="">
+                        </label>
+                        <ul tabindex="0"
+                            class="dropdown-content z-[1] menu p-4 shadow bg-[#F2F2F2] rounded-box rounded-[5px] w-[130px]">
+                            <li><a
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    <img src="images/uk.png" alt="">
+                                    EN
+                                </a></li>
+                            <li><a
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    <img src="images/france.png" alt="">
+                                    RU
+                                </a></li>
                             </a></li>
-                        <li><a>
-                                <img src="images/france.png" alt="">
-                                RU
+                            <li><a
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    <img src="images/france.png" alt="">
+                                    FR
+                                </a></li>
                             </a></li>
-                        </a></li>
-                        <li><a>
-                                <img src="images/france.png" alt="">
-                                FR
-                            </a></li>
-                        </a></li>
-                        <li><a>
-                                <img src="images/uk.png" alt="">
-                                UK
-                            </a></li>
-                    </ul>
+                            <li><a
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    <img src="images/uk.png" alt="">
+                                    TR
+                                </a></li>
+                            <li><a
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    <img src="images/uk.png" alt="">
+                                    UK
+                                </a></li>
+                        </ul>
+                    </div>
+                    <a class="text-[15px] text-[#128CED] py-2 text-center border border-[#128CED] mr-3 w-[106px] md:block hidden rounded-[5px] font-medium hover:bg-gradient-to-r from-[#17A9F7] to-[#0969FA] hover:text-white"
+                        href="signup.html">Sign In</a>
+                    <a class="md:block hidden w-[156px] text-center text-[15px] text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-2 rounded-[5px] font-medium hover:bg-gradient-to-r hover:from-[#F2F2F2] hover:to-[#F2F2F2] hover:border hover:border-[#128CED] hover:text-[#128CED] hover:py-[7px] hover:px-[23px]"
+                        href="dashboard.html">Create Invoice</a>
                 </div>
-                <a class="text-[#128CED] py-[11px] text-center border border-[#128CED] mr-3 w-[106px] md:block hidden rounded-md font-medium"
-                    href="signup.html">Sign In</a>
-                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 rounded-md font-medium w-[156px] text-center md:block hidden"
-                    href="dashboard.html">Create Invoice</a>
             </div>
         </div>
     </header>
@@ -107,24 +127,22 @@
     <main>
 
         <!-- FAQ section -->
-        <section class="my-12 xl:px-24 lg:px-12 md:px-8 px-0 mx-auto">
-
-            <img src="images/FAQ.png" class="mx-auto mt-8 mb-4" alt="">
-
-            <div class="text-white bg-[#128CED] py-5 md:py-8 px-5 md:px-[75px] mb-8 md:rounded-md">
+        <section class="my-12 max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-0 mx-auto">
+            <div class="text-white bg-[#128CED] py-5 md:py-8 px-5 md:px-[75px] mb-8">
                 <h4 class="text-2xl md:text-[30px] font-semibold mb-3">Frequently Asked Questions</h4>
                 <p>Here are a few of the questions we get the most. If you don't see what's on your mind, reach out to
                     us anytime on phone, chat, or email.</p>
             </div>
 
             <div class="flex flex-wrap justify-start overflow-hidden bg-[#108bf81a] text-[#128CED] shadow-md mb-2">
-                <label class="grow px-4 py-5 font-semibold md:text-[18px]" for="collapse">How does InvoiceUs work?</label>
+                <label class="grow px-4 py-5 font-semibold md:text-[18px]" for="collapse">How does InvoiceUs
+                    work?</label>
                 <input
                     class="peer mx-4 my-3 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
                     type="checkbox" name="collapse" id="collapse" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-[67px] w-[67px] hidden md:block peer-checked:scale-75 transition-all duration-0 peer-checked:scale-75 peer-checked:rotate-45 text-white bg-[#23A6F0]">
+                    class="h-[67px] w-[67px] hidden md:block transition-all duration-0 text-white bg-[#23A6F0]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                 </svg>
                 <div
@@ -142,7 +160,7 @@
                     type="checkbox" name="collapse2" id="collapse2" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-[67px] w-[67px] hidden md:block peer-checked:scale-75 transition-all duration-0 peer-checked:rotate-45 text-white bg-[#23A6F0]">
+                    class="h-[67px] w-[67px] hidden md:block transition-all duration-0 text-white bg-[#23A6F0]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                 </svg>
                 <div
@@ -153,14 +171,15 @@
             </div>
 
             <div class="flex flex-wrap justify-start overflow-hidden bg-[#108bf81a] text-[#128CED] shadow-md mb-2">
-                <label class="grow px-4 py-5 font-semibold md:text-[18px]" for="collapse3">Do you offer Paypal as a payment
+                <label class="grow px-4 py-5 font-semibold md:text-[18px]" for="collapse3">Do you offer Paypal as a
+                    payment
                     option?</label>
                 <input
                     class="peer mx-4 my-3 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
                     type="checkbox" name="collapse3" id="collapse3" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-[67px] w-[67px] hidden md:block peer-checked:scale-75 transition-all duration-0 peer-checked:rotate-45 text-white bg-[#23A6F0]">
+                    class="h-[67px] w-[67px] hidden md:block transition-all duration-0 text-white bg-[#23A6F0]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                 </svg>
                 <div
@@ -178,7 +197,7 @@
                     type="checkbox" name="collapse4" id="collapse4" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-[67px] w-[67px] hidden md:block peer-checked:scale-75 transition-all duration-0 peer-checked:rotate-45 text-white bg-[#23A6F0]">
+                    class="h-[67px] w-[67px] hidden md:block transition-all duration-0 text-white bg-[#23A6F0]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                 </svg>
                 <div
@@ -196,7 +215,7 @@
                     type="checkbox" name="collapse5" id="collapse5" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-[67px] w-[67px] hidden md:block peer-checked:scale-75 transition-all duration-0 peer-checked:rotate-45 text-white bg-[#23A6F0]">
+                    class="h-[67px] w-[67px] hidden md:block transition-all duration-0 text-white bg-[#23A6F0]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                 </svg>
                 <div
@@ -207,14 +226,15 @@
             </div>
 
             <div class="flex flex-wrap justify-start overflow-hidden bg-[#108bf81a] text-[#128CED] shadow-md mb-2">
-                <label class="grow px-4 py-5 font-semibold md:text-[18px]" for="collapse6">What is difference between PRO
+                <label class="grow px-4 py-5 font-semibold md:text-[18px]" for="collapse6">What is difference between
+                    PRO
                     and Standard plans?</label>
                 <input
                     class="peer mx-4 my-3 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
                     type="checkbox" name="collapse6" id="collapse6" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-[67px] w-[67px] hidden md:block peer-checked:scale-75 transition-all duration-0 peer-checked:rotate-45 text-white bg-[#23A6F0]">
+                    class="h-[67px] w-[67px] hidden md:block transition-all duration-0 text-white bg-[#23A6F0]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
                 </svg>
                 <div
@@ -224,23 +244,20 @@
                 </div>
             </div>
 
-            <div class="bg-[#108bf833] py-8 text-center mt-12 mb-16 md:rounded-md">
-                <img src="images/Avatar group.png" class="mx-auto mb-8" alt="">
-                <h4 class="text-2xl font-semibold text-[#15304D] mb-2">Still have questions?</h4>
-                <p class="text-[#15304d99] mb-8">Can't find the answer you're looking for? Please chat to our friendly team.</p>
-                <a class="text-white font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-3 px-6 rounded-md inline-block mx-auto" href="#">Get in touch</a>
-            </div>
-
         </section>
 
     </main>
 
-    <footer class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] xl:px-24 lg:px-12 md:px-8 px-5 pt-10 md:pt-12 pb-5">
+    <!-- Footer -->
+    <div class="bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
+        <footer
+        class="text-white max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto  pt-10 md:pt-12 pb-5">
         <div class="grid grid-cols-1 md:grid-cols-4 items-start gap-8 md:gap-12">
 
             <div>
                 <h2 class="text-[40px] leading-[40px] font-semibold mb-4 md:mb-8">Logo</h2>
-                <p class="text-[14px] mb-3 md:mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi sequi
+                <p class="text-[14px] mb-3 md:mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                    commodi sequi
                     animi cum? Optio maiores a harum animi.</p>
                 <div class="flex justify-start items-center">
                     <a href="#"><img src="images/fb.png" alt=""></a>
@@ -306,9 +323,10 @@
             </div>
 
         </div>
-        <hr class="border-2 mb-4 border-white">
+        <hr class="border mb-4 border-[#86BBFD]">
         <p class="text-center text-[14px] ">© 2023 @ InvoiceUs All rights reserved</p>
     </footer>
+    </div>
 </body>
 
 </html>
