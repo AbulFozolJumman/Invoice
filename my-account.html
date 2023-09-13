@@ -189,7 +189,7 @@
                         </div>
 
                         <div class="flex items-center justify-end gap-2 absolute bottom-0 w-full p-4 bg-[#F8F8FA] border-t">
-                            <a class="border text-sm p-2 px-5 rounded" href="#">Cancel</a>
+                            <a class="border text-sm p-2 px-5 rounded" href="#" id="cancelButton9">Cancel</a>
                             <a class="bg-[#128CED] text-white text-sm py-2 px-5 rounded" href="#">Next</a>
                         </div>
                     </form>
@@ -393,5 +393,13 @@
         <p class="text-center text-[14px] text-[#1D2939]">© 2023 @ InvoiceUs All rights reserved</p>
     </footer>
 </body>
+<script>
+    const cancelButton9 = document.getElementById('cancelButton9');
+    const modal9 = document.getElementById('my_modal_9');
+
+    cancelButton9.addEventListener('click', () => {
+        modal9.close();
+    });
+</script>
 
 </html>
