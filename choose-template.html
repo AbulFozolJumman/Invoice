@@ -14,7 +14,7 @@
         .template .create {
             display: block;
             opacity: 0;
-            transition: opacity 1.5s ease;
+            transition: opacity 0.5s ease;
         }
 
         .template:hover .create {
@@ -319,8 +319,8 @@
                 </select>
 
                 <a class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
-                    href="templates.html">
-                    <img src="images/template-design.png" alt="">Change Template Design
+                    href="choose-template.html">
+                    <img src="images/template-design.png" alt="">Choose Template Design
                 </a>
 
                 <!-- Calling Empty Select client Modal -->
@@ -430,6 +430,49 @@
                     </form>
                 </dialog>
 
+                <!-- Calling Empty Select client Modal -->
+                <a onclick="my_modal_9.showModal()"
+                    class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
+                    href="#">
+                    <img src="images/add-client.png" alt="">Update Company info
+                </a>
+
+                <!-- Edit company info Modal -->
+                <dialog id="my_modal_9" class="modal">
+                    <form method="dialog" class="modal-box md:w-[500px] w-[90%] h-[350px] p-0 rounded-[5px]">
+                        <div class="flex items-center justify-start py-3 px-3 border-b gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="images/arrow-left-blue.png" alt=""></a>
+                            <p class="text-[15px]">Edit Company info</p>
+                        </div>
+
+                        <div class="w-full px-5 py-8">
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Company Name <input type="text"
+                                    placeholder="Company Name"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Email address <input
+                                    type="text" placeholder="Email address"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Phone number <input
+                                    type="text" placeholder="Phone number"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Address <input type="text"
+                                    placeholder="Business Address"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                        </div>
+
+                        <div
+                            class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#"
+                                id="cancelButton9">Cancel</a>
+
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Update</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+
                 <!-- Calling Select saved item -->
                 <a onclick="my_modal_6.showModal()"
                     class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-[30px]"
@@ -447,7 +490,7 @@
                             <p class="text-[15px]">Select saved item</p>
                         </div>
 
-                        <div class="flex items-center justify-between gap-2 mt-10 mx-5">
+                        <div class="flex items-center justify-between gap-2 mt-5 mx-5">
                             <input class="border w-full text-[12px] py-2 pl-2 rounded-[5px] h-[38px]" type="text"
                                 placeholder="Search by item name">
 
@@ -470,7 +513,7 @@
                                 <a href="#"><img src="images/delete.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between border mt-5 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
+                        <div class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
                             <div>
                                 <p class="text-[14px]">JBL Vibe 200TWS True Wireless Earbuds</p>
                                 <p class="text-[14px] font-medium">$80</p>
@@ -482,7 +525,7 @@
                                 <a href="#"><img src="images/delete.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between border mt-5 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
+                        <div class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
                             <div>
                                 <p class="text-[14px]">Amazon Fire TV Stick 4K Max device</p>
                                 <p class="text-[14px]">$80</p>
