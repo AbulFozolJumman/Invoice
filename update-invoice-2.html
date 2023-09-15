@@ -14,7 +14,7 @@
     <header>
         <!-- Navbar -->
         <div class="bg-[#F2F2F2] w-full shadow-lg mb-1">
-            <div class="navbar max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto">
+            <div class="navbar h-[64px] max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto">
                 <div class="navbar-start w-[150px]">
                     <div class="dropdown">
                         <label tabindex="0" class="btn lg:hidden md:mr-5 pl-0 hover:bg-[#F2F2F2] border-0">
@@ -386,12 +386,12 @@
                 </select>
 
                 <a class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
-                    href="templates.html">
+                    href="choose-template.html">
                     <img src="images/template-design.png" alt="">Choose Template Design
                 </a>
 
                 <!-- Calling Empty Select client Modal -->
-                <a onclick="my_modal_3.showModal()"
+                <a onclick="my_modal_5.showModal()"
                     class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
                     href="#">
                     <img src="images/add-client.png" alt="">Update Client info
@@ -463,25 +463,33 @@
 
                 <!-- Edit client info Modal -->
                 <dialog id="my_modal_5" class="modal">
-                    <form method="dialog" class="modal-box md:w-[350px] w-[90%] min-h-[300px] px-5 py-2 rounded-[5px]">
-                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                    <form method="dialog" class="modal-box md:w-[500px] w-[90%] h-[350px] p-0 rounded-[5px]">
+                        <div class="flex items-center justify-start py-3 px-3 border-b gap-2 bg-[#F8F8FA]">
                             <a href="#"><img src="images/arrow-left-blue.png" alt=""></a>
-                            <p>Edit client info</p>
+                            <p class="text-[15px]">Edit client info</p>
                         </div>
 
-                        <div class="w-full py-5 px-0">
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Client name <input type="text"
-                                    placeholder="John Doe" class="input input-bordered max-w-xs" /></p>
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Email address <input
-                                    type="text" placeholder="Example@gmail.com" class="input input-bordered max-w-xs" />
-                            </p>
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Address <input type="text"
-                                    placeholder="106/5, Dhaka, Bangladesh" class="input input-bordered max-w-xs" /></p>
+                        <div class="w-full px-5 py-8">
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Name <input type="text"
+                                    placeholder="Mr."
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Email address <input
+                                    type="text" placeholder="John@gmail.com"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Phone number <input
+                                    type="text" placeholder="(732) 280-1133"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Address <input type="text"
+                                    placeholder="1212 El Camino Real San Bruno, California"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
                         </div>
 
-                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
-                            <a class="border text-[12px] p-2" href="#" id="cancelButton5">Cancel</a>
-                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4" href="#">Ok</a>
+                        <div
+                            class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#"
+                                id="cancelButton5">Cancel</a>
+
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Update</a>
                         </div>
                     </form>
                     <form method="dialog" class="modal-backdrop">
@@ -490,11 +498,47 @@
                 </dialog>
 
                 <!-- Calling Empty Select client Modal -->
-                <a onclick="my_modal_3.showModal()"
+                <a onclick="my_modal_9.showModal()"
                     class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
                     href="#">
                     <img src="images/add-client.png" alt="">Update Company info
                 </a>
+
+                <!-- Edit company info Modal -->
+                <dialog id="my_modal_9" class="modal">
+                    <form method="dialog" class="modal-box md:w-[500px] w-[90%] h-[350px] p-0 rounded-[5px]">
+                        <div class="flex items-center justify-start py-3 px-3 border-b gap-2 bg-[#F8F8FA]">
+                            <a href="#"><img src="images/arrow-left-blue.png" alt=""></a>
+                            <p class="text-[15px]">Edit Company info</p>
+                        </div>
+
+                        <div class="w-full px-5 py-8">
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Company Name <input type="text"
+                                    placeholder="Company Name"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Email address <input
+                                    type="text" placeholder="Email address"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Phone number <input
+                                    type="text" placeholder="Phone number"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Address <input type="text"
+                                    placeholder="Business Address"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                        </div>
+
+                        <div
+                            class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#"
+                                id="cancelButton9">Cancel</a>
+
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Update</a>
+                        </div>
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
 
                 <!-- Calling Select saved item -->
                 <a onclick="my_modal_6.showModal()"
@@ -630,7 +674,7 @@
                 </dialog>
 
                 <a class="w-[220px] h-[40px] text-[14px] py-3 flex items-center justify-center gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
-                    href="create-Invoice-with-sender-and-receiver.html">
+                    href="preview-invoice.html">
                     <img src="images/save-white.png" alt="">Update
                 </a>
                 <a class="w-[220px] h-[40px] text-[14px] py-3 flex items-center justify-center gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
@@ -660,12 +704,14 @@
     const cancelButton6 = document.getElementById('cancelButton6');
     const cancelButton7 = document.getElementById('cancelButton7');
     const cancelButton8 = document.getElementById('cancelButton8');
+    const cancelButton9 = document.getElementById('cancelButton9');
     const modal3 = document.getElementById('my_modal_3');
     const modal4 = document.getElementById('my_modal_4');
     const modal5 = document.getElementById('my_modal_5');
     const modal6 = document.getElementById('my_modal_6');
     const modal7 = document.getElementById('my_modal_7');
     const modal8 = document.getElementById('my_modal_8');
+    const modal9 = document.getElementById('my_modal_9');
 
     cancelButton3.addEventListener('click', () => {
         modal3.close();
@@ -684,6 +730,9 @@
     });
     cancelButton8.addEventListener('click', () => {
         modal8.close();
+    });
+    cancelButton9.addEventListener('click', () => {
+        modal9.close();
     });
 </script>
 
