@@ -4,10 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Invoice - Add 1 items</title>
+    <title>Select Template</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .template .create {
+            display: block;
+            opacity: 0;
+            transition: opacity 1.5s ease;
+        }
+
+        .template:hover .create {
+            opacity: 1;
+            /* Change opacity to 1 when hovering */
+            display: block;
+        }
+    </style>
 </head>
 
 <body style="font-family: 'Inter';">
@@ -55,27 +70,23 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <div class="menu menu-horizontal px-1">
-                        
-                            <a href="dashboard.html"
-                                class="px-8 text-[16px] hover:text-[#128CED] text-[#128CED]">Invoices</a>
-                        
+
+                        <a href="dashboard.html"
+                            class="px-8 text-[16px] hover:text-[#128CED] text-[#128CED]">Invoices</a>
+
                         <a href="#" class="hover:text-[#128CED] pr-8 text-[16px]">Estimate</a>
-                        
-                            <a href="clients.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px]">Clients</a>
-                        
-                        
-                            <a href="items.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px]">Items</a>
-                        
-                        
-                            <a href="reports.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px]">Reports</a>
-                        
-                        
-                            <a href="settings.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px] mr-3">Settings</a>
-                        
+
+                        <a href="clients.html" class="hover:text-[#128CED] pr-8 text-[16px]">Clients</a>
+
+
+                        <a href="items.html" class="hover:text-[#128CED] pr-8 text-[16px]">Items</a>
+
+
+                        <a href="reports.html" class="hover:text-[#128CED] pr-8 text-[16px]">Reports</a>
+
+
+                        <a href="settings.html" class="hover:text-[#128CED] pr-8 text-[16px] mr-3">Settings</a>
+
                     </div>
                 </div>
                 <div class="navbar-end ml-auto">
@@ -83,8 +94,10 @@
                         <summary tabindex="0" class="btn m-1 hover:bg-transparent p-0 m-0 border-none mr-2 xl:mr-5">
                             <div><img class="w-9 h-9" src="images/notification+dot.png" alt=""></div>
                         </summary>
-                        <ul tabindex="0" class="dropdown-content z-[1] p-5 menu shadow bg-white rounded-[5px] w-[350px] border">
-                            <a href="#" class="flex items-start justify-center gap-2 rounded-[5px] p-2 hover:bg-[#f2f2f2]">
+                        <ul tabindex="0"
+                            class="dropdown-content z-[1] p-5 menu shadow bg-white rounded-[5px] w-[350px] border">
+                            <a href="#"
+                                class="flex items-start justify-center gap-2 rounded-[5px] p-2 hover:bg-[#f2f2f2]">
                                 <img class="pt-1" src="images/oval.png" alt="">
                                 <div>
                                     <h3 class="text-[14px] text-[#128CED] font-medium">Agent Rose</h3>
@@ -92,7 +105,8 @@
                                 </div>
                                 <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">18min.</p>
                             </a>
-                            <a href="#" class="flex items-start justify-center gap-4 rounded-[5px] p-2 hover:bg-[#f2f2f2]">
+                            <a href="#"
+                                class="flex items-start justify-center gap-4 rounded-[5px] p-2 hover:bg-[#f2f2f2]">
                                 <img class="pt-1" src="images/oval.png" alt="">
                                 <div>
                                     <h3 class="text-[14px] text-[#128CED] font-medium">GOGE Team</h3>
@@ -101,7 +115,8 @@
                                 </div>
                                 <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">34min.</p>
                             </a>
-                            <a href="#" class="flex items-start justify-center gap-2 rounded-[5px] p-2 hover:bg-[#f2f2f2]">
+                            <a href="#"
+                                class="flex items-start justify-center gap-2 rounded-[5px] p-2 hover:bg-[#f2f2f2]">
                                 <img class="pt-1" src="images/oval.png" alt="">
                                 <div>
                                     <h3 class="text-[14px] text-[#128CED] font-medium">Halloween Promo</h3>
@@ -110,7 +125,8 @@
                                 </div>
                                 <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">1hour</p>
                             </a>
-                            <a href="#" class="flex items-start justify-center gap-2 rounded-[5px] p-2 hover:bg-[#f2f2f2]">
+                            <a href="#"
+                                class="flex items-start justify-center gap-2 rounded-[5px] p-2 hover:bg-[#f2f2f2]">
                                 <img class="pt-1" src="images/oval.png" alt="">
                                 <div>
                                     <h3 class="text-[14px] text-[#128CED] font-medium">GOGO Team</h3>
@@ -119,12 +135,14 @@
                                 </div>
                                 <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">2hour</p>
                             </a>
-                            <button class="text-white text-[14px] bg-[#128CED] px-4 py-2 mt-4 mb-2 block mx-auto rounded-[5px]">View
+                            <button
+                                class="text-white text-[14px] bg-[#128CED] px-4 py-2 mt-4 mb-2 block mx-auto rounded-[5px]">View
                                 More</button>
                         </ul>
                     </details>
                     <details class="dropdown dropdown-end">
-                        <summary tabindex="0" class="btn hover:border hover:border-[#F2F2F2] p-0 m-0 hover:bg-[#F2F2F2] rounded-[5px]">
+                        <summary tabindex="0"
+                            class="btn hover:border hover:border-[#F2F2F2] p-0 m-0 hover:bg-[#F2F2F2] rounded-[5px]">
                             <div class="flex items-center justify-start gap-1" href="#">
                                 <img class="h-9 w-9" src="images/profile.png" alt="">
                                 <h5 class="capitalize hidden md:block p-0 m-0 text-[15px]">Devon Lane</h5>
@@ -133,12 +151,15 @@
                         </summary>
                         <ul tabindex="0"
                             class="dropdown-content z-[1] menu p-2 shadow bg-base-100 m-1 rounded-[5px] border-[#CCD5DF] border w-[200px]">
-                            <li><a class="py-3 m-1 rounded-[5px]" href="my-account.html" href="my-account.html"><img src="images/client.png"
-                                        alt="">My Account</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="settings.html"><img src="images/settings.png" alt="">Account
+                            <li><a class="py-3 m-1 rounded-[5px]" href="my-account.html" href="my-account.html"><img
+                                        src="images/client.png" alt="">My Account</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="settings.html"><img src="images/settings.png"
+                                        alt="">Account
                                     Settings</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="faq.html"><img src="images/faq-sign.png" alt="">FAQ</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="#"><img src="images/logout.png" alt="">Log Out</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="faq.html"><img src="images/faq-sign.png"
+                                        alt="">FAQ</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="#"><img src="images/logout.png" alt="">Log
+                                    Out</a></li>
                         </ul>
                     </details>
                 </div>
@@ -150,170 +171,139 @@
     <main class="min-h-screen">
 
         <section
-            class="max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto  py-12 mx-auto flex flex-col md:flex-row items-start justify-between xl:gap-12 gap-5">
+            class="max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto pt-10 mx-auto flex flex-col md:flex-row items-start justify-between xl:gap-12 gap-5">
 
-            <div class="border-t-2 border-[#128CED] shadow-lg md:p-5 p-3 lg:w-full md:w-[70%] w-full">
-                <div class="flex flex-col lg:flex-row items-start justify-between gap-5">
-                    <div class="md:p-5 p-2 border border-[#DEE2E6] bg-[#F8F9FA] w-full">
-                        <p class="font-semibold mb-4 text-xl">From</p>
-                        <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Name <input
-                                type="text" placeholder="Business Name"
-                                class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                        </p>
-                        <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Email <input
-                                type="text" placeholder="Email address"
-                                class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                        </p>
-                        <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Address <input
-                                type="text" placeholder="Address"
-                                class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                        </p>
-                    </div>
-                    <div class="md:p-5 p-2 border border-[#DEE2E6] bg-[#F8F9FA] w-full">
-                        <p class="font-semibold mb-4 text-xl">To</p>
-                        <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Name <input
-                                type="text" placeholder="Client Name"
-                                class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                        </p>
-                        <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Email <input
-                                type="text" placeholder="Email Address"
-                                class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                        </p>
-                        <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Address <input
-                                type="text" placeholder="Address"
-                                class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                        </p>
-                    </div>
-                </div>
+            <!-- Popular Invoice templates -->
+            <div class="md:p-5 p-3 md:pt-0 lg:w-full md:w-[70%] w-full">
+                <p class="md:w-[364px] w-[280px] text-xl md:text-[24px] text-center py-2 text-white bg-[#23A6F0]">
+                    Popular Invoice Templates</p>
+                <hr class="border-[#23A6F0] border-2 mt-0 mb-10">
 
-                <div class="md:w-[50%] py-5 px-0">
-                    <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Invoice Number <input
-                            type="text" placeholder="INV001"
-                            class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                    </p>
-                    <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Invoice Date <input
-                            type="text" placeholder="Aug 7, 2023"
-                            class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                    </p>
-                    <p class="mb-1 text-sm flex gap-2 items-center justify-between text-[#9F9F9F]">Due Date <input
-                            type="text" placeholder="Dec 7, 2022"
-                            class="input text-sm h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px]" />
-                    </p>
-                </div>
-
-                <!-- Table -->
-                <div class="lg:overflow-clip overflow-x-scroll">
-                    <table class="w-full min-w-[700px]">
-                        <thead>
-                            <th class="text-left pr-3 pb-2">Item name</th>
-                            <th class="text-left pr-3 pb-2">Qty</th>
-                            <th class="text-left pr-3 pb-2">Price</th>
-                            <th class="text-left pr-3 pb-2">VAT</th>
-                            <th class="pb-2">Total</th>
-                            <th class="pb-2"></th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="pr-3"><input type="text" placeholder="Item Name"
-                                        class="input input-bordered text-sm h-[38px] rounded-[5px] w-full max-w-xs" />
-                                </td>
-                                <td class="pr-3"><input type="text" placeholder="1.00"
-                                        class="input input-bordered text-sm h-[38px] rounded-[5px] py-3 w-[100px] max-w-xs" />
-                                </td>
-                                <td class="pr-3"><input type="text" placeholder="$2.00"
-                                        class="input input-bordered text-sm h-[38px] rounded-[5px] py-3 w-[100px] max-w-xs" />
-                                </td>
-                                <td class="pr-3"><input type="text" placeholder="Ex 1%"
-                                    class="input input-bordered text-sm h-[38px] rounded-[5px] py-3 w-[100px] max-w-xs" /></td>
-                                <td>
-                                    <div class="flex gap-1">
-                                        <input type="text" placeholder="$2.00"
-                                            class="input input-bordered text-sm h-[38px] rounded-[5px] py-3 w-[100px] max-w-xs" />
-                                    </div>
-                                </td>
-                                <td>
-                                    <img class="h-[38px]" src="images/delete.png" alt="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <a href="add-3-items.html"
-                    class="text-[
-                #272B30] text-[14px] flex items-center justify-center gap-3 py-4 my-5 border-dashed border-2 border-[#DEE2E6]">
-                    <img src="images/plus.png" alt="">
-                    Add New Item
-                </a>
-
-                <!-- Total -->
-                <div class="md:w-[300px] w-[280px] ml-auto">
-                    <div class="flex items-center justify-between bg-[#DEE2E6] rounded-[4px] py-3">
-                        <p class="text-[#4F575E] text-[14px] font-semibold pl-7">Invoice Summery</p>
-                        <p class="text-[#4F575E] text-[14px] font-semibold pr-7">Amount</p>
-                        <!-- <div class="dropdown dropdown-hover">
-                        <label tabindex="0" class="btn m-1 bg-[#DEE2E6] border border-[#ADB5BD]">
-                            <a class="flex items-center justify-start gap-10" href="#">
-                                <h5 class="text-[14px] font-normal">usd</h5>
-                                <img src="images/down.png" alt="">
-                            </a>
-                        </label>
-                        <ul tabindex="0"
-                            class="dropdown-content hidden z-[1] menu p-2 shadow bg-[#F2F2F2] rounded-box w-26">
-                            <li><a>
-                                    <img src="images/uk.png" alt="">
-                                    EN
-                                </a></li>
-                            <li><a>
-                                    <img src="images/france.png" alt="">
-                                    RU
-                                </a></li>
-                            </a></li>
-                            <li><a>
-                                    <img src="images/france.png" alt="">
-                                    FR
-                                </a></li>
-                            </a></li>
-                            <li><a>
-                                    <img src="images/uk.png" alt="">
-                                    UK
-                                </a></li>
-                        </ul>
-                    </div> -->
+                <div class="grid md:grid-cols-3 grid-cols-1 items-center xl:gap-12 lg:gap-8 gap-8 md:gap-4 mb-10">
+                    <div class="relative template">
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Business Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/military-orange.png" alt="">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
                     </div>
-                    <div class="flex items-center justify-between px-7 pt-2 text-[14px]">
-                        <p>Total Amount</p>
-                        <p>$5000</p>
+                    <div class="relative template">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Internet Bill Template</p>
+                        <img class="border border-[#108bf833] p-[11px]" src="images/MapReceipt_sm.png" alt="">
                     </div>
-                    <div class="flex items-center justify-between px-7 pt-2 text-[14px]">
-                        <p>Total Amount</p>
-                        <p>$2000</p>
+                    <div class="relative template">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Sales Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/cool-waves.png" alt="">
                     </div>
-                    <div class="flex items-center justify-between px-7 pt-2 pb-8 text-[14px]">
-                        <p>Total Amount</p>
-                        <p>$3000</p>
+                    <div class="relative template">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Sales Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/cool-waves.png" alt="">
+                    </div>
+                    <div class="relative template">
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Business Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/military-orange.png" alt="">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                    </div>
+                    <div class="relative template">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Business Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/connect-rbw.png" alt="">
+                    </div>
+                    <div class="relative template">
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Business Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/military-orange.png" alt="">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                    </div>
+                    <div class="relative template">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Internet Bill Template</p>
+                        <img class="border border-[#108bf833] p-[11px]" src="images/MapReceipt_sm.png" alt="">
+                    </div>
+                    <div class="relative template">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Sales Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/cool-waves.png" alt="">
+                    </div>
+                    <div class="relative template">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Sales Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/cool-waves.png" alt="">
+                    </div>
+                    <div class="relative template">
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Business Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/military-orange.png" alt="">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                    </div>
+                    <div class="relative template">
+                        <a href="#"
+                            class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center px-6 py-10 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
+                            <p>Select</p>
+                        </a>
+                        <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img
+                                src="images/three-line.png" alt="">
+                            Business Invoice Template</p>
+                        <img class="border border-[#108bf833]" src="images/connect-rbw.png" alt="">
                     </div>
                 </div>
 
-                <div class="mb-5 w-full">
-                    <p class="text-[14px] font-medium text[#555555] pb-2">Notes</p>
-                    <textarea placeholder=""
-                        class="textarea textarea-bordered textarea-xs w-full h-[150px] rounded-[5px]"></textarea>
-                </div>
-
-                <div class="flex flex-col lg:flex-row items-center justify-center gap-5">
-                    <a href="#"
-                        class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[5px] flex items-center justify-center gap-3 border border-[#CED4DA]">
-                        <img src="images/upload.png" alt="">
-                        Choose Logo
-                    </a>
-                    <a href="#"
-                        class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[5px] flex items-center justify-center gap-3 border border-[#CED4DA]">
-                        <img src="images/signature.png" alt="">
-                        Signature
-                    </a>
-                </div>
-
+                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-2 text-center w-[130px] mx-auto block rounded-[5px] mb-12 font-medium text-[15px] hover:bg-gradient-to-r hover:from-[#FFFFFF] hover:to-[#FFFFFF] hover:border hover:border-[#128CED] hover:text-[#128CED] hover:py-[7px]"
+                    href="#">Load more</a>
             </div>
 
             <div>
@@ -329,7 +319,7 @@
                 </select>
 
                 <a class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
-                    href="select-template.html">
+                    href="#">
                     <img src="images/template-design.png" alt="">Select Template
                 </a>
 
@@ -430,12 +420,13 @@
 
                 <!-- Calling Select saved item -->
                 <a onclick="my_modal_6.showModal()"
-                    class="w-[220px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-[30px]"
+                    class="w-[220px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-8"
                     href="#">
                     <img src="images/add-save-item.png" alt="">Add Saved Items
                 </a>
 
                 <hr class="mb-[30px] border border-[#DEE2E6]">
+
 
                 <!-- Select saved item modal -->
                 <dialog id="my_modal_6" class="modal">
@@ -624,12 +615,14 @@
     const cancelButton6 = document.getElementById('cancelButton6');
     const cancelButton7 = document.getElementById('cancelButton7');
     const cancelButton8 = document.getElementById('cancelButton8');
+    const cancelButton9 = document.getElementById('cancelButton9');
     const modal3 = document.getElementById('my_modal_3');
     const modal4 = document.getElementById('my_modal_4');
     const modal5 = document.getElementById('my_modal_5');
     const modal6 = document.getElementById('my_modal_6');
     const modal7 = document.getElementById('my_modal_7');
     const modal8 = document.getElementById('my_modal_8');
+    const modal9 = document.getElementById('my_modal_9');
 
     cancelButton3.addEventListener('click', () => {
         modal3.close();
@@ -648,6 +641,9 @@
     });
     cancelButton8.addEventListener('click', () => {
         modal8.close();
+    });
+    cancelButton9.addEventListener('click', () => {
+        modal9.close();
     });
 </script>
 
