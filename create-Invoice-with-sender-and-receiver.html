@@ -423,7 +423,7 @@
                 </a>
 
 
-                <!-- Select saved item -->
+                <!-- Select saved item modal -->
                 <dialog id="my_modal_6" class="modal">
                     <form method="dialog" class="modal-box md:w-[470px] w-[90%] min-h-[450px] p-0 rounded-[5px]">
                         <div class="flex items-center justify-start py-3 px-3 border-b gap-2 bg-[#F8F8FA]">
@@ -431,7 +431,7 @@
                             <p class="text-[15px]">Select saved item</p>
                         </div>
 
-                        <div class="flex items-center justify-between gap-2 mt-10 mx-5">
+                        <div class="flex items-center justify-between gap-2 mt-5 mx-5">
                             <input class="border w-full text-[12px] py-2 pl-2 rounded-[5px] h-[38px]" type="text"
                                 placeholder="Search by item name">
 
@@ -442,9 +442,9 @@
                             </a>
                         </div>
 
-                        <div class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
+                        <div class="flex items-center justify-between border mt-5 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
                             <div>
-                                <p class="font-semibold">Amazon Fire TV Stick 4K Max device</p>
+                                <p class="text-[14px]">Amazon Fire TV Stick 4K Max device</p>
                                 <p class="text-[14px]">$80</p>
                             </div>
                             <div class="flex gap-1">
@@ -456,8 +456,8 @@
                         </div>
                         <div class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
                             <div>
-                                <p class="font-semibold">JBL Vibe 200TWS True Wireless Earbuds</p>
-                                <p class="text-[14px]">$80</p>
+                                <p class="text-[14px]">JBL Vibe 200TWS True Wireless Earbuds</p>
+                                <p class="text-[14px] font-medium">$80</p>
                             </div>
                             <div class="flex gap-1">
 
@@ -468,7 +468,7 @@
                         </div>
                         <div class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
                             <div>
-                                <p class="font-semibold">Amazon Fire TV Stick 4K Max device</p>
+                                <p class="text-[14px]">Amazon Fire TV Stick 4K Max device</p>
                                 <p class="text-[14px]">$80</p>
                             </div>
                             <div class="flex gap-1">
@@ -481,7 +481,8 @@
 
                         <div
                             class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
-                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#">Cancel</a>
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#"
+                                id="cancelButton6">Cancel</a>
                             <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Ok</a>
                         </div>
                     </form>
@@ -561,6 +562,39 @@
             </div>
 
         </section>
+
+        <!-- Chatbot -->
+        <a class="fixed top-[50%] right-0 pr-1" onclick="my_modal_2.showModal()" href="#">
+            <img src="images/chat-bot.png" alt="">
+        </a>
+
+        <!-- Chatbot Modal -->
+        <dialog id="my_modal_2" class="modal">
+            <form method="dialog"
+                class="modal-box w-[350px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
+                <div class="flex items-center justify-start p-3 gap-2 bg-[#294DFF]">
+                    <img src="images/chat-logo.png" alt="">
+                    <p class="text-white text-sm">Invoice Us Support</p>
+                </div>
+                <div class="flex items-start justify-start gap-2 p-3 pr-8">
+                    <img src="images/chat-logo-2.png" alt="">
+                    <div>
+                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Thank you for contacting InvoiceUs
+                            Support.</p>
+                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find you
+                            an answer. I do best with "How to" style
+                            questions.</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between border-t p-3 gap-2 absolute bottom-0 w-full">
+                    <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text" placeholder="Write a message">
+                    <a href="#"><img class="w-5 h-5" src="images/send.png" alt=""></a>
+                </div>
+            </form>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>
 
     </main>
 
