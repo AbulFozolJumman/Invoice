@@ -16,8 +16,8 @@
         <div class="bg-[#F2F2F2] w-full shadow-lg mb-1">
             <div class="navbar h-[64px] max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto">
                 <div class="navbar-start w-[150px]">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn lg:hidden md:mr-5 pl-0 hover:bg-[#F2F2F2] border-0">
+                    <div class="dropdown mr-5 lg:mr-0">
+                        <label tabindex="0" class="btn lg:hidden p-0 m-0 hover:bg-[#F2F2F2] border-0">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -25,7 +25,7 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box w-[130px]">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box rounded-[5px]  w-[130px]">
                             <li>
                                 <a href="dashboard.html"
                                     class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2 text-[#128CED]">Invoices</a>
@@ -151,10 +151,10 @@
         <section class=" max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto min-h-screen">
             <!-- Search input -->
             <div
-                class="flex flex-col md:flex-row justify-between mx-auto gap-2 h-[40px] md:w-[410px] md:my-9 mt-8  md:border md:border-[#CDD5DF] rounded-[5px] pl-1">
+                class="flex flex-col md:flex-row justify-between mx-auto gap-2 h-[40px] max-w-[410px] md:my-9 mt-8 mb-[70px] md:border md:border-[#CDD5DF] rounded-[5px] pl-1">
                 <div class="relative">
                     <input
-                        class="border md:border-0 rounded-[5px] border-[#CDD5DF] md:h-[38px] h-[48px] md:w-[300px] w-[280px] md:pl-10 pl-8 pr-0 text-[14px] text-[#667085] outline-0"
+                        class="border md:border-0 rounded-[5px] border-[#CDD5DF] h-[38px] md:w-[300px] w-full md:pl-10 pl-8 pr-0 text-[14px] text-[#667085] outline-0"
                         type="text" placeholder="Search by customer, item or address">
                     <a class="left-[8px] top-[10px] h-[38px] absolute" href="#"><img src="images/search.png" alt=""></a>
                 </div>
@@ -167,25 +167,25 @@
                 <!-- Routes -->
                 <div class="mb-8 bg-[#cdd5df80] rounded-[5px] p-[5px]">
                     <div class="flex-wrap">
-                        <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white" href="dashboard.html">All
+                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white" href="dashboard.html">All
                             Invoice</a>
-                        <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                             href="paid.html">Paid</a>
-                        <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                             href="unpaid.html">Unpaid</a>
-                        <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                             href="partiallyPaid.html">Partially Paid</a>
-                        <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                             href="overdue.html">Overdue</a>
-                        <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] bg-[#128CED] text-white"
+                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] bg-[#128CED] text-white"
                             href="mailSent.html">Mail sent(2)</a>
-                        <a class="px-6 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
                             href="trash.html">Trash</a>
                     </div>
                 </div>
 
                 <div
-                    class="flex items-center md:mb-8 justify-start gap-2 w-[160px] rounded-[5px] bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
+                    class="flex items-center mb-8 justify-start gap-2 w-[160px] rounded-[5px] bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
                     <a href="add-1-items.html" class="text-white capitalize pl-5 font-normal text-[15px] py-2 rounded-[5px]">New
                         Invoice</a>
                     <details class="dropdown dropdown-bottom dropdown-end">
@@ -204,8 +204,8 @@
             </div>
 
             <!-- Table -->
-            <div class="rounded-[5px] mb-3 border">
-                <table class="table table-zebra min-w-[928px]">
+            <div class="lg:overflow-x-auto overflow-x-scroll rounded-[5px] mb-3 border border-[#CCD5DF]">
+                <table class="table table-zebra min-w-[900px]">
                     <!-- head -->
                     <thead class="text-[14px] font-semibold text-white bg-[#128CED]">
                         <tr>
