@@ -177,18 +177,18 @@
                     </div>
                 </div>
 
-                <div class="md:w-[50%] py-5 px-0">
-                    <p class="mb-1 text-xs flex gap-2 items-center justify-between text-[
-#454545]">Invoice Number <input type="text" placeholder="INV001"
-                            class="input text-xs h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px] h-[40px]" />
+                <div class="lg:w-[50%] py-5 px-0">
+                    <p class="mb-1 text-xs md:text-sm flex md:gap-2 items-center justify-between text-[#9F9F9F]"><span
+                            class="30%">Invoice Number</span> <input type="text" placeholder="INV001"
+                            class="input md:text-sm text-xs h-[38px] mb-1 rounded-[5px] w-[70%] input-bordered xl:w-[320px] lg:w-[220px]" />
                     </p>
-                    <p class="mb-1 text-xs flex gap-2 items-center justify-between text-[
-#454545]">Invoice Date <input type="text" placeholder="Aug 7, 2023"
-                            class="input text-xs h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px] h-[40px]" />
+                    <p class="mb-1 text-xs md:text-sm flex md:gap-2 items-center justify-between text-[#9F9F9F]"><span
+                            class="30%">Invoice Date</span> <input type="text" placeholder="Aug 7, 2023"
+                            class="input md:text-sm text-xs h-[38px] mb-1 rounded-[5px] w-[70%] input-bordered xl:w-[320px] lg:w-[220px]" />
                     </p>
-                    <p class="mb-1 text-xs flex gap-2 items-center justify-between text-[
-#454545]">Due Date <input type="text" placeholder="Dec 7, 2022"
-                            class="input text-xs h-[38px] mb-1 rounded-[5px] w-full input-bordered xl:w-[320px] lg:w-[220px] h-[40px]" />
+                    <p class="mb-1 text-xs md:text-sm flex md:gap-2 items-center justify-between text-[#9F9F9F]"><span
+                            class="30%">Due Date</span> <input type="text" placeholder="Dec 7, 2022"
+                            class="input md:text-sm text-xs h-[38px] mb-1 rounded-[5px] w-[70%] input-bordered xl:w-[320px] lg:w-[220px]" />
                     </p>
                 </div>
 
@@ -305,7 +305,7 @@
                 </a>
 
                 <!-- Total -->
-                <div class="md:w-[300px] w-[280px] ml-auto">
+                <div class="md:w-[300px] min-w-[260px] md:ml-auto md:mr-0 mx-auto">
                     <div class="flex items-center justify-between bg-[#DEE2E6] rounded-[4px] py-3">
                         <p class="text-[#4F575E] text-[14px] font-semibold pl-7">Invoice Summery</p>
                         <p class="text-[#4F575E] text-[14px] font-semibold pr-7">Amount</p>
@@ -360,14 +360,14 @@
                         class="textarea textarea-bordered textarea-xs w-full h-[150px] rounded-[5px]"></textarea>
                 </div>
 
-                <div class="flex items-start justify-center gap-5">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-5 mb-3">
                     <a href="#"
-                        class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[3px] flex items-center justify-center gap-3 border border-[#CED4DA]">
+                        class="text-[18px] text-[#454545] h-[98px] py-7 lg:px-20 md:px-8 px-16 bg-[#F8F9FA] rounded-[5px] flex items-center justify-center gap-3 border border-[#CED4DA]">
                         <img src="images/upload.png" alt="">
                         Choose Logo
                     </a>
                     <a href="#"
-                        class="text-[18px] text-[#454545] py-7 px-20 bg-[#F8F9FA] rounded-[3px] flex items-center justify-center gap-3 border border-[#CED4DA]">
+                        class="text-[18px] text-[#454545] h-[98px] py-7 lg:px-20 md:px-10 px-20 bg-[#F8F9FA] rounded-[5px] flex items-center justify-center gap-3 border border-[#CED4DA]">
                         <img src="images/signature.png" alt="">
                         Signature
                     </a>
@@ -392,98 +392,39 @@
                     <img src="images/template-design.png" alt="">Choose Template Design
                 </a>
 
-                <!-- Calling Empty Select client Modal -->
+                <!-- Calling Update Client info Modal -->
                 <a onclick="my_modal_5.showModal()"
                     class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
                     href="#">
                     <img src="images/add-client.png" alt="">Update Client info
                 </a>
 
-                <!-- Empty Select client Modal -->
-                <dialog id="my_modal_3" class="modal p-0">
-                    <form method="dialog" class="modal-box md:w-[400px] w-[90%] min-h-[450px] p-0 rounded-[5px]">
-                        <div class="flex items-center justify-start p-3  gap-2 bg-[#F8F8FA] border-b border-[#EBEDF0]">
-                            <a href="#"><img src="images/arrow-left-blue.png" alt=""></a>
-                            <p class="text-[15px]">Select Client</p>
-                        </div>
-
-                        <div class="flex items-center justify-between gap-3 mt-5 px-5">
-                            <input class="border w-full text-[12px] py-2 pl-2 rounded-[5px]" type="text"
-                                placeholder="Search by client name">
-
-                            <!-- Calling Create client Modal -->
-                            <a onclick="my_modal_4.showModal()" href="#"
-                                class="p-2 bg-[#128CED] w-[170px] text-[12px] text-white flex items-center gap-1 rounded-[5px]">
-                                <img src="images/plus-white.png" alt="">Create Client
-                            </a>
-                        </div>
-
-                        <div
-                            class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
-                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" id="cancelButton3"
-                                href="#">Cancel</a>
-                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Ok</a>
-                        </div>
-                    </form>
-                    <form method="dialog" class="modal-backdrop">
-                        <button>close</button>
-                    </form>
-                </dialog>
-
-                <!-- Create client Modal -->
-                <dialog id="my_modal_4" class="modal">
-                    <form method="dialog" class="modal-box md:w-[400px] w-[90%] min-h-[300px] p-0 rounded-[5px]">
-                        <div class="flex items-center justify-start py-3 px-3 border-b gap-2 bg-[#F8F8FA]">
-                            <a href="#"><img src="images/arrow-left-blue.png" alt=""></a>
-                            <p class="text-[15px]">Add new client</p>
-                        </div>
-
-                        <div class="w-full p-5">
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Client name <input type="text"
-                                    placeholder="Client name"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] max-w-xs" /></p>
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Email address <input
-                                    type="text" placeholder="Email address"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] max-w-xs" /></p>
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Address <input type="text"
-                                    placeholder="Business address"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] max-w-xs" /></p>
-                        </div>
-
-                        <div
-                            class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
-                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#"
-                                id="cancelButton4">Cancel</a>
-
-                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Ok</a>
-                        </div>
-                    </form>
-                    <form method="dialog" class="modal-backdrop">
-                        <button>close</button>
-                    </form>
-                </dialog>
-
-                <!-- Edit client info Modal -->
+                <!-- Update Client info Modal -->
                 <dialog id="my_modal_5" class="modal">
                     <form method="dialog" class="modal-box md:w-[500px] w-[90%] h-[350px] p-0 rounded-[5px]">
                         <div class="flex items-center justify-start py-3 px-3 border-b gap-2 bg-[#F8F8FA]">
                             <a href="#"><img src="images/arrow-left-blue.png" alt=""></a>
-                            <p class="text-[15px]">Edit client info</p>
+                            <p class="text-[15px]">Update client info</p>
                         </div>
 
                         <div class="w-full px-5 py-8">
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Name <input type="text"
-                                    placeholder="Mr."
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Email address <input
-                                    type="text" placeholder="John@gmail.com"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Phone number <input
-                                    type="text" placeholder="(732) 280-1133"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Address <input type="text"
+                            <p class="mb-2 text-[14px] flex items-center justify-between"><span
+                                    class="w-[30%]">Name</span> <input type="text" placeholder="Mr."
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] md:w-[280px] w-[70%]" />
+                            </p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between"><span class="w-[30%]">Email
+                                    address</span> <input type="text" placeholder="John@gmail.com"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] md:w-[280px] w-[70%]" />
+                            </p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between"><span class="w-[30%]">Phone
+                                    number</span> <input type="text" placeholder="(732) 280-1133"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] md:w-[280px] w-[70%]" />
+                            </p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between"><span
+                                    class="w-[30%]">Address</span> <input type="text"
                                     placeholder="1212 El Camino Real San Bruno, California"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] md:w-[280px] w-[70%]" />
+                            </p>
                         </div>
 
                         <div
@@ -499,34 +440,39 @@
                     </form>
                 </dialog>
 
-                <!-- Calling Empty Select client Modal -->
+                <!-- Calling Update Company info Modal -->
                 <a onclick="my_modal_9.showModal()"
                     class="w-[220px] h-[40px] text-[14px] py-3 pl-3 flex items-center justify-start gap-2 bg-[#F8F9FA] border border-[#CED4DA] rounded-[4px] mb-2"
                     href="#">
                     <img src="images/add-client.png" alt="">Update Company info
                 </a>
 
-                <!-- Edit company info Modal -->
+                <!-- Update company info Modal -->
                 <dialog id="my_modal_9" class="modal">
-                    <form method="dialog" class="modal-box md:w-[500px] w-[90%] h-[350px] p-0 rounded-[5px]">
+                    <form method="dialog" class="modal-box md:w-[500px] w-[90%] md:h-[350px] min-h-[400px] p-0 rounded-[5px]">
                         <div class="flex items-center justify-start py-3 px-3 border-b gap-2 bg-[#F8F8FA]">
                             <a href="#"><img src="images/arrow-left-blue.png" alt=""></a>
-                            <p class="text-[15px]">Edit Company info</p>
+                            <p class="text-[15px]">Update Company info</p>
                         </div>
 
                         <div class="w-full px-5 py-8">
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Company Name <input type="text"
-                                    placeholder="Company Name"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Email address <input
-                                    type="text" placeholder="Email address"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Phone number <input
-                                    type="text" placeholder="Phone number"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Address <input type="text"
-                                    placeholder="Business Address"
-                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between"><span class="w-[30%]">Company
+                                    Name</span> <input type="text" placeholder="Company Name"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] md:w-[280px] w-[70%]" />
+                            </p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between"><span class="w-[30%]">Email
+                                    address</span> <input type="text" placeholder="John@gmail.com"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] md:w-[280px] w-[70%]" />
+                            </p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between"><span class="w-[30%]">Phone
+                                    number</span> <input type="text" placeholder="(732) 280-1133"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] md:w-[280px] w-[70%]" />
+                            </p>
+                            <p class="mb-2 text-[14px] flex items-center justify-between"><span
+                                    class="w-[30%]">Address</span> <input type="text"
+                                    placeholder="1212 El Camino Real San Bruno, California"
+                                    class="input input-bordered rounded-[5px] text-[15px] h-[38px] md:w-[280px] w-[70%]" />
+                            </p>
                         </div>
 
                         <div
@@ -548,9 +494,6 @@
                     href="#">
                     <img src="images/add-save-item.png" alt="">Add Saved Items
                 </a>
-
-                <hr class="mb-[30px] border border-[#DEE2E6]">
-
                 <!-- Select saved item modal -->
                 <dialog id="my_modal_6" class="modal">
                     <form method="dialog" class="modal-box md:w-[470px] w-[90%] min-h-[450px] p-0 rounded-[5px]">
@@ -559,7 +502,7 @@
                             <p class="text-[15px]">Select saved item</p>
                         </div>
 
-                        <div class="flex items-center justify-between gap-2 mt-5 mx-5">
+                        <div class="flex items-center justify-between gap-2 mt-5 md:mx-5 mx-2">
                             <input class="border w-full text-[12px] py-2 pl-2 rounded-[5px] h-[38px]" type="text"
                                 placeholder="Search by item name">
 
@@ -570,10 +513,11 @@
                             </a>
                         </div>
 
-                        <div class="flex items-center justify-between border mt-5 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
+                        <div
+                            class="flex items-center justify-between border mt-5 p-2 bg-[#F8F8FA] md:mx-5 mx-2 rounded-[5px]">
                             <div>
-                                <p class="text-[14px]">Amazon Fire TV Stick 4K Max device</p>
-                                <p class="text-[14px]">$80</p>
+                                <p class="text-[12px]">Amazon Fire TV Stick 4K Max device</p>
+                                <p class="text-[12px]">$80</p>
                             </div>
                             <div class="flex gap-1">
 
@@ -582,10 +526,11 @@
                                 <a href="#"><img src="images/delete.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
+                        <div
+                            class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA]  md:mx-5 mx-2 rounded-[5px]">
                             <div>
-                                <p class="text-[14px]">JBL Vibe 200TWS True Wireless Earbuds</p>
-                                <p class="text-[14px] font-medium">$80</p>
+                                <p class="text-[12px]">JBL Vibe 200TWS True Wireless Earbuds</p>
+                                <p class="text-[12px] font-medium">$80</p>
                             </div>
                             <div class="flex gap-1">
 
@@ -594,10 +539,11 @@
                                 <a href="#"><img src="images/delete.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA] mx-5 rounded-[5px]">
+                        <div
+                            class="flex items-center justify-between border mt-2 p-2 bg-[#F8F8FA] md:mx-5 mx-2 rounded-[5px]">
                             <div>
-                                <p class="text-[14px]">Amazon Fire TV Stick 4K Max device</p>
-                                <p class="text-[14px]">$80</p>
+                                <p class="text-[12px]">Amazon Fire TV Stick 4K Max device</p>
+                                <p class="text-[12px]">$80</p>
                             </div>
                             <div class="flex gap-1">
 
@@ -650,30 +596,34 @@
 
                 <!-- Edit Item info Modal -->
                 <dialog id="my_modal_8" class="modal">
-                    <form method="dialog" class="modal-box md:w-[450px] w-[90%] min-h-[300px] px-5 py-2 rounded-[5px]">
-                        <div class="flex items-center justify-start p-2 gap-2 bg-[#F8F8FA]">
+                    <form method="dialog" class="modal-box md:w-[400px] w-[90%] min-h-[300px] p-0 rounded-[5px]">
+                        <div class="flex items-center justify-start py-3 px-3 border-b gap-2 bg-[#F8F8FA]">
                             <a href="#"><img src="images/arrow-left-blue.png" alt=""></a>
-                            <p>Edit Item info</p>
+                            <p class="text-[15px]">Edit item info</p>
                         </div>
 
-                        <div class="w-full py-5 px-0">
-                            <p class="mb-1 text-[14px] flex items-center justify-between">Item Name <input type="text"
-                                    placeholder="Amazon Fire TV Stick 4K Max  device"
-                                    class="input input-bordered w-[80%]" /></p>
+                        <div class="w-full py-5 px-5">
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Item name <input type="text"
+                                    placeholder="Name"
+                                    class="input input-bordered max-w-xs h-[38px] rounded-[5px] text-sm" /></p>
                             <p class="mb-1 text-[14px] flex items-center justify-between">Unit Price <input type="text"
-                                    placeholder="$80" class="input input-bordered w-[80%]" /></p>
+                                    placeholder="Price"
+                                    class="input input-bordered max-w-xs h-[38px] rounded-[5px] text-sm" /></p>
                         </div>
 
-                        <div class="flex items-center justify-end gap-2 absolute bottom-0 mb-2 right-[10px]">
-                            <a class="border text-[12px] p-2" href="#" id="cancelButton8">Cancel</a>
-                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4"
-                                href="after-adding-all-item.html">Update</a>
+                        <div
+                            class="flex items-center w-full justify-end gap-2 absolute bottom-0 px-5 py-3 border-t border-[#EBEDF0] bg-[#F8F8FA]">
+                            <a class="border text-[12px] p-2 rounded-[5px] bg-white" href="#"
+                                id="cancelButton8">Cancel</a>
+                            <a class="bg-[#128CED] text-white text-[12px] py-2 px-4 rounded-[5px]" href="#">Create</a>
                         </div>
                     </form>
                     <form method="dialog" class="modal-backdrop">
                         <button>close</button>
                     </form>
                 </dialog>
+
+                <hr class="mb-[30px] border border-[#DEE2E6]">
 
                 <a class="w-[220px] text-[14px] py-3 pl-4 flex items-center justify-start gap-2 bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white rounded-[4px] mb-2"
                     href="preview-invoice.html">
@@ -699,7 +649,7 @@
         <!-- Chatbot Modal -->
         <dialog id="my_modal_2" class="modal">
             <form method="dialog"
-                class="modal-box w-[350px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
+                class="modal-box md:w-[350px] w-[300px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
                 <div class="flex items-center justify-start p-3 gap-2 bg-[#294DFF]">
                     <img src="images/chat-logo.png" alt="">
                     <p class="text-white text-sm">Invoice Us Support</p>
@@ -709,13 +659,15 @@
                     <div>
                         <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Thank you for contacting InvoiceUs
                             Support.</p>
-                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find you
+                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find
+                            you
                             an answer. I do best with "How to" style
                             questions.</p>
                     </div>
                 </div>
                 <div class="flex items-center justify-between border-t p-3 gap-2 absolute bottom-0 w-full">
-                    <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text" placeholder="Write a message">
+                    <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text"
+                        placeholder="Write a message">
                     <a href="#"><img class="w-5 h-5" src="images/send.png" alt=""></a>
                 </div>
             </form>
@@ -733,27 +685,18 @@
 </body>
 
 <script>
-    const cancelButton3 = document.getElementById('cancelButton3');
-    const cancelButton4 = document.getElementById('cancelButton4');
     const cancelButton5 = document.getElementById('cancelButton5');
     const cancelButton6 = document.getElementById('cancelButton6');
     const cancelButton7 = document.getElementById('cancelButton7');
     const cancelButton8 = document.getElementById('cancelButton8');
     const cancelButton9 = document.getElementById('cancelButton9');
-    const modal3 = document.getElementById('my_modal_3');
-    const modal4 = document.getElementById('my_modal_4');
+
     const modal5 = document.getElementById('my_modal_5');
     const modal6 = document.getElementById('my_modal_6');
     const modal7 = document.getElementById('my_modal_7');
     const modal8 = document.getElementById('my_modal_8');
     const modal9 = document.getElementById('my_modal_9');
 
-    cancelButton3.addEventListener('click', () => {
-        modal3.close();
-    });
-    cancelButton4.addEventListener('click', () => {
-        modal4.close();
-    });
     cancelButton5.addEventListener('click', () => {
         modal5.close();
     });

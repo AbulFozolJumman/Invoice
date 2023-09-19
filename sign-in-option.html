@@ -161,17 +161,19 @@
             <h3 class="text-[24px] font-bold mt-10 mb-7">Settings</h3>
 
             <!-- Settings routes -->
-            <div class="rounded-[5px] mb-9 join">
-                <a class="join-item px-6 py-2 hover:bg-[#cdd5df80] border text-[14px] rounded-[5px]"
-                    href="settings.html">Profile</a>
-                <a class="join-item px-6 py-2 text-[14px] hover:bg-[#cdd5df80] border rounded-[5px]"
-                    href="change-password.html">Change Password</a>
-                <a class="join-item px-6 py-2 text-[14px] hover:bg-[#cdd5df80] border rounded-[5px]"
-                    href="email-report.html">Email Report</a>
-                <a class="join-item px-6 py-2 text-[14px] bg-[#cdd5df80] border rounded-[5px]"
-                    href="sign-in-option.html">Sign In Option</a>
-                <a class="join-item px-6 py-2 text-[14px] hover:bg-[#cdd5df80] border rounded-[5px]"
-                    href="document-setting.html">Document Setting</a>
+            <div class="lg:overflow-visible overflow-x-scroll">
+                <div class="rounded-[5px] mb-9 join w-[704px]">
+                    <a class="join-item px-6 py-2 hover:bg-[#cdd5df80] border text-[14px] rounded-[5px]"
+                        href="settings.html">Profile</a>
+                    <a class="join-item px-6 py-2 text-[14px] hover:bg-[#cdd5df80] border rounded-[5px]"
+                        href="change-password.html">Change Password</a>
+                    <a class="join-item px-6 py-2 text-[14px] hover:bg-[#cdd5df80] border rounded-[5px]"
+                        href="email-report.html">Email Report</a>
+                    <a class="join-item px-6 py-2 text-[14px] bg-[#cdd5df80] border rounded-[5px]"
+                        href="sign-in-option.html">Sign In Option</a>
+                    <a class="join-item px-6 py-2 text-[14px] hover:bg-[#cdd5df80] border rounded-[5px]"
+                        href="document-setting.html">Document Setting</a>
+                </div>
             </div>
 
             <div class="md:w-[50%] mx-auto border bg-[#F8F9FA] md:p-8 p-4 rounded-[5px]">
@@ -205,32 +207,32 @@
         </a>
 
         <!-- Chatbot Modal -->
-        <dialog id="my_modal_2" class="modal">
-            <form method="dialog"
-                class="modal-box w-[350px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
-                <div class="flex items-center justify-start p-3 gap-2 bg-[#294DFF]">
-                    <img src="images/chat-logo.png" alt="">
-                    <p class="text-white text-sm">Invoice Us Support</p>
-                </div>
-                <div class="flex items-start justify-start gap-2 p-3 pr-8">
-                    <img src="images/chat-logo-2.png" alt="">
-                    <div>
-                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Thank you for contacting InvoiceUs
-                            Support.</p>
-                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find you
-                            an answer. I do best with "How to" style
-                            questions.</p>
+            <dialog id="my_modal_2" class="modal">
+                <form method="dialog"
+                    class="modal-box md:w-[350px] w-[300px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
+                    <div class="flex items-center justify-start p-3 gap-2 bg-[#294DFF]">
+                        <img src="images/chat-logo.png" alt="">
+                        <p class="text-white text-sm">Invoice Us Support</p>
                     </div>
-                </div>
-                <div class="flex items-center justify-between border-t p-3 gap-2 absolute bottom-0 w-full">
-                    <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text" placeholder="Write a message">
-                    <a href="#"><img class="w-5 h-5" src="images/send.png" alt=""></a>
-                </div>
-            </form>
-            <form method="dialog" class="modal-backdrop">
-                <button>close</button>
-            </form>
-        </dialog>
+                    <div class="flex items-start justify-start gap-2 p-3 pr-8">
+                        <img src="images/chat-logo-2.png" alt="">
+                        <div>
+                            <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Thank you for contacting InvoiceUs
+                                Support.</p>
+                            <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find you
+                                an answer. I do best with "How to" style
+                                questions.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-t p-3 gap-2 absolute bottom-0 w-full">
+                        <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text" placeholder="Write a message">
+                        <a href="#"><img class="w-5 h-5" src="images/send.png" alt=""></a>
+                    </div>
+                </form>
+                <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                </form>
+            </dialog>
 
     </main>
 

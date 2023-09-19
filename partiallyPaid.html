@@ -170,49 +170,51 @@
                     href="#">Search</a>
             </div>
 
-            <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="xl:overflow-visible overflow-x-scroll">
+                <div class="flex min-w-[985px] items-center justify-between">
 
-                <!-- Routes -->
-                <div class="mb-8 bg-[#cdd5df80] rounded-[5px] p-[5px]">
-                    <div class="flex-wrap">
-                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white" href="dashboard.html">All
-                            Invoice</a>
-                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
-                            href="paid.html">Paid</a>
-                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
-                            href="unpaid.html">Unpaid</a>
-                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] bg-[#128CED] text-white"
-                            href="partiallyPaid.html">Partially Paid(2)</a>
-                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
-                            href="overdue.html">Overdue</a>
-                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
-                            href="mailSent.html">Mail sent</a>
-                        <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
-                            href="trash.html">Trash</a>
+                    <!-- Routes -->
+                    <div class="mb-8 bg-[#cdd5df80] rounded-[5px] p-[5px]">
+                        <div class="flex-wrap">
+                            <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white" href="dashboard.html">All
+                                Invoice</a>
+                            <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                                href="paid.html">Paid</a>
+                            <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                                href="unpaid.html">Unpaid</a>
+                            <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] bg-[#128CED] text-white"
+                                href="partiallyPaid.html">Partially Paid(2)</a>
+                            <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                                href="overdue.html">Overdue</a>
+                            <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                                href="mailSent.html">Mail sent</a>
+                            <a class="px-6 mb-1 lg:mb-0 py-2 rounded-[5px] inline-block text-[15px] hover:bg-[#128CED]  hover:text-white"
+                                href="trash.html">Trash</a>
+                        </div>
                     </div>
-                </div>
-
-                <div
-                    class="flex items-center mb-8 justify-start gap-2 w-[160px] rounded-[5px] bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
-                    <a href="add-1-items.html" class="text-white capitalize pl-5 font-normal text-[15px] py-2 rounded-[5px]">New
-                        Invoice</a>
-                    <details class="dropdown dropdown-bottom dropdown-end">
-                        <summary tabindex="0" class="btn pl-0 bg-transparent hover:bg-transparent border-none">
-                            <img src="images/down-white.png" alt="">
-                        </summary>
-                        <ul tabindex="0"
-                            class="dropdown-content z-[1] menu p-[10px] shadow bg-base-100 rounded-box rounded-[5px] w-[180px]">
-                            <li><a class="rounded-[5px] m-1 p-3" href="add-1-items.html"><img src="images/new-invoice.png" alt="">New Invoice</a></li>
-                            <li><a class="rounded-[5px] m-1 p-3" href="#"><img class="w-[20px]" src="images/client.png" alt="">New Client</a></li>
-                            <li><a class="rounded-[5px] m-1 p-3" href="#"><img class="w-[20px]" src="images/new-item.png" alt="">New Item</a></li>
-                            <li><a class="rounded-[5px] m-1 p-3" href="#"><img class="w-[20px]" src="images/estimate.png" alt="">New Estimate</a></li>
-                        </ul>
-                    </details>
+    
+                    <div
+                        class="flex items-center mb-8 justify-start gap-2 w-[160px] rounded-[5px] bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
+                        <a href="add-1-items.html" class="text-white capitalize pl-5 font-normal text-[15px] py-2 rounded-[5px]">New
+                            Invoice</a>
+                        <details class="dropdown dropdown-bottom dropdown-end">
+                            <summary tabindex="0" class="btn pl-0 bg-transparent hover:bg-transparent border-none">
+                                <img src="images/down-white.png" alt="">
+                            </summary>
+                            <ul tabindex="0"
+                                class="dropdown-content z-[1] menu p-[10px] shadow bg-base-100 rounded-box rounded-[5px] w-[180px]">
+                                <li><a class="rounded-[5px] m-1 p-3" href="add-1-items.html"><img src="images/new-invoice.png" alt="">New Invoice</a></li>
+                                <li><a class="rounded-[5px] m-1 p-3" href="#"><img class="w-[20px]" src="images/client.png" alt="">New Client</a></li>
+                                <li><a class="rounded-[5px] m-1 p-3" href="#"><img class="w-[20px]" src="images/new-item.png" alt="">New Item</a></li>
+                                <li><a class="rounded-[5px] m-1 p-3" href="#"><img class="w-[20px]" src="images/estimate.png" alt="">New Estimate</a></li>
+                            </ul>
+                        </details>
+                    </div>
                 </div>
             </div>
 
             <!-- Table -->
-            <div class="lg:overflow-x-auto overflow-x-scroll rounded-[5px] mb-3 border border-[#CCD5DF]">
+            <div class="lg:overflow-visible overflow-x-scroll rounded-[5px] mb-3 border border-[#CCD5DF]">
                 <table class="table table-zebra min-w-[900px]">
                     <!-- head -->
                     <thead class="text-[14px] font-semibold text-white bg-[#128CED]">
