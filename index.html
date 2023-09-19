@@ -22,6 +22,25 @@
             /* Change opacity to 1 when hovering */
             display: block;
         }
+
+        @media (prefers-color-scheme: dark) {
+            body, input {
+                background-color: white;
+            }
+
+            /* Override the text color */
+            body,
+            input,
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: #000;
+            }
+        }
     </style>
 </head>
 
@@ -91,7 +110,7 @@
                 <div class="navbar-end ml-auto">
 
                     <div class="dropdown dropdown-bottom dropdown-end dropdown-hover md:pr-3">
-                        <label tabindex="0" class="btn bg-[#F2F2F2] hover:bg-[#F2F2F2] hover:border-0 p-0 m-0 w-[60px]">
+                        <label tabindex="0" class="btn bg-[#F2F2F2] hover:bg-[#F2F2F2] border-[#F2F2F2] hover:border-0 p-0 m-0 w-[60px]">
                             <img src="images/usa flag.png" alt="">
                             <img src="images/dropdown.png" alt="">
                         </label>
@@ -138,12 +157,12 @@
         <section class="md:relative lg:mb-[180px] md:mb-[200px]">
             <div class="bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
                 <div
-                    class="text-white max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto  flex md:flex-row flex-col items-center justify-between xl:pb-[120px] lg:pb-[100px] md:[pb-80px]">
+                    class="max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto  flex md:flex-row flex-col items-center justify-between xl:pb-[120px] lg:pb-[100px] md:[pb-80px]">
                     <div class="md:py-[100px] py-12">
-                        <h1 class="xl:text-[60px] lg:text-[40px] text-[30px] font-semibold">Invoicing Software that
+                        <h1 class="text-white xl:text-[60px] lg:text-[40px] text-[30px] font-semibold">Invoicing Software that
                             Grows with You</h1>
                         <hr class="border-white pb-5">
-                        <p class="inline pt-3">We Provide 100 Free Invoice Templates | Print & Email Invoices</p>
+                        <p class="text-white inline pt-3">We Provide 100 Free Invoice Templates | Print & Email Invoices</p>
                         <a class="flex items-center gap-2 px-5 rounded-[5px] mt-5 py-2 bg-white hover:bg-gradient-to-r from-[#0969FA] to-[#17A9F7] to-[#0969FA] hover:text-white text-[#128CED] w-[205px] font-medium text-[15px]"
                             href="dashboard.html">Create invoice now <span
                                 class="material-symbols-outlined text-[15px]">
@@ -260,15 +279,15 @@
                     <img class="border border-[#108bf833]" src="images/military-orange.png" alt="">
                     <a href="dashboard.html"
                         class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center p-8 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
-                        <p class="text-4xl">+</p>
-                        <p>Create</p>
+                        <p class="text-white text-4xl">+</p>
+                        <p class="text-white">Create</p>
                     </a>
                 </div>
                 <div class="relative template">
                     <a href="dashboard.html"
                         class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center p-8 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
-                        <p class="text-4xl">+</p>
-                        <p>Create</p>
+                        <p class="text-white text-4xl">+</p>
+                        <p class="text-white">Create</p>
                     </a>
                     <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img src="images/three-line.png"
                             alt="">
@@ -278,8 +297,8 @@
                 <div class="relative template">
                     <a href="dashboard.html"
                         class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center p-8 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
-                        <p class="text-4xl">+</p>
-                        <p>Create</p>
+                        <p class="text-white text-4xl">+</p>
+                        <p class="text-white">Create</p>
                     </a>
                     <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img src="images/three-line.png"
                             alt="">
@@ -289,8 +308,8 @@
                 <div class="relative template">
                     <a href="dashboard.html"
                         class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center p-8 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
-                        <p class="text-4xl">+</p>
-                        <p>Create</p>
+                        <p class="text-white text-4xl">+</p>
+                        <p class="text-white">Create</p>
                     </a>
                     <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img src="images/three-line.png"
                             alt="">
@@ -304,15 +323,15 @@
                     <img class="border border-[#108bf833]" src="images/military-orange.png" alt="">
                     <a href="dashboard.html"
                         class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center p-8 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
-                        <p class="text-4xl">+</p>
-                        <p>Create</p>
+                        <p class="text-white text-4xl">+</p>
+                        <p class="text-white">Create</p>
                     </a>
                 </div>
                 <div class="relative template">
                     <a href="dashboard.html"
                         class="create hidden absolute lg:top-[100px] top-[100px] md:top-[50px] lg:left-[30%] left-[30%] md:left-[20%] rounded-full text-xl text-center p-8 font-medium bg-gradient-to-r from-[#17A9F7] to-[#0969FA] text-white">
-                        <p class="text-4xl">+</p>
-                        <p>Create</p>
+                        <p class="text-white text-4xl">+</p>
+                        <p class="text-white">Create</p>
                     </a>
                     <p class="flex items-center gap-1 lg:text-[18px] font-bold mb-4"><img src="images/three-line.png"
                             alt="">
@@ -453,9 +472,9 @@
 
         <!-- FAQ section -->
         <section class="my-12 max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto">
-            <div class="text-white bg-[#128CED] py-5 md:py-8 px-5 md:px-[75px] mb-8">
-                <h4 class="text-2xl md:text-[30px] font-semibold mb-3">Frequently Asked Questions</h4>
-                <p>Here are a few of the questions we get the most. If you don't see what's on your mind, reach out to
+            <div class="bg-[#128CED] py-5 md:py-8 px-5 md:px-[75px] mb-8">
+                <h4 class="text-white text-2xl md:text-[30px] font-semibold mb-3">Frequently Asked Questions</h4>
+                <p class="text-white">Here are a few of the questions we get the most. If you don't see what's on your mind, reach out to
                     us anytime on phone, chat, or email.</p>
             </div>
 
@@ -674,12 +693,12 @@
 
     <!-- Footer -->
     <div class="bg-gradient-to-r from-[#17A9F7] to-[#0969FA]">
-        <footer class="text-white max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto  pt-10 md:pt-12 pb-5">
+        <footer class="max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto  pt-10 md:pt-12 pb-5">
             <div class="grid grid-cols-1 md:grid-cols-4 items-start gap-8 md:gap-12">
 
                 <div>
-                    <h2 class="text-[40px] leading-[40px] font-semibold mb-4 md:mb-8">Logo</h2>
-                    <p class="text-[14px] mb-3 md:mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                    <h2 class="text-white text-[40px] leading-[40px] font-semibold mb-4 md:mb-8">Logo</h2>
+                    <p class="text-white text-[14px] mb-3 md:mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                         commodi sequi
                         animi cum? Optio maiores a harum animi.</p>
                     <div class="flex justify-start items-center">
@@ -691,39 +710,39 @@
                 </div>
 
                 <div>
-                    <h3 class="lg:text-[20px]  font-semibold mb-5">Company News</h3>
+                    <h3 class="text-white lg:text-[20px] font-semibold mb-5">Company News</h3>
                     <div class="flex gap-2">
                         <hr class="border-2 mb-7 border-white w-[35px]">
                         <hr class="border-2 mb-7 border-white w-[20px]">
                         <hr class="border-2 mb-7 border-white w-[35px]">
                     </div>
                     <div>
-                        <a class="text-[14px] block mb-2" href="#">Partners</a>
-                        <a class="text-[14px] block mb-2" href="#">About Us</a>
-                        <a class="text-[14px] block mb-2" href="#">Career</a>
-                        <a class="text-[14px] block mb-2" href="#">Reviews</a>
-                        <a class="text-[14px] block mb-2" href="#">Terms & Conditions</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">Partners</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">About Us</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">Career</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">Reviews</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">Terms & Conditions</a>
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="lg:text-[20px] font-semibold mb-5">Useful Links</h3>
+                    <h3 class="text-white lg:text-[20px] font-semibold mb-5">Useful Links</h3>
                     <div class="flex gap-2">
                         <hr class="border-2 mb-7 border-white w-[35px]">
                         <hr class="border-2 mb-7 border-white w-[20px]">
                         <hr class="border-2 mb-7 border-white w-[35px]">
                     </div>
                     <div>
-                        <a class="text-[14px] block mb-2" href="#">Home</a>
-                        <a class="text-[14px] block mb-2" href="#">About Us</a>
-                        <a class="text-[14px] block mb-2" href="#">Services</a>
-                        <a class="text-[14px] block mb-2" href="#">Why us</a>
-                        <a class="text-[14px] block mb-2" href="#">Our Team</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">Home</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">About Us</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">Services</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">Why us</a>
+                        <a class="text-white text-[14px] block mb-2" href="#">Our Team</a>
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="lg:text-[20px] font-semibold mb-5">Useful Links</h3>
+                    <h3 class="text-white lg:text-[20px] font-semibold mb-5">Useful Links</h3>
                     <div class="flex gap-2">
                         <hr class="border-2 mb-7 border-white w-[35px]">
                         <hr class="border-2 mb-7 border-white w-[20px]">
@@ -732,22 +751,22 @@
                     <div>
                         <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img src="images/hello.png"
                                 alt="">
-                            <p>1800-121-3637 <br> +91 555 234-8765</p>
+                            <p class="text-white">1800-121-3637 <br> +91 555 234-8765</p>
                         </div>
                         <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img
                                 src="images/mail-blue.png" alt="">
-                            <p class="break-all	">info@invoiceus.com <br> sale@example.com</p>
+                            <p class="break-all	text-white">info@invoiceus.com <br> sale@example.com</p>
                         </div>
                         <div class="text-[14px] flex items-start justify-start gap-2 mb-5"><img
                                 src="images/location.png" alt="">
-                            <p>380 St Kilda Road, <br> Melbourne <br> VIC 3004, Australia</p>
+                            <p class="text-white">380 St Kilda Road, <br> Melbourne <br> VIC 3004, Australia</p>
                         </div>
                     </div>
                 </div>
 
             </div>
             <hr class="border mb-4 border-[#86BBFD]">
-            <p class="text-center text-[14px] ">© 2023 @ InvoiceUs All rights reserved</p>
+            <p class="text-center text-[14px] text-white">© 2023 @ InvoiceUs All rights reserved</p>
         </footer>
     </div>
 </body>
