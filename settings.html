@@ -41,70 +41,30 @@
         <div class="bg-[#F2F2F2] w-full shadow-lg mb-1">
             <div class="navbar h-[64px] max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto">
                 <div class="navbar-start w-[150px]">
-                    <div class="dropdown mr-5 lg:mr-0">
-                        <label tabindex="0" class="btn lg:hidden p-0 m-0 hover:bg-[#F2F2F2] border-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box rounded-[5px]  w-[130px]">
-                            <li>
-                                <a href="dashboard.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2 text-[#128CED]">Invoices</a>
-                            </li>
-                            <li><a href="#.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2 my-1">Estimate</a>
-                            </li>
-                            <li>
-                                <a href="clients.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2">Clients</a>
-                            </li>
-                            <li>
-                                <a href="items.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2 my-1">Items</a>
-                            </li>
-                            <li>
-                                <a href="reports.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2">Reports</a>
-                            </li>
-                            <li>
-                                <a href="settings.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2">Settings</a>
-                            </li>
-                        </ul>
-                    </div>
                     <a href="index.html"><img src="images/logo.png" class="h-12" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <div class="menu menu-horizontal px-1">
-                        
-                            <a href="dashboard.html"
-                                class="px-8 text-[16px] hover:text-[#128CED]">Invoices</a>
-                        
+
+                        <a href="dashboard.html" class="px-8 text-[16px] hover:text-[#128CED]">Invoices</a>
+
                         <a href="#" class="hover:text-[#128CED] pr-8 text-[16px]">Estimate</a>
-                        
-                            <a href="clients.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px]">Clients</a>
-                        
-                        
-                            <a href="items.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px]">Items</a>
-                        
-                        
-                            <a href="reports.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px]">Reports</a>
-                        
-                        
-                            <a href="settings.html"
-                                class="text-[#128CED] pr-8 text-[16px] mr-3">Settings</a>
-                        
+
+                        <a href="clients.html" class="hover:text-[#128CED] pr-8 text-[16px]">Clients</a>
+
+
+                        <a href="items.html" class="hover:text-[#128CED] pr-8 text-[16px]">Items</a>
+
+
+                        <a href="reports.html" class="hover:text-[#128CED] pr-8 text-[16px]">Reports</a>
+
+
+                        <a href="settings.html" class="hover:text-[#128CED] text-[#128CED] pr-8 text-[16px] mr-3">Settings</a>
+
                     </div>
                 </div>
                 <div class="navbar-end ml-auto">
-                    <details class="dropdown dropdown-end">
+                    <details class="dropdown dropdown-end md:block hidden">
                         <summary tabindex="0" class="btn m-1 hover:bg-transparent p-0 m-0 border-none mr-2 xl:mr-5">
                             <div><img class="w-9 h-9" src="images/notification+dot.png" alt=""></div>
                         </summary>
@@ -156,8 +116,9 @@
                                 More</button>
                         </ul>
                     </details>
-                    <details class="dropdown dropdown-end">
-                        <summary tabindex="0" class="btn hover:border hover:border-[#F2F2F2] p-0 m-0 hover:bg-[#F2F2F2] rounded-[5px]">
+                    <details class="dropdown dropdown-end md:block hidden">
+                        <summary tabindex="0"
+                            class="btn hover:border hover:border-[#F2F2F2] p-0 m-0 hover:bg-[#F2F2F2] rounded-[5px]">
                             <div class="flex items-center justify-start gap-1" href="#">
                                 <img class="h-9 w-9" src="images/profile.png" alt="">
                                 <h5 class="capitalize hidden md:block p-0 m-0 text-[15px]">Devon Lane</h5>
@@ -166,14 +127,127 @@
                         </summary>
                         <ul tabindex="0"
                             class="dropdown-content z-[1] menu p-2 shadow bg-base-100 m-1 rounded-[5px] border-[#CCD5DF] border w-[200px]">
-                            <li><a class="py-3 m-1 rounded-[5px]" href="my-account.html" href="my-account.html"><img src="images/client.png"
-                                        alt="">My Account</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="settings.html"><img src="images/settings.png" alt="">Account
+                            <li><a class="py-3 m-1 rounded-[5px]" href="my-account.html" href="my-account.html"><img
+                                        src="images/client.png" alt="">My Account</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="settings.html"><img src="images/settings.png"
+                                        alt="">Account
                                     Settings</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="faq.html"><img src="images/faq-sign.png" alt="">FAQ</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="#"><img src="images/logout.png" alt="">Log Out</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="faq.html"><img src="images/faq-sign.png"
+                                        alt="">FAQ</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="#"><img src="images/logout.png" alt="">Log
+                                    Out</a></li>
                         </ul>
                     </details>
+
+                    <!-- Hamburger Menu -->
+                    <button class="md:hidden px-2 hover:px-2 hover:m-0 hover:bg-[#F2F2F2] hover:border-0"
+                        onclick="my_modal_11.showModal()">
+                        <span
+                            class="material-symbols-outlined text-[#128CED] hover:bg-[#F2F2F2] border border-[#128CED] text-[26px] p-1 rounded-[4px]">
+                            menu
+                        </span>
+                    </button>
+                    <dialog id="my_modal_11" class="modal modal-top">
+                        <div class="modal-box overflow-auto rounded-[0px] p-4 bg-[#F2F2F2]">
+                            <form method="dialog">
+                                <button
+                                    class="btn btn-sm btn-circle btn-ghost hover:bg-[#F2F2F2] text-[#128CED] text-[20px] absolute right-2 top-2">✕</button>
+                            </form>
+                            <details class="dropdown dropdown-center">
+                                <summary tabindex="0"
+                                    class="btn hover:border hover:border-[#F2F2F2] px-5 pb-5 m-0 hover:bg-[#F2F2F2] rounded-[5px]">
+                                    <div class="flex items-center justify-start gap-1" href="#">
+                                        <img class="h-9 w-9" src="images/profile.png" alt="">
+                                        <h5 class="capitalize p-0 m-0 text-[15px]">Devon Lane</h5>
+                                        <img src="images/dropdown.png" alt="">
+                                    </div>
+                                </summary>
+                                <ul tabindex="0"
+                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 m-1 rounded-[5px] border-[#CCD5DF] border w-[200px]">
+                                    <li><a class="py-3 m-1 rounded-[5px]" href="my-account.html"
+                                            href="my-account.html"><img src="images/client.png" alt="">My Account</a>
+                                    </li>
+                                    <li><a class="py-3 m-1 rounded-[5px]" href="settings.html"><img
+                                                src="images/settings.png" alt="">Account
+                                            Settings</a></li>
+                                    <li><a class="py-3 m-1 rounded-[5px]" href="faq.html"><img src="images/faq-sign.png"
+                                                alt="">FAQ</a></li>
+                                </ul>
+                            </details>
+                            <a href="dashboard.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Invoices</a>
+                            <a href="#"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Estimate</a>
+                            <a href="clients.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Clients</a>
+                            <a href="items.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Items</a>
+                            <a href="reports.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Reports</a>
+                            <a href="settings.html"
+                                class="text-[#128CED] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Settings</a>
+                            <details class="dropdown dropdown-end block">
+                                <summary tabindex="0"
+                                    class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px] w-full">
+                                    Notifications
+                                </summary>
+                                <ul tabindex="0"
+                                    class="dropdown-content z-[1] md:p-4 p-2 menu shadow bg-white rounded-[5px] md:w-[350px] w-[260px] border">
+                                    <a href="#"
+                                        class="flex items-start justify-center md:gap-2 gap-1 rounded-[5px] md:p-2 p-1 hover:bg-[#f2f2f2]">
+                                        <img class="pt-1" src="images/oval.png" alt="">
+                                        <div>
+                                            <h3 class="text-[12px] md:text-sm text-[#128CED] font-medium">Agent Rose
+                                            </h3>
+                                            <p class="text-[10px] md:text-xs">Message: Please, kindly do take a
+                                                snap-shot of the
+                                                card.</p>
+                                        </div>
+                                        <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">18min.</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-start justify-center md:gap-2 gap-1 rounded-[5px] md:p-2 p-1 hover:bg-[#f2f2f2]">
+                                        <img class="pt-1" src="images/oval.png" alt="">
+                                        <div>
+                                            <h3 class="text-[12px] md:text-sm text-[#128CED] font-medium">GOGE Team</h3>
+                                            <p class="text-[10px] md:text-xs">Alert: New card added this week
+                                                check em out.</p>
+                                        </div>
+                                        <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">34min.</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-start justify-center md:gap-2 gap-1 rounded-[5px] md:p-2 p-1 hover:bg-[#f2f2f2]">
+                                        <img class="pt-1" src="images/oval.png" alt="">
+                                        <div>
+                                            <h3 class="text-[12px] md:text-sm text-[#128CED] font-medium">Halloween
+                                                Promo</h3>
+                                            <p class="text-[10px] md:text-xs">Promotion: Get 13% the price when
+                                                you exchange bitcoin to cash.</p>
+                                        </div>
+                                        <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">1hour</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-start justify-center md:gap-2 gap-1 rounded-[5px] md:p-2 p-1 hover:bg-[#f2f2f2]">
+                                        <img class="pt-1" src="images/oval.png" alt="">
+                                        <div>
+                                            <h3 class="text-[12px] md:text-sm text-[#128CED] font-medium">GOGO Team</h3>
+                                            <p class="text-[10px] md:text-xs">Alert: Sorry to see you go. You just
+                                                unsubscribe
+                                                from the
+                                                newsletter.</p>
+                                        </div>
+                                        <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">2hour</p>
+                                    </a>
+                                    <button
+                                        class="text-white text-[12px] text-[15px] bg-[#128CED] px-4 py-2 mt-4 mb-2 block mx-auto rounded-[5px] text-[#15304D] hover:text-[#128CED] hover:border hover:border-[#128CED] hover:bg-white hover:py-[7px]">View
+                                        More</button>
+                                </ul>
+                            </details>
+                            <a href="#"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Logout</a>
+                        </div>
+                    </dialog>
+
                 </div>
             </div>
         </div>
@@ -204,7 +278,8 @@
             <h4 class="text-[20px] font-semibold mt-5 mb-3">Basics</h4>
 
             <div class="px-[20px] py-[10px] bg-[#f8f9fa] rounded-[5px] border">
-                <div class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-2 px-7">
+                <div
+                    class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-2 px-7">
                     <p class="text-[14px]">Profile Photo</p>
                     <div class="flex items-center justify-center gap-5">
                         <img src="images/profile.png" alt="">
@@ -212,21 +287,24 @@
                         <a class="text-[14px] text-[#128CED]" href="#">Update</a>
                     </div>
                 </div>
-                <div class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
+                <div
+                    class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
                     <p class="text-[14px]">Name</p>
                     <div class="flex items-center justify-center gap-10">
                         <p class="text-[14px]" href="#">Steven Smith</p>
                         <a class="text-[14px] text-[#128CED]" href="#">Edit</a>
                     </div>
                 </div>
-                <div class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
+                <div
+                    class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
                     <p class="text-[14px]">Email Address</p>
                     <div class="flex items-center justify-center gap-10">
                         <p class="text-[14px]" href="#">smith@gmail.com</p>
                         <a class="text-[14px] text-[#128CED]" href="#">Edit</a>
                     </div>
                 </div>
-                <div class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
+                <div
+                    class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
                     <p class="text-[14px]">Business Name</p>
                     <div class="flex items-center justify-center gap-10">
                         <p class="text-[14px]" href="#">Company1</p>
@@ -245,28 +323,32 @@
             <h4 class="text-[20px] font-semibold mt-5 mb-3">Preferences</h4>
 
             <div class="px-[20px] py-[10px] bg-[#f8f9fa] rounded-[5px] border">
-                <div class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
+                <div
+                    class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
                     <p class="text-[14px]">Language</p>
                     <div class="flex items-center justify-center gap-10">
                         <p class="text-[14px]" href="#">English (united States)</p>
                         <a class="text-[14px] text-[#128CED]" href="#">Edit</a>
                     </div>
                 </div>
-                <div class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
+                <div
+                    class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
                     <p class="text-[14px]">Date Format</p>
                     <div class="flex items-center justify-center gap-10">
                         <input class="border px-2 rounded-[5px] h-[38px] text-[15px]" type="date" name="" id="">
                         <a class="text-[14px] text-[#128CED]" href="#">Edit</a>
                     </div>
                 </div>
-                <div class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
+                <div
+                    class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
                     <p class="text-[14px]">Automatic Time Zone</p>
                     <div class="flex items-center justify-center gap-10">
                         <p class="text-[14px]" href="#">GMT +02:00</p>
                         <a class="text-[14px] text-[#128CED]" href="#">Edit</a>
                     </div>
                 </div>
-                <div class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
+                <div
+                    class="bg-[#f8f9fa] flex flex-col md:flex-row gap-5 items-center justify-between border-b py-3 px-7">
                     <p class="text-[14px]">Regions</p>
                     <div class="flex items-center justify-center gap-10">
                         <p class="text-[14px]" href="#">United States</p>
@@ -291,14 +373,18 @@
                 </div>
 
                 <div class="dropdown dropdown-top dropdown-left">
-                    <label tabindex="0" class="btn m-1 text-white bg-red-500 hover:text-white hover:bg-red-500  py-2 px-6 rounded-[4px] capitalize">Close
+                    <label tabindex="0"
+                        class="btn m-1 text-white bg-red-500 hover:text-white hover:bg-red-500  py-2 px-6 rounded-[4px] capitalize">Close
                         Account</label>
 
                     <!-- Delete Account -->
-                    <div tabindex="0" class="dropdown-content bg-[#F8F8FA] border-2 z-[1] menu p-2 shadow bg-base-100 rounded-box w-[350px]">
+                    <div tabindex="0"
+                        class="dropdown-content bg-[#F8F8FA] border-2 z-[1] menu p-2 shadow bg-base-100 rounded-box w-[350px]">
                         <p class="text-sm bg-[#F8F8FA] p-4">Are you sure tou want to close your account?</p>
                         <hr>
-                        <p class="text-xs p-3">You will not be able to log in to your account or continue to accept payments. You will still be responsible for any refunds that are issued, or disputes that arrise.</p>
+                        <p class="text-xs p-3">You will not be able to log in to your account or continue to accept
+                            payments. You will still be responsible for any refunds that are issued, or disputes that
+                            arrise.</p>
                         <hr>
                         <p class="text-sm font-medium p-4">Additional authentication required</p>
                         <p class="text-xs px-4 pb-6">To continue, please enter your password</p>
@@ -308,7 +394,8 @@
                         <input class="px-4 border mb-12 mx-2 h-8 ml-4" type="text">
                         <div class="flex flex-col md:flex-row gap-5 items-center justify-end gap-4">
                             <a class="py-2 rounded-[5px] mb-7 px-6 border" href="#">Cancel</a>
-                            <a class="py-2 rounded-[5px] mb-7 px-6 border text-white bg-red-500" href="#">Close account</a>
+                            <a class="py-2 rounded-[5px] mb-7 px-6 border text-white bg-red-500" href="#">Close
+                                account</a>
                         </div>
 
                     </div>
@@ -324,32 +411,34 @@
         </a>
 
         <!-- Chatbot Modal -->
-            <dialog id="my_modal_2" class="modal">
-                <form method="dialog"
-                    class="modal-box md:w-[350px] w-[300px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
-                    <div class="flex items-center justify-start p-3 gap-2 bg-[#294DFF]">
-                        <img src="images/chat-logo.png" alt="">
-                        <p class="text-white text-sm">Invoice Us Support</p>
+        <dialog id="my_modal_2" class="modal">
+            <form method="dialog"
+                class="modal-box md:w-[350px] w-[300px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
+                <div class="flex items-center justify-start p-3 gap-2 bg-[#294DFF]">
+                    <img src="images/chat-logo.png" alt="">
+                    <p class="text-white text-sm">Invoice Us Support</p>
+                </div>
+                <div class="flex items-start justify-start gap-2 p-3 pr-8">
+                    <img src="images/chat-logo-2.png" alt="">
+                    <div>
+                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Thank you for contacting InvoiceUs
+                            Support.</p>
+                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find
+                            you
+                            an answer. I do best with "How to" style
+                            questions.</p>
                     </div>
-                    <div class="flex items-start justify-start gap-2 p-3 pr-8">
-                        <img src="images/chat-logo-2.png" alt="">
-                        <div>
-                            <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Thank you for contacting InvoiceUs
-                                Support.</p>
-                            <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find you
-                                an answer. I do best with "How to" style
-                                questions.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between border-t p-3 gap-2 absolute bottom-0 w-full">
-                        <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text" placeholder="Write a message">
-                        <a href="#"><img class="w-5 h-5" src="images/send.png" alt=""></a>
-                    </div>
-                </form>
-                <form method="dialog" class="modal-backdrop">
-                    <button>close</button>
-                </form>
-            </dialog>
+                </div>
+                <div class="flex items-center justify-between border-t p-3 gap-2 absolute bottom-0 w-full">
+                    <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text"
+                        placeholder="Write a message">
+                    <a href="#"><img class="w-5 h-5" src="images/send.png" alt=""></a>
+                </div>
+            </form>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>
 
     </main>
 

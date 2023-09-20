@@ -41,48 +41,10 @@
         <div class=" bg-[#F2F2F2] shadow-lg mb-1">
             <div class="navbar max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto ">
                 <div class="navbar-start w-[150px]">
-                    <div class="dropdown mr-5 lg:mr-0">
-                        <label tabindex="0" class="btn lg:hidden p-0 m-0 hover:bg-[#F2F2F2] border-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box rounded-[5px]  w-[170px]">
-                            <li>
-                                <a href="index.html"
-                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Home</a>
-                            </li>
-                            <li><a href="about.html"
-                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2 my-1">About</a></li>
-                            <li>
-                                <a href="features.html"
-                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Features</a>
-                            </li>
-                            <li>
-                                <a href="faq.html"
-                                    class="text-[18px] text-[#128CED] hover:text-[#128CED] hover:bg-white py-2 my-1">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html"
-                                    class="text-[18px] hover:text-[#128CED] hover:bg-white py-2">Pricing</a>
-                            </li>
-                            <li>
-                                <a class="text-[#128CED] py-2 border border-[#128CED] text-center w-[150px] my-2 block md:hidden rounded-[5px] font-medium hover:bg-gradient-to-r from-[#17A9F7] to-[#0969FA] hover:text-white"
-                                    href="signup.html">Sign In</a>
-                            </li>
-                            <li>
-                                <a class="text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-2 w-[150px] text-center rounded-[5px] font-medium block md:hidden hover:bg-gradient-to-r hover:from-[#F2F2F2] hover:to-[#F2F2F2] hover:border hover:border-[#128CED] hover:text-[#128CED] hover:py-[7px] hover:px-[23px]"
-                                    href="dashboard.html">Create Invoice</a>
-                            </li>
-                        </ul>
-                    </div>
                     <a href="index.html"><img src="images/logo.png" class="h-12" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <div class=" menu-horizontal px-1">
+                    <div class="menu-horizontal px-1">
 
                         <a href="index.html" class="pr-8 text-[16px] hover:text-[#128CED]">Home</a>
 
@@ -91,7 +53,7 @@
                         <a href="features.html" class="hover:text-[#128CED] pr-8 text-[16px]">Features</a>
 
 
-                        <a href="faq.html" class="text-[#128CED] pr-8 text-[16px]">FAQ</a>
+                        <a href="faq.html" class="hover:text-[#128CED] text-[#128CED] pr-8 text-[16px]">FAQ</a>
 
 
                         <a href="pricing.html" class="hover:text-[#128CED] pr-8 text-[16px] mr-3">Pricing</a>
@@ -100,42 +62,113 @@
                 </div>
                 <div class="navbar-end ml-auto">
 
-                    <div class="dropdown dropdown-bottom dropdown-end dropdown-hover md:pr-3">
-                        <label tabindex="0" class="btn bg-[#F2F2F2] hover:bg-[#F2F2F2] hover:border-0 p-0 m-0 w-[60px]">
+                    <div class="dropdown dropdown-bottom dropdown-end dropdown-hover md:pr-3 md:block hidden">
+                        <label tabindex="0"
+                            class="btn bg-[#F2F2F2] hover:bg-[#F2F2F2] border-[#F2F2F2] hover:border-0 p-0 m-0 w-[60px]">
                             <img src="images/usa flag.png" alt="">
                             <img src="images/dropdown.png" alt="">
                         </label>
                         <ul tabindex="0"
                             class="dropdown-content z-[1] menu p-4 shadow bg-[#F2F2F2] rounded-box rounded-[5px] w-[130px]">
                             <li><a
-                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
                                     <img src="images/uk.png" alt="">
                                     EN
                                 </a></li>
                             <li><a
-                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
                                     <img src="images/france.png" alt="">
                                     RU
                                 </a></li>
                             </a></li>
                             <li><a
-                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
                                     <img src="images/france.png" alt="">
                                     FR
                                 </a></li>
                             </a></li>
                             <li><a
-                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
                                     <img src="images/uk.png" alt="">
                                     TR
                                 </a></li>
                             <li><a
-                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[4px] hover:bg-white hover:border-[#128CED] my-1">
+                                    class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
                                     <img src="images/uk.png" alt="">
                                     UK
                                 </a></li>
                         </ul>
                     </div>
+
+                    <!-- Hamburger Menu -->
+                    <button class="md:hidden px-2 hover:px-2 hover:m-0 hover:bg-[#F2F2F2] hover:border-0"
+                        onclick="my_modal_11.showModal()">
+                        <span
+                            class="material-symbols-outlined text-[#128CED] hover:bg-[#F2F2F2] border border-[#128CED] text-[26px] p-1 rounded-[4px]">
+                            menu
+                        </span>
+                    </button>
+                    <dialog id="my_modal_11" class="modal modal-top">
+                        <div class="modal-box overflow-auto rounded-[0px] p-4 bg-[#F2F2F2]">
+                            <form method="dialog">
+                                <button
+                                    class="btn btn-sm btn-circle btn-ghost hover:bg-[#F2F2F2] text-[#128CED] text-[20px] absolute right-2 top-2">✕</button>
+                            </form>
+                            <a href="index.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Home</a>
+                            <a href="about.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">About</a>
+                            <a href="features.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Features</a>
+                            <a href="faq.html"
+                                class="text-[#128CED] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">FAQ</a>
+                            <a href="pricing.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Pricing</a>
+
+                                <div class="dropdown dropdown-bottom dropdown-center dropdown-hover block">
+                                    <label tabindex="0"
+                                        class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px] mb-2">
+                                        Languages
+                                    </label>
+                                    <ul tabindex="0"
+                                        class="dropdown-content z-[1] menu p-4 shadow bg-[#F2F2F2] rounded-box rounded-[5px] w-[130px]">
+                                        <li><a
+                                                class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
+                                                <img src="images/uk.png" alt="">
+                                                EN
+                                            </a></li>
+                                        <li><a
+                                                class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
+                                                <img src="images/france.png" alt="">
+                                                RU
+                                            </a></li>
+                                        </a></li>
+                                        <li><a
+                                                class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
+                                                <img src="images/france.png" alt="">
+                                                FR
+                                            </a></li>
+                                        </a></li>
+                                        <li><a
+                                                class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
+                                                <img src="images/uk.png" alt="">
+                                                TR
+                                            </a></li>
+                                        <li><a
+                                                class="bg-white border border-gray-300 pl-3 pr-7 rounded-[5px] hover:bg-white hover:border-[#128CED] my-1">
+                                                <img src="images/uk.png" alt="">
+                                                UK
+                                            </a></li>
+                                    </ul>
+                                </div>
+
+                            <a class="block ml-5 mb-2 text-[15px] text-[#128CED] py-2 text-center border border-[#128CED] w-[156px] rounded-[5px] font-medium hover:bg-gradient-to-r from-[#17A9F7] to-[#0969FA] hover:text-white"
+                                href="signup.html">Sign In</a>
+                            <a class="block ml-5 w-[156px] text-center text-[15px] text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-2 rounded-[5px] font-medium hover:bg-gradient-to-r hover:from-[#F2F2F2] hover:to-[#F2F2F2] hover:border hover:border-[#128CED] hover:text-[#128CED] hover:py-[7px] hover:px-[23px]"
+                                href="dashboard.html">Create Invoice</a>
+                        </div>
+                    </dialog>
+
                     <a class="text-[15px] text-[#128CED] py-2 text-center border border-[#128CED] mr-3 w-[106px] md:block hidden rounded-[5px] font-medium hover:bg-gradient-to-r from-[#17A9F7] to-[#0969FA] hover:text-white"
                         href="signup.html">Sign In</a>
                     <a class="md:block hidden w-[156px] text-center text-[15px] text-white bg-gradient-to-r from-[#17A9F7] to-[#0969FA] py-2 rounded-[5px] font-medium hover:bg-gradient-to-r hover:from-[#F2F2F2] hover:to-[#F2F2F2] hover:border hover:border-[#128CED] hover:text-[#128CED] hover:py-[7px] hover:px-[23px]"

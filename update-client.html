@@ -41,70 +41,31 @@
         <div class="bg-[#F2F2F2] w-full shadow-lg mb-1">
             <div class="navbar h-[64px] max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto">
                 <div class="navbar-start w-[150px]">
-                    <div class="dropdown mr-5 lg:mr-0">
-                        <label tabindex="0" class="btn lg:hidden p-0 m-0 hover:bg-[#F2F2F2] border-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F2F2F2] rounded-box rounded-[5px]  w-[130px]">
-                            <li>
-                                <a href="dashboard.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2 text-[#128CED]">Invoices</a>
-                            </li>
-                            <li><a href="#.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2 my-1">Estimate</a>
-                            </li>
-                            <li>
-                                <a href="clients.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2">Clients</a>
-                            </li>
-                            <li>
-                                <a href="items.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2 my-1">Items</a>
-                            </li>
-                            <li>
-                                <a href="reports.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2">Reports</a>
-                            </li>
-                            <li>
-                                <a href="settings.html"
-                                    class="text-[16px] text-center block rounded-[5px] hover:text-[#128CED] hover:bg-white py-2">Settings</a>
-                            </li>
-                        </ul>
-                    </div>
                     <a href="index.html"><img src="images/logo.png" class="h-12" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <div class="menu menu-horizontal px-1">
-                        
-                            <a href="dashboard.html"
-                                class="px-8 text-[16px] hover:text-[#128CED]">Invoices</a>
-                        
+
+                        <a href="dashboard.html"
+                            class="px-8 text-[16px] hover:text-[#128CED]">Invoices</a>
+
                         <a href="#" class="hover:text-[#128CED] pr-8 text-[16px]">Estimate</a>
-                        
-                            <a href="clients.html"
-                                class="text-[#128CED] pr-8 text-[16px]">Clients</a>
-                        
-                        
-                            <a href="items.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px]">Items</a>
-                        
-                        
-                            <a href="reports.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px]">Reports</a>
-                        
-                        
-                            <a href="settings.html"
-                                class="hover:text-[#128CED] pr-8 text-[16px] mr-3">Settings</a>
-                        
+
+                        <a href="clients.html" class="hover:text-[#128CED] text-[#128CED] pr-8 text-[16px]">Clients</a>
+
+
+                        <a href="items.html" class="hover:text-[#128CED] pr-8 text-[16px]">Items</a>
+
+
+                        <a href="reports.html" class="hover:text-[#128CED] pr-8 text-[16px]">Reports</a>
+
+
+                        <a href="settings.html" class="hover:text-[#128CED] pr-8 text-[16px] mr-3">Settings</a>
+
                     </div>
                 </div>
                 <div class="navbar-end ml-auto">
-                    <details class="dropdown dropdown-end">
+                    <details class="dropdown dropdown-end md:block hidden">
                         <summary tabindex="0" class="btn m-1 hover:bg-transparent p-0 m-0 border-none mr-2 xl:mr-5">
                             <div><img class="w-9 h-9" src="images/notification+dot.png" alt=""></div>
                         </summary>
@@ -156,8 +117,9 @@
                                 More</button>
                         </ul>
                     </details>
-                    <details class="dropdown dropdown-end">
-                        <summary tabindex="0" class="btn hover:border hover:border-[#F2F2F2] p-0 m-0 hover:bg-[#F2F2F2] rounded-[5px]">
+                    <details class="dropdown dropdown-end md:block hidden">
+                        <summary tabindex="0"
+                            class="btn hover:border hover:border-[#F2F2F2] p-0 m-0 hover:bg-[#F2F2F2] rounded-[5px]">
                             <div class="flex items-center justify-start gap-1" href="#">
                                 <img class="h-9 w-9" src="images/profile.png" alt="">
                                 <h5 class="capitalize hidden md:block p-0 m-0 text-[15px]">Devon Lane</h5>
@@ -166,14 +128,126 @@
                         </summary>
                         <ul tabindex="0"
                             class="dropdown-content z-[1] menu p-2 shadow bg-base-100 m-1 rounded-[5px] border-[#CCD5DF] border w-[200px]">
-                            <li><a class="py-3 m-1 rounded-[5px]" href="my-account.html" href="my-account.html"><img src="images/client.png"
-                                        alt="">My Account</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="settings.html"><img src="images/settings.png" alt="">Account
+                            <li><a class="py-3 m-1 rounded-[5px]" href="my-account.html" href="my-account.html"><img
+                                        src="images/client.png" alt="">My Account</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="settings.html"><img src="images/settings.png"
+                                        alt="">Account
                                     Settings</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="faq.html"><img src="images/faq-sign.png" alt="">FAQ</a></li>
-                            <li><a class="py-3 m-1 rounded-[5px]" href="#"><img src="images/logout.png" alt="">Log Out</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="faq.html"><img src="images/faq-sign.png"
+                                        alt="">FAQ</a></li>
+                            <li><a class="py-3 m-1 rounded-[5px]" href="#"><img src="images/logout.png" alt="">Log
+                                    Out</a></li>
                         </ul>
                     </details>
+
+                    <!-- Hamburger Menu -->
+                    <button class="md:hidden px-2 hover:px-2 hover:m-0 hover:bg-[#F2F2F2] hover:border-0" onclick="my_modal_11.showModal()">
+                        <span
+                            class="material-symbols-outlined text-[#128CED] hover:bg-[#F2F2F2] border border-[#128CED] text-[26px] p-1 rounded-[4px]">
+                            menu
+                        </span>
+                    </button>
+                    <dialog id="my_modal_11" class="modal modal-top">
+                        <div class="modal-box overflow-auto rounded-[0px] p-4 bg-[#F2F2F2]">
+                            <form method="dialog">
+                                <button
+                                    class="btn btn-sm btn-circle btn-ghost hover:bg-[#F2F2F2] text-[#128CED] text-[20px] absolute right-2 top-2">✕</button>
+                            </form>
+                            <details class="dropdown dropdown-center">
+                                <summary tabindex="0"
+                                    class="btn hover:border hover:border-[#F2F2F2] px-5 pb-5 m-0 hover:bg-[#F2F2F2] rounded-[5px]">
+                                    <div class="flex items-center justify-start gap-1" href="#">
+                                        <img class="h-9 w-9" src="images/profile.png" alt="">
+                                        <h5 class="capitalize p-0 m-0 text-[15px]">Devon Lane</h5>
+                                        <img src="images/dropdown.png" alt="">
+                                    </div>
+                                </summary>
+                                <ul tabindex="0"
+                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 m-1 rounded-[5px] border-[#CCD5DF] border w-[200px]">
+                                    <li><a class="py-3 m-1 rounded-[5px]" href="my-account.html"
+                                            href="my-account.html"><img src="images/client.png" alt="">My Account</a>
+                                    </li>
+                                    <li><a class="py-3 m-1 rounded-[5px]" href="settings.html"><img
+                                                src="images/settings.png" alt="">Account
+                                            Settings</a></li>
+                                    <li><a class="py-3 m-1 rounded-[5px]" href="faq.html"><img src="images/faq-sign.png"
+                                                alt="">FAQ</a></li>
+                                </ul>
+                            </details>
+                            <a href="dashboard.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Invoices</a>
+                            <a href="#"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Estimate</a>
+                            <a href="clients.html"
+                                class="text-[#128CED] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Clients</a>
+                            <a href="items.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Items</a>
+                            <a href="reports.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Reports</a>
+                            <a href="settings.html"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Settings</a>
+                            <details class="dropdown dropdown-end block">
+                                <summary tabindex="0"
+                                    class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px] w-full">
+                                    Notifications
+                                </summary>
+                                <ul tabindex="0"
+                                    class="dropdown-content z-[1] md:p-4 p-2 menu shadow bg-white rounded-[5px] md:w-[350px] w-[260px] border">
+                                    <a href="#"
+                                        class="flex items-start justify-center md:gap-2 gap-1 rounded-[5px] md:p-2 p-1 hover:bg-[#f2f2f2]">
+                                        <img class="pt-1" src="images/oval.png" alt="">
+                                        <div>
+                                            <h3 class="text-[12px] md:text-sm text-[#128CED] font-medium">Agent Rose
+                                            </h3>
+                                            <p class="text-[10px] md:text-xs">Message: Please, kindly do take a
+                                                snap-shot of the
+                                                card.</p>
+                                        </div>
+                                        <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">18min.</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-start justify-center md:gap-2 gap-1 rounded-[5px] md:p-2 p-1 hover:bg-[#f2f2f2]">
+                                        <img class="pt-1" src="images/oval.png" alt="">
+                                        <div>
+                                            <h3 class="text-[12px] md:text-sm text-[#128CED] font-medium">GOGE Team</h3>
+                                            <p class="text-[10px] md:text-xs">Alert: New card added this week
+                                                check em out.</p>
+                                        </div>
+                                        <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">34min.</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-start justify-center md:gap-2 gap-1 rounded-[5px] md:p-2 p-1 hover:bg-[#f2f2f2]">
+                                        <img class="pt-1" src="images/oval.png" alt="">
+                                        <div>
+                                            <h3 class="text-[12px] md:text-sm text-[#128CED] font-medium">Halloween
+                                                Promo</h3>
+                                            <p class="text-[10px] md:text-xs">Promotion: Get 13% the price when
+                                                you exchange bitcoin to cash.</p>
+                                        </div>
+                                        <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">1hour</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-start justify-center md:gap-2 gap-1 rounded-[5px] md:p-2 p-1 hover:bg-[#f2f2f2]">
+                                        <img class="pt-1" src="images/oval.png" alt="">
+                                        <div>
+                                            <h3 class="text-[12px] md:text-sm text-[#128CED] font-medium">GOGO Team</h3>
+                                            <p class="text-[10px] md:text-xs">Alert: Sorry to see you go. You just
+                                                unsubscribe
+                                                from the
+                                                newsletter.</p>
+                                        </div>
+                                        <p class="text-[10px] text-[#128CED] rounded-[5px] px-1 bg-[#E7F4FD]">2hour</p>
+                                    </a>
+                                    <button
+                                        class="text-white text-[12px] text-[15px] bg-[#128CED] px-4 py-2 mt-4 mb-2 block mx-auto rounded-[5px] text-[#15304D] hover:text-[#128CED] hover:border hover:border-[#128CED] hover:bg-white hover:py-[7px]">View
+                                        More</button>
+                                </ul>
+                            </details>
+                            <a href="#"
+                                class="text-[#15304D] hover:text-[#128CED] px-5 py-2 block text-[15px] hover:bg-[#E5E9EE] rounded-[5px]">Logout</a>
+                        </div>
+                    </dialog>
+
                 </div>
             </div>
         </div>
@@ -181,7 +255,7 @@
 
     <!-- Main -->
     <main class="max-w-[1536px] xl:px-24 lg:px-12 md:px-8 px-5 mx-auto">
-        <section class="mb-12 mx-auto min-h-screen w-[50%]">
+        <section class="mb-12 mx-auto min-h-screen md:w-[50%]">
             <h2 class="text-[24px] font-bold mt-12 mb-8">Update Clients</h2>
 
             <div class="border border-[#DEE2E6] bg-[#f8f9fa] p-10 rounded-[5px]">
