@@ -22,6 +22,28 @@
             /* Change opacity to 1 when hovering */
             display: block;
         }
+
+        @media (prefers-color-scheme: dark) {
+
+            /* Override the background color */
+            body {
+                background-color: transparent !important;
+                /* Change to your desired background color */
+            }
+
+            /* Override the text color */
+            body,
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: #000 !important;
+                /* Change to your desired text color */
+            }
+        }
     </style>
 </head>
 
@@ -448,8 +470,8 @@
                         </div>
 
                         <div class="w-full px-5 py-8">
-                            <p class="mb-2 text-[14px] flex items-center justify-between">Company Name <input type="text"
-                                    placeholder="Company Name"
+                            <p class="mb-2 text-[14px] flex items-center justify-between">Company Name <input
+                                    type="text" placeholder="Company Name"
                                     class="input input-bordered rounded-[5px] text-[15px] h-[38px] w-[280px]" /></p>
                             <p class="mb-2 text-[14px] flex items-center justify-between">Email address <input
                                     type="text" placeholder="Email address"
@@ -630,32 +652,34 @@
         </a>
 
         <!-- Chatbot Modal -->
-            <dialog id="my_modal_2" class="modal">
-                <form method="dialog"
-                    class="modal-box md:w-[350px] w-[300px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
-                    <div class="flex items-center justify-start p-3 gap-2 bg-[#294DFF]">
-                        <img src="images/chat-logo.png" alt="">
-                        <p class="text-white text-sm">Invoice Us Support</p>
+        <dialog id="my_modal_2" class="modal">
+            <form method="dialog"
+                class="modal-box md:w-[350px] w-[300px] min-h-[450px] p-0 border-0 rounded-[5px] border-[#128CED]">
+                <div class="flex items-center justify-start p-3 gap-2 bg-[#294DFF]">
+                    <img src="images/chat-logo.png" alt="">
+                    <p class="text-white text-sm">Invoice Us Support</p>
+                </div>
+                <div class="flex items-start justify-start gap-2 p-3 pr-8">
+                    <img src="images/chat-logo-2.png" alt="">
+                    <div>
+                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Thank you for contacting InvoiceUs
+                            Support.</p>
+                        <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find
+                            you
+                            an answer. I do best with "How to" style
+                            questions.</p>
                     </div>
-                    <div class="flex items-start justify-start gap-2 p-3 pr-8">
-                        <img src="images/chat-logo-2.png" alt="">
-                        <div>
-                            <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Thank you for contacting InvoiceUs
-                                Support.</p>
-                            <p class="p-2 text-xs bg-[#EAF0F6] mb-2 rounded-[5px]">Hello! Ask me a question and I'll find you
-                                an answer. I do best with "How to" style
-                                questions.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between border-t p-3 gap-2 absolute bottom-0 w-full">
-                        <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text" placeholder="Write a message">
-                        <a href="#"><img class="w-5 h-5" src="images/send.png" alt=""></a>
-                    </div>
-                </form>
-                <form method="dialog" class="modal-backdrop">
-                    <button>close</button>
-                </form>
-            </dialog>
+                </div>
+                <div class="flex items-center justify-between border-t p-3 gap-2 absolute bottom-0 w-full">
+                    <input class="w-full outline-0 bg-[#EAF0F6] p-2 text-xs h-[38px] rounded-[5px]" type="text"
+                        placeholder="Write a message">
+                    <a href="#"><img class="w-5 h-5" src="images/send.png" alt=""></a>
+                </div>
+            </form>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>
 
     </main>
 
@@ -701,6 +725,18 @@
     });
     cancelButton9.addEventListener('click', () => {
         modal9.close();
+    });
+
+    const openMenuButton = document.getElementById('open-menu');
+    const closeMenuButton = document.getElementById('close-menu');
+    const menu = document.getElementById('menu');
+
+    openMenuButton.addEventListener('click', () => {
+        menu.classList.remove('hidden');
+    });
+
+    closeMenuButton.addEventListener('click', () => {
+        menu.classList.add('hidden');
     });
 </script>
 

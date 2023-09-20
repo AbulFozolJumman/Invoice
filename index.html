@@ -771,4 +771,19 @@
     </div>
 </body>
 
+<script>
+    const openMenuButton = document.getElementById('open-menu');
+    const closeMenuButton = document.getElementById('close-menu');
+    const menu = document.getElementById('menu');
+
+    openMenuButton.addEventListener('click', () => {
+        menu.classList.remove('hidden');
+    });
+
+    closeMenuButton.addEventListener('click', () => {
+        menu.classList.add('hidden');
+    });
+
+</script>
+
 </html>
