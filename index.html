@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -24,15 +24,17 @@
         }
 
         @media (prefers-color-scheme: dark) {
-
+            /* Override the background color */
             body,
-            input {
+            input,
+            textarea {
                 background-color: white;
             }
 
             /* Override the text color */
             body,
             input,
+            textarea,
             p,
             h1,
             h2,
@@ -41,6 +43,9 @@
             h5,
             h6 {
                 color: #000;
+            }
+            th p{
+                color: white;
             }
         }
     </style>
@@ -120,7 +125,7 @@
                         </span>
                     </button>
                     <dialog id="my_modal_11" class="modal modal-top">
-                        <div class="modal-box overflow-auto rounded-[0px] p-4 bg-[#F2F2F2]">
+                        <div class="modal-box overflow-visible rounded-[0px] p-4 bg-[#F2F2F2]">
                             <form method="dialog">
                                 <button
                                     class="btn btn-sm btn-circle btn-ghost hover:bg-[#F2F2F2] text-[#128CED] text-[20px] absolute right-2 top-2">✕</button>
